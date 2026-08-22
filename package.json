@@ -1,0 +1,17 @@
+{
+  "name": "pujolwilkie",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "verify:urls": "node scripts/verify-urls.mjs"
+  },
+  "dependencies": {
+    "next": "^16.3.2",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  }
+}
