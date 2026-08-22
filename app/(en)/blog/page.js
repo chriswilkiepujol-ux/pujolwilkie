@@ -1,15 +1,12 @@
-import InnerPage from '@/components/InnerPage';
+import BlogIndex from '@/components/BlogIndex';
 import en from '@/content/en';
 
 export const metadata = {
-  title: "Insights",
-  description: "Notes on Spanish property law, tax and residency for foreign owners.",
-  alternates: { canonical: "/blog" },
+  title: `${en.insights.h2} | Esther Pujol Wilkie & Associates`,
+  description: en.insights.items.map((p) => p.title).join('. '),
+  alternates: { canonical: '/blog' },
 };
 
 export default function P() {
-  return (
-    <InnerPage t={en} eyebrow="Insights" title="Insights"
-      intro="Notes on Spanish property law, tax and residency for foreign owners." image="hero" />
-  );
+  return <BlogIndex t={en} />;
 }

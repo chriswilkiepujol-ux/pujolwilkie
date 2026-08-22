@@ -1,15 +1,15 @@
-import InnerPage from '@/components/InnerPage';
+import ServicePage from '@/components/ServicePage';
 import en from '@/content/en';
+import pages from '@/content/pages.en';
+
+const page = pages['about'];
 
 export const metadata = {
-  title: "About Esther Pujol Wilkie",
-  description: "Thirty five years of Spanish property law from an office in La Marina de Sotogrande.",
-  alternates: { canonical: "/about" },
+  title: `${page.title} | Esther Pujol Wilkie & Associates`,
+  description: page.intro,
+  alternates: { canonical: '/about' },
 };
 
 export default function P() {
-  return (
-    <InnerPage t={en} eyebrow="About" title="About Esther Pujol Wilkie"
-      intro="Thirty five years of Spanish property law from an office in La Marina de Sotogrande." image="esther" />
-  );
+  return <ServicePage t={en} page={page} />;
 }

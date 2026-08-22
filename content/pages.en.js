@@ -1,6 +1,51 @@
 // Page content. `legacy: true` marks URLs inherited from the WordPress site that
 // must keep their path. New services sit on new paths alongside them.
 const pages = {
+// ---- non-service pages ----
+  'about': {
+    legacy: true, image: 'esther', eyebrow: 'About',
+    title: 'Esther Pujol Wilkie',
+    intro: 'Thirty five years of Spanish law, almost entirely for people meeting it for the first time.',
+    nav: 'About',
+    sections: [
+      { h2: 'Barcelona, London, Gibraltar, Sotogrande',
+        p: ['I was born in Barcelona and studied law there. Before settling on this coast I practised in the United Kingdom and in Gibraltar, and I hold banking qualifications alongside the legal ones, which turns out to matter more often than you would expect in property work.',
+            'For roughly thirty years I have worked from Sotogrande. The clients are overwhelmingly foreign nationals dealing with Spanish law for the first time, usually around a property purchase, and usually while living somewhere else.'] },
+      { h2: 'How the practice works',
+        p: ['I act for the client and nobody else. No referral arrangements with estate agents, no commission from developers, no divided loyalty. That sounds unremarkable until you understand how much property work on this coast is introduced by the selling side.',
+            'Most matters start with one transaction and continue for years: the purchase leads to the tax filings, the filings lead to a residence application, and eventually the same office handles the sale or the inheritance. Clients tend to arrive nervous and stay for decades.'] },
+      { h2: 'Languages and jurisdictions',
+        list: ['Spanish and English, both fluent, with every document explained in plain English',
+               'Qualified and practising in Spain',
+               'Previous practice in the United Kingdom and Gibraltar',
+               'Cross border work between Spain and Gibraltar, including frontier workers and Gibraltar companies'] },
+      { h2: 'The office',
+        p: ['The office is in Guadalmarina, on Avenida de la Marina in La Marina de Sotogrande, a few minutes from the port. Clients are welcome to come in, but a great deal of work is done remotely under power of attorney for people who are not in Spain.'] },
+    ],
+    related: [{ href: '/full-client-service/', label: 'How I work with clients' },
+              { href: '/contact/', label: 'Arrange a free consultation' }],
+  },
+  'contact': {
+    legacy: true, image: 'polo', eyebrow: 'Contact',
+    title: 'Contact',
+    intro: 'A free initial conversation about what you are planning, with no obligation.',
+    nav: 'Contact',
+    sections: [
+      { h2: 'What happens when you get in touch',
+        p: ['Use the form below, call the office, or email. I reply personally rather than passing enquiries to an assistant, normally within one working day.',
+            'The first conversation costs nothing. It is usually enough to tell you whether what you are planning is straightforward, what the process involves, roughly what it will cost, and whether you need a lawyer at all. Sometimes the answer is that you do not.'] },
+      { h2: 'Useful things to mention',
+        list: ['Whether you are buying, selling, or already own something here',
+               'Where the property is, or where you are looking',
+               'Whether you have signed anything yet, and if so what',
+               'Your nationality and where you are tax resident',
+               'Whether residency in Spain is part of the plan'] },
+      { h2: 'If you have already signed something',
+        p: ['If a reservation contract or contrato de arras has been signed and you are having second thoughts, say so in the first message. Timing matters in those situations and there are often more options than people assume.'] },
+    ],
+    related: [{ href: '/buying-property/', label: 'Buying a property in Spain' },
+              { href: '/about/', label: 'About Esther Pujol Wilkie' }],
+  },
   'property-law': {
     legacy: true, image: 'buying', eyebrow: 'Practice area',
     title: 'Property Law in Spain',

@@ -17,7 +17,7 @@ export const metadata = {
     siteName: 'Esther Pujol Wilkie & Associates', locale: 'en_GB', type: 'website',
     images: [{ url: '/images/hero.jpg', width: 1800, height: 972 }],
   },
-  robots: { index: process.env.VERCEL_ENV === 'production', follow: true },
+  robots: { index: process.env.ALLOW_INDEXING === 'true', follow: true },
 };
 
 export default function EnLayout({ children }) {

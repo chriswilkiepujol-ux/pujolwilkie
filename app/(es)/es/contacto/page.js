@@ -1,15 +1,15 @@
-import InnerPage from '@/components/InnerPage';
+import ServicePage from '@/components/ServicePage';
 import es from '@/content/es';
+import pages from '@/content/pages.es';
+
+const page = pages['contacto'];
 
 export const metadata = {
-  title: "Contacto",
-  description: "Primera consulta gratuita. Respondo personalmente, normalmente en un d\u00eda laborable.",
-  alternates: { canonical: "/es/contacto" },
+  title: `${page.title} | Esther Pujol Wilkie & Associates`,
+  description: page.intro,
+  alternates: { canonical: '/es/contacto' },
 };
 
 export default function P() {
-  return (
-    <InnerPage t={es} eyebrow="Contacto" title="Contacto"
-      intro="Primera consulta gratuita. Respondo personalmente, normalmente en un d\u00eda laborable." image="polo" />
-  );
+  return <ServicePage t={es} page={page} />;
 }

@@ -1,15 +1,15 @@
-import InnerPage from '@/components/InnerPage';
+import ServicePage from '@/components/ServicePage';
 import en from '@/content/en';
+import pages from '@/content/pages.en';
+
+const page = pages['contact'];
 
 export const metadata = {
-  title: "Contact",
-  description: "Free initial consultation. I reply personally, usually within one working day.",
-  alternates: { canonical: "/contact" },
+  title: `${page.title} | Esther Pujol Wilkie & Associates`,
+  description: page.intro,
+  alternates: { canonical: '/contact' },
 };
 
 export default function P() {
-  return (
-    <InnerPage t={en} eyebrow="Contact" title="Contact"
-      intro="Free initial consultation. I reply personally, usually within one working day." image="polo" />
-  );
+  return <ServicePage t={en} page={page} />;
 }
