@@ -124,6 +124,7 @@ export const en = {
       ['Languages', 'Spanish and English'],
       ['Colegio', 'ICA Cádiz, nº 1432'],
       ['Practising since', '2 July 1990'],
+      ['Recent training', 'Competencias Digitales Profesionales, CGAE, 150h, 2026'],
     ],
     credPending: null,
     chips: [
