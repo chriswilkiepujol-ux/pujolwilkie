@@ -69,7 +69,7 @@ export function Services({ t }) {
           <Link className="card" href={`${t.locale === 'es' ? '/es' : ''}/${s.slug}`} key={s.slug}>
             <div className="cimg">
               {s.tag && <span className="tag">{s.tag}</span>}
-              <Image src={img(s.img)} alt="" width={736} height={408} sizes="(max-width:760px) 50vw, 33vw" />
+              <Image src={img(s.img)} alt={s.title} width={736} height={408} sizes="(max-width:760px) 50vw, 33vw" />
             </div>
             <div className="cb">
               <h3>{s.title}</h3>

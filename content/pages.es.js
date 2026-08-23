@@ -1,7 +1,7 @@
 // Las páginas heredadas conservan su ruta original en inglés bajo /es/ con slug propio.
 const pages = {
 'sobre-esther': {
-    en: 'about', legacy: true, image: 'esther', eyebrow: 'Sobre Esther',
+    en: 'about', legacy: true, image: 'esther', imageAlt: 'Esther Pujol Wilkie, abogada, en su despacho de Sotogrande', eyebrow: 'Sobre Esther',
     title: 'Esther Pujol Wilkie',
     intro: 'Ejerciendo el derecho español desde 1990, casi siempre para quienes se enfrentan a él por primera vez.',
     nav: 'Sobre Esther',
@@ -17,6 +17,9 @@ const pages = {
                'Colegiada y en ejercicio en España',
                'Ejercicio previo en el Reino Unido y en Gibraltar',
                'Asuntos transfronterizos entre España y Gibraltar'] },
+      { h2: 'Trabajar con clientes que no están aquí',
+        p: ['Buena parte de mis clientes no reside en España la mayor parte del año, de modo que gran parte del trabajo se realiza a distancia mediante poder notarial: firmar ante notario, presentar declaraciones y tratar con el ayuntamiento y con Hacienda.',
+            'En junio de 2026 complet\u00e9 el Diploma en Competencias Digitales Profesionales del Consejo General de la Abogac\u00eda Espa\u00f1ola, un programa de 150 horas impartido junto con Uni\u00f3n Profesional, directamente relacionado con la forma en que hoy se desarrolla ese trabajo: presentaciones telem\u00e1ticas, firma digital y tratamiento seguro de documentaci\u00f3n de clientes entre jurisdicciones.'] },
       { h2: 'El despacho',
         p: ['El despacho está en Guadalmarina, en la Avenida de la Marina, a pocos minutos del puerto. Buena parte del trabajo se realiza a distancia mediante poder notarial para quienes no están en España.'] },
     ],
@@ -24,7 +27,7 @@ const pages = {
               { href: '/es/contacto/', label: 'Solicitar una consulta gratuita' }],
   },
   'contacto': {
-    en: 'contact', legacy: true, image: 'polo', eyebrow: 'Contacto',
+    en: 'contact', legacy: true, image: 'polo', imageAlt: 'Partido de polo en Sotogrande', eyebrow: 'Contacto',
     title: 'Contacto',
     intro: 'Una primera conversación gratuita sobre lo que tiene en mente, sin compromiso.',
     nav: 'Contacto',
@@ -64,7 +67,7 @@ const pages = {
             "a": "Si posee un inmueble aquí, sí. Sin él, el procedimiento para sus herederos resulta más lento, más caro e íntegramente en español. El testamento español es además el lugar natural para hacer la elección del Reglamento UE 650/2012."
       }
     ],
-    en: 'property-law', image: 'buying', eyebrow: '\u00c1rea de pr\u00e1ctica',
+    en: 'property-law', image: 'buying', imageAlt: 'Villa con piscina en la Costa del Sol, típica de las compraventas en Sotogrande', eyebrow: '\u00c1rea de pr\u00e1ctica',
     title: 'Derecho inmobiliario en Espa\u00f1a',
     intro: 'El marco legal que hay detr\u00e1s de cada compraventa en Espa\u00f1a y lo que significa para un propietario extranjero.',
     nav: 'Derecho inmobiliario',
@@ -122,7 +125,7 @@ const pages = {
             "a": "No. El umbral de 500.000 euros no se ha elevado: se ha suprimido. Ninguna compra, por elevado que sea su importe, genera derecho de residencia."
       }
     ],
-    en: 'spanish-golden-visa', image: 'residency', eyebrow: 'Residencia',
+    en: 'spanish-golden-visa', image: 'residency', imageAlt: 'Formulario de solicitud de visado español', eyebrow: 'Residencia',
     title: 'La Golden Visa espa\u00f1ola',
     intro: 'La v\u00eda de residencia por inversi\u00f3n se cerr\u00f3 el 3 de abril de 2025. Qu\u00e9 ocurre si ya la tiene y qu\u00e9 alternativas existen.',
     nav: 'Golden Visa',
@@ -182,7 +185,7 @@ const pages = {
             "a": "El ITP satisfecho en la compra, la notaría, el Registro, los honorarios y las mejoras documentadas incrementan el valor de adquisición. El mantenimiento ordinario y la redecoración no. Conservar las facturas de una cubierta nueva o una ampliación suele valer varios miles de euros."
       }
     ],
-    en: 'tax-and-accountancy', image: 'tax', eyebrow: '\u00c1rea de pr\u00e1ctica',
+    en: 'tax-and-accountancy', image: 'tax', imageAlt: 'Campo de golf de Alcaidesa con el Peñón de Gibraltar al fondo', eyebrow: '\u00c1rea de pr\u00e1ctica',
     title: 'Fiscalidad y contabilidad',
     intro: 'Los impuestos de la compra, los que se repiten cada a\u00f1o y las declaraciones que hay que presentar viva o no en Espa\u00f1a.',
     nav: 'Fiscalidad',
@@ -214,7 +217,7 @@ const pages = {
               { href: '/es/gestion-de-propiedades/', label: 'Gesti\u00f3n de propiedades' }],
   },
   'tramites-de-extranjeria': {
-    en: 'immigration-and-foreigners-legal-procedures', image: 'management', eyebrow: '\u00c1rea de pr\u00e1ctica',
+    en: 'immigration-and-foreigners-legal-procedures', image: 'management', imageAlt: 'Embarcaciones amarradas en el Puerto de Sotogrande', eyebrow: '\u00c1rea de pr\u00e1ctica',
     title: 'Extranjer\u00eda y tr\u00e1mites administrativos',
     intro: 'La maquinaria administrativa que acompa\u00f1a a vivir o tener algo en Espa\u00f1a siendo extranjero.',
     nav: 'Extranjer\u00eda',
@@ -246,7 +249,7 @@ const pages = {
               { href: '/es/gibraltar-y-espana/', label: 'Gibraltar y Espa\u00f1a' }],
   },
   'gestion-de-propiedades': {
-    en: 'property-management-services', image: 'selling', eyebrow: '\u00c1rea de pr\u00e1ctica',
+    en: 'property-management-services', image: 'selling', imageAlt: 'Entrega de llaves en la firma de una compraventa en España', eyebrow: '\u00c1rea de pr\u00e1ctica',
     title: 'Gesti\u00f3n de propiedades',
     intro: 'Mantener una propiedad en Espa\u00f1a en orden cuando no se reside aqu\u00ed la mayor parte del a\u00f1o.',
     nav: 'Gesti\u00f3n de propiedades',
@@ -275,7 +278,7 @@ const pages = {
               { href: '/es/fiscalidad/', label: 'Fiscalidad y contabilidad' }],
   },
   'servicio-integral': {
-    en: 'full-client-service', image: 'polo', eyebrow: 'C\u00f3mo trabajo',
+    en: 'full-client-service', image: 'polo', imageAlt: 'Partido de polo en Sotogrande', eyebrow: 'C\u00f3mo trabajo',
     title: 'Servicio integral al cliente',
     intro: 'Asuntos legales, fiscales y administrativos atendidos desde un mismo despacho, mientras tenga algo aqu\u00ed.',
     nav: 'Servicio integral',
@@ -328,7 +331,7 @@ const pages = {
             "a": "Sí. No existe restricción para que un extranjero compre en España, sea cual sea el importe. Lo que cambió en abril de 2025 es que la compra ya no otorga derecho de residencia, al derogarse la Golden Visa. Comprar y residir son ahora cuestiones independientes."
       }
     ],
-    image: 'buying', eyebrow: 'Servicio', title: 'Comprar una propiedad en Espa\u00f1a',
+    image: 'buying', imageAlt: 'Villa con piscina en la Costa del Sol, típica de las compraventas en Sotogrande', eyebrow: 'Servicio', title: 'Comprar una propiedad en Espa\u00f1a',
     intro: 'Asesoramiento independiente desde la primera b\u00fasqueda hasta las llaves, actuando solo para el comprador.',
     nav: 'Comprar una propiedad',
     sections: [
@@ -367,7 +370,7 @@ const pages = {
               { href: '/es/residencia-y-visados/', label: 'Si la residencia forma parte del plan' }],
   },
   'venta-de-propiedades': {
-    image: 'selling', eyebrow: 'Servicio', title: 'Vender una propiedad en Espa\u00f1a',
+    image: 'selling', imageAlt: 'Entrega de llaves en la firma de una compraventa en España', eyebrow: 'Servicio', title: 'Vender una propiedad en Espa\u00f1a',
     intro: 'Ganancia patrimonial, la retenci\u00f3n del 3% a no residentes y la repatriaci\u00f3n del importe.',
     nav: 'Vender una propiedad',
     sections: [
@@ -414,7 +417,7 @@ const pages = {
             "a": "Si permanece más de 183 días al año, por regla general sí, por su renta mundial. Tener aquí el núcleo principal de intereses económicos puede producir el mismo resultado incluso por debajo de ese umbral. Conviene calcularlo antes de solicitar."
       }
     ],
-    image: 'residency', eyebrow: 'Servicio', title: 'Residencia y visados',
+    image: 'residency', imageAlt: 'Formulario de solicitud de visado español', eyebrow: 'Servicio', title: 'Residencia y visados',
     intro: 'Las v\u00edas que siguen abiertas en 2026 y cu\u00e1l encaja en su situaci\u00f3n.',
     nav: 'Residencia y visados',
     sections: [
@@ -446,7 +449,7 @@ const pages = {
               { href: '/es/tramites-de-extranjeria/', label: 'Tr\u00e1mites de extranjer\u00eda' }],
   },
   'gibraltar-y-espana': {
-    image: 'gibraltar', eyebrow: 'Servicio', title: 'Gibraltar y Espa\u00f1a',
+    image: 'gibraltar', imageAlt: 'El Peñón de Gibraltar visto desde la costa española', eyebrow: 'Servicio', title: 'Gibraltar y Espa\u00f1a',
     intro: 'Asuntos transfronterizos para trabajadores, sociedades gibraltare\u00f1as y residentes entre ambas jurisdicciones.',
     nav: 'Gibraltar y Espa\u00f1a',
     sections: [

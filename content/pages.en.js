@@ -3,7 +3,7 @@
 const pages = {
 // ---- non-service pages ----
   'about': {
-    legacy: true, image: 'esther', eyebrow: 'About',
+    legacy: true, image: 'esther', imageAlt: 'Esther Pujol Wilkie, abogada, at her desk in Sotogrande', eyebrow: 'About',
     title: 'Esther Pujol Wilkie',
     intro: 'Practising Spanish law since 1990, almost entirely for people meeting it for the first time.',
     nav: 'About',
@@ -19,6 +19,9 @@ const pages = {
                'Qualified and practising in Spain',
                'Previous practice in the United Kingdom and Gibraltar',
                'Cross border work between Spain and Gibraltar, including frontier workers and Gibraltar companies'] },
+      { h2: 'Working with clients who are not here',
+        p: ['A large share of my clients are not in Spain for most of the year, so much of the work is done at a distance under power of attorney: signing at the notary, filing returns, dealing with the town hall and the tax office.',
+            'I completed the Consejo General de la Abogacía Española digital competencies diploma in June 2026, a 150 hour programme run with Unión Profesional, which is directly relevant to how that work now happens: electronic filings, digital signatures and secure handling of client documentation across borders.'] },
       { h2: 'The office',
         p: ['The office is in Guadalmarina, on Avenida de la Marina in La Marina de Sotogrande, a few minutes from the port. Clients are welcome to come in, but a great deal of work is done remotely under power of attorney for people who are not in Spain.'] },
     ],
@@ -26,7 +29,7 @@ const pages = {
               { href: '/contact/', label: 'Arrange a free consultation' }],
   },
   'contact': {
-    legacy: true, image: 'polo', eyebrow: 'Contact',
+    legacy: true, image: 'polo', imageAlt: 'Polo match at Sotogrande', eyebrow: 'Contact',
     title: 'Contact',
     intro: 'A free initial conversation about what you are planning, with no obligation.',
     nav: 'Contact',
@@ -69,7 +72,7 @@ const pages = {
             "a": "If you own property here, yes. Without one, the process for your heirs is slower, more expensive and conducted entirely in Spanish. A Spanish will is also the natural place to make the EU 650/2012 election of your national law, which for common law nationals avoids the Spanish forced heirship rules."
       }
     ],
-    legacy: true, image: 'buying', eyebrow: 'Practice area',
+    legacy: true, image: 'buying', imageAlt: 'Villa with pool on the Costa del Sol, typical of resale purchases in Sotogrande', eyebrow: 'Practice area',
     title: 'Property Law in Spain',
     intro: 'The legal framework behind every Spanish property transaction, and what it means for a foreign owner.',
     nav: 'Property law',
@@ -134,7 +137,7 @@ const pages = {
             "a": "Spending more than 183 days in Spain in a calendar year generally makes you tax resident here on worldwide income, whatever permit you hold. Because the replacement routes expect real presence and the Golden Visa did not, this now affects far more applicants than it used to."
       }
     ],
-    legacy: true, image: 'residency', eyebrow: 'Residency',
+    legacy: true, image: 'residency', imageAlt: 'Spanish visa application form being completed', eyebrow: 'Residency',
     title: 'The Spanish Golden Visa',
     intro: 'The investor residence route closed on 3 April 2025. What that means if you hold one, and what is available if you do not.',
     nav: 'Golden Visa',
@@ -204,7 +207,7 @@ const pages = {
             "a": "If you are tax resident in Spain, yes, through Modelo 720 where assets exceed fifty thousand euros in a category. The penalty regime was found disproportionate by the Court of Justice of the EU in 2022 and has been revised, but the obligation to declare remains."
       }
     ],
-    legacy: true, image: 'tax', eyebrow: 'Practice area',
+    legacy: true, image: 'tax', imageAlt: 'Golf course at Alcaidesa with the Rock of Gibraltar beyond', eyebrow: 'Practice area',
     title: 'Tax and Accountancy',
     intro: 'The taxes that arise on purchase, the ones that recur every year, and the returns that have to be filed whether or not you live here.',
     nav: 'Tax and accountancy',
@@ -241,7 +244,7 @@ const pages = {
   },
 
   'immigration-and-foreigners-legal-procedures': {
-    legacy: true, image: 'management', eyebrow: 'Practice area',
+    legacy: true, image: 'management', imageAlt: 'Yachts moored in the marina at Puerto de Sotogrande', eyebrow: 'Practice area',
     title: 'Immigration and Foreigners\u2019 Legal Procedures',
     intro: 'The administrative machinery that comes with living in, or owning something in, Spain as a foreign national.',
     nav: 'Immigration procedures',
@@ -277,7 +280,7 @@ const pages = {
   },
 
   'property-management-services': {
-    legacy: true, image: 'selling', eyebrow: 'Practice area',
+    legacy: true, image: 'selling', imageAlt: 'Keys being handed over on completion of a Spanish property sale', eyebrow: 'Practice area',
     title: 'Property Management Services',
     intro: 'Keeping a Spanish property running properly when you are not here for most of the year.',
     nav: 'Property management',
@@ -309,7 +312,7 @@ const pages = {
   },
 
   'full-client-service': {
-    legacy: true, image: 'polo', eyebrow: 'How I work',
+    legacy: true, image: 'polo', imageAlt: 'Polo match at Sotogrande', eyebrow: 'How I work',
     title: 'Full Client Service',
     intro: 'Legal, fiscal and administrative matters handled together, by the same office, for as long as you own something here.',
     nav: 'Full client service',
@@ -374,7 +377,7 @@ const pages = {
             "a": "In practice yes, for paying the purchase, the taxes and the ongoing utilities and community fees. It is worth opening it early, because banks apply anti money laundering checks on the origin of funds and those take longer than people expect."
       }
     ],
-    image: 'buying', eyebrow: 'Service',
+    image: 'buying', imageAlt: 'Villa with pool on the Costa del Sol, typical of resale purchases in Sotogrande', eyebrow: 'Service',
     title: 'Buying a Property in Spain',
     intro: 'Independent conveyancing from the first search to the keys, acting only for the buyer.',
     nav: 'Buying property',
@@ -440,7 +443,7 @@ const pages = {
             "a": "Yes, under a power of attorney. For a non-resident seller it is usually the practical route, since the tax filings and any refund claim continue for months after completion."
       }
     ],
-    image: 'selling', eyebrow: 'Service',
+    image: 'selling', imageAlt: 'Keys being handed over on completion of a Spanish property sale', eyebrow: 'Service',
     title: 'Selling a Property in Spain',
     intro: 'Capital gains, the non-resident retention, and getting the proceeds out cleanly.',
     nav: 'Selling property',
@@ -497,7 +500,7 @@ const pages = {
             "a": "If you spend more than 183 days a year here, generally yes, on worldwide income. Having your main centre of economic interests in Spain can produce the same result below that threshold. This should be modelled before applying, not after arriving."
       }
     ],
-    image: 'residency', eyebrow: 'Service',
+    image: 'residency', imageAlt: 'Spanish visa application form being completed', eyebrow: 'Service',
     title: 'Residency and Visa Applications',
     intro: 'The routes that remain open in 2026, and which one fits your circumstances.',
     nav: 'Residency and visas',
@@ -554,7 +557,7 @@ const pages = {
             "a": "The treaty framework governing Gibraltar's relationship with the EU has been under negotiation for years and arrangements have been subject to transitional measures throughout. Anything time sensitive should be confirmed at the point of decision rather than relying on a general description."
       }
     ],
-    image: 'gibraltar', eyebrow: 'Service',
+    image: 'gibraltar', imageAlt: 'The Rock of Gibraltar seen across the bay from the Spanish coast', eyebrow: 'Service',
     title: 'Gibraltar and Spain',
     intro: 'Cross-border matters for frontier workers, Gibraltar companies and residents moving between the two jurisdictions.',
     nav: 'Gibraltar and Spain',

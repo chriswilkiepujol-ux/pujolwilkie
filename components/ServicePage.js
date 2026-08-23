@@ -23,7 +23,7 @@ export default function ServicePage({ t, page, jsonLd = [] }) {
 
       {page.image && (
         <div className="wrap"><div className="iband">
-          <Image src={`/images/${page.image}.jpg`} alt="" width={1300} height={498} priority sizes="100vw" />
+          <Image src={`/images/${page.image}.jpg`} alt={page.imageAlt || page.title} width={1300} height={498} priority sizes="100vw" />
         </div></div>
       )}
 
