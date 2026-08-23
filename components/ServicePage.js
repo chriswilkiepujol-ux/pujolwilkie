@@ -4,9 +4,13 @@ import Header from './Header';
 import ContactForm from './ContactForm';
 import { Footer, MobileCta, Trust } from './Sections';
 
-export default function ServicePage({ t, page }) {
+export default function ServicePage({ t, page, jsonLd = [] }) {
   return (
     <>
+      {jsonLd.map((o, i) => (
+        <script key={i} type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(o) }} />
+      ))}
       <Header t={t} />
       <div className="ihero">
         <div className="wrap">

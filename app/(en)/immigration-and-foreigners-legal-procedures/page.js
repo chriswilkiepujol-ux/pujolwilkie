@@ -1,15 +1,25 @@
 import ServicePage from '@/components/ServicePage';
 import en from '@/content/en';
 import pages from '@/content/pages.en';
+import { servicePageSchema, breadcrumbSchema } from '@/lib/schema';
 
-const page = pages["immigration-and-foreigners-legal-procedures"];
+const slug = 'immigration-and-foreigners-legal-procedures';
+const page = pages[slug];
+const path = '/' + slug + '/';
 
 export const metadata = {
   title: `${page.title} | Esther Pujol Wilkie & Associates`,
   description: page.intro,
-  alternates: { canonical: "/immigration-and-foreigners-legal-procedures" },
+  alternates: { canonical: path },
 };
 
 export default function P() {
-  return <ServicePage t={en} page={page} />;
+  const jsonLd = [
+    servicePageSchema(page, { locale: 'en', path }),
+    breadcrumbSchema([
+      { name: 'Home', path: '/' },
+      { name: page.nav || page.title, path },
+    ]),
+  ];
+  return <ServicePage t={en} page={page} jsonLd={jsonLd} />;
 }
