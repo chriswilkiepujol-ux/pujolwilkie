@@ -1,8 +1,8 @@
 
 // Required under Ley 34/2002 (LSSI-CE) art. 10 and the RGPD/LOPDGDD.
-// NIF and colegiado number are pending from the client and are rendered
-// as visible gaps rather than invented.
-const TBC = '[pendiente]';
+// The NIF is published in the partially masked form the AEPD sets out for
+// identity documents, since the practice is a sole practitioner and the NIF
+// is her personal DNI. See lib/site.js. Do not substitute the full number.
 
 const legal = {
   'aviso-legal': {
@@ -12,7 +12,7 @@ const legal = {
       { h2: 'Ownership of this website',
         list: [
           'Holder: Esther Pujol Wilkie & Associates',
-          `NIF / CIF: ${TBC}`,
+          'NIF: ***9020** (shown in the partially masked form set out by the Spanish Data Protection Agency for the publication of identity documents)',
           'Registered office: Guadalmarina 1, Portal 3, 2E, La Marina de Sotogrande, 11310 San Roque, Cádiz, Spain',
           'Telephone: +34 620 86 80 12',
           'Domain: pujolwilkie.com',
@@ -51,7 +51,7 @@ const legal = {
       { h2: 'Who is responsible for your data',
         list: [
           'Data controller: Esther Pujol Wilkie & Associates',
-          `NIF / CIF: ${TBC}`,
+          'NIF: ***9020** (partially masked, per Spanish Data Protection Agency criteria)',
           'Address: Guadalmarina 1, Portal 3, 2E, La Marina de Sotogrande, 11310 San Roque, Cádiz',
           'Telephone: +34 620 86 80 12',
         ] },

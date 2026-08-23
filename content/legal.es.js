@@ -1,7 +1,7 @@
 // Exigido por la Ley 34/2002 (LSSI-CE) art. 10 y por el RGPD / LOPDGDD.
-// El NIF y el número de colegiada están pendientes de la clienta y se
-// muestran como huecos visibles en lugar de inventarse.
-const TBC = '[pendiente]';
+// El NIF se publica parcialmente anonimizado conforme al criterio de la AEPD
+// para documentos identificativos, al tratarse de una profesional autonoma
+// cuyo NIF es su DNI personal. No sustituir por el numero completo.
 
 const legal = {
   'aviso-legal': {
@@ -11,7 +11,7 @@ const legal = {
       { h2: 'Titularidad de este sitio web',
         list: [
           'Titular: Esther Pujol Wilkie & Associates',
-          `NIF / CIF: ${TBC}`,
+          'NIF: ***9020** (publicado de forma parcialmente anonimizada conforme al criterio de la Agencia Española de Protección de Datos para la publicación de documentos identificativos)',
           'Domicilio: Guadalmarina 1, Portal 3, 2E, La Marina de Sotogrande, 11310 San Roque, Cádiz, España',
           'Teléfono: +34 620 86 80 12',
           'Dominio: pujolwilkie.com',
@@ -50,7 +50,7 @@ const legal = {
       { h2: 'Responsable del tratamiento',
         list: [
           'Responsable: Esther Pujol Wilkie & Associates',
-          `NIF / CIF: ${TBC}`,
+          'NIF: ***9020** (parcialmente anonimizado conforme al criterio de la AEPD)',
           'Dirección: Guadalmarina 1, Portal 3, 2E, La Marina de Sotogrande, 11310 San Roque, Cádiz',
           'Teléfono: +34 620 86 80 12',
         ] },
