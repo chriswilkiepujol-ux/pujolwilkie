@@ -230,7 +230,7 @@ export function Footer({ t }) {
         </div>
         <div>
           <h5>{t.footer.firm}</h5>
-          {t.footer.firmLinks.map((l) => <a href={l.href} key={l.label}>{l.label}</a>)}
+          {t.footer.firmLinks.map((l) => <Link href={l.href} key={l.label}>{l.label}</Link>)}
           <Link href={t.altLocale.href} hrefLang={t.altLocale.code}>{t.altLocale.label}</Link>
         </div>
       </div>

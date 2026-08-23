@@ -50,7 +50,7 @@ export default function Header({ t }) {
 
       <header><div className="wrap hbar">
         <Link className="brand" href={t.home}><Logo className="brandmark" />{brand}</Link>
-        <nav>{t.nav.map((n) => <a key={n.href} href={n.href}>{n.label}</a>)}</nav>
+        <nav>{t.nav.map((n) => <Link key={n.href} href={n.href}>{n.label}</Link>)}</nav>
         <Link className="lang" href={t.altLocale.href} hrefLang={t.altLocale.code}>
           <b>{t.locale.toUpperCase()}</b> / {t.altLocale.code.toUpperCase()}
         </Link>
@@ -69,10 +69,13 @@ export default function Header({ t }) {
           <button className="dclose" ref={closeBtn} aria-label="Close menu" onClick={() => setOpen(false)}>×</button>
         </div>
         <nav className="dnav">
-          {t.nav.map((n) => (
-            <a key={n.href} href={n.href} onClick={() => setOpen(false)}>
-              {n.label}{n.hint && <span>{n.hint}</span>}
-            </a>
+          <p className="dgroup">{t.navLabels.services}</p>
+          {t.navServices.map((n) => (
+            <Link key={n.href} href={n.href} onClick={() => setOpen(false)}>{n.label}</Link>
+          ))}
+          <p className="dgroup">{t.navLabels.firm}</p>
+          {t.navFirm.map((n) => (
+            <Link key={n.href} href={n.href} onClick={() => setOpen(false)}>{n.label}</Link>
           ))}
         </nav>
         <p className="dmeta">{site.street}<br />{site.district}, {site.postal} {site.region}<br />{t.topbar.hours}</p>
