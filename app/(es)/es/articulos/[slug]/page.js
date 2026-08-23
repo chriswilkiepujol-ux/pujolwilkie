@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
   if (!post) return {};
   return {
     title: post.title,
-    description: post.text,
+    description: post.metaDesc || post.text,
     alternates: { canonical: `${BASE}/${slug}/` },
   };
 }

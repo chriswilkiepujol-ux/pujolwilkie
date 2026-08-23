@@ -3,7 +3,7 @@ export const en = {
   altLocale: { code: 'es', label: 'Español', href: '/es' },
   home: '/',
   meta: {
-    title: 'Property Lawyers in Sotogrande | Esther Pujol Wilkie & Associates',
+    title: 'Property Lawyers in Sotogrande and the Costa del Sol',
     description:
       'Property lawyers in Sotogrande and the Costa del Sol. Independent legal advice for foreign buyers on purchase, residency and tax. Rated 5.0 from 53 Google reviews.',
   },

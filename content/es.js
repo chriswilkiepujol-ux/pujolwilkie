@@ -3,7 +3,7 @@ export const es = {
   altLocale: { code: 'en', label: 'English', href: '/' },
   home: '/es',
   meta: {
-    title: 'Abogada Inmobiliaria en Sotogrande | Esther Pujol Wilkie & Associates',
+    title: 'Abogados inmobiliarios en Sotogrande y Costa del Sol',
     description:
       'Abogados inmobiliarios en Sotogrande y la Costa del Sol. Asesoramiento independiente para compradores extranjeros en compraventa, residencia y fiscalidad.',
   },
