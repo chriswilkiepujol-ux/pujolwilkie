@@ -5,7 +5,7 @@ export const es = {
   meta: {
     title: 'Abogada Inmobiliaria en Sotogrande | Esther Pujol Wilkie & Associates',
     description:
-      'Abogados inmobiliarios en Sotogrande y la Costa del Sol. Asesoramiento legal independiente para compradores extranjeros: compraventa, residencia y fiscalidad. 5,0 sobre 53 reseñas de Google.',
+      'Abogados inmobiliarios en Sotogrande y la Costa del Sol. Asesoramiento independiente para compradores extranjeros en compraventa, residencia y fiscalidad.',
   },
   topbar: { blurb: 'Asesoramiento legal independiente para compradores en Sotogrande', hours: 'Lunes a viernes, 9:00 a 17:00' },
   nav: [

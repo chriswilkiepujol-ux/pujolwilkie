@@ -8,12 +8,12 @@ const page = pages[slug];
 const path = '/es/' + slug + '/';
 
 export const metadata = {
-  title: `${page.title} | Esther Pujol Wilkie & Associates`,
-  description: page.intro,
+  title: page.metaTitle || `${page.title} | Esther Pujol Wilkie & Associates`,
+  description: page.metaDesc || page.intro,
   alternates: { canonical: path },
   openGraph: {
-    title: page.title,
-    description: page.intro,
+    title: page.metaTitle || page.title,
+    description: page.metaDesc || page.intro,
     url: path,
     type: 'article',
     locale: 'es_ES',

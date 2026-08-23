@@ -1,6 +1,8 @@
 // Las páginas heredadas conservan su ruta original en inglés bajo /es/ con slug propio.
 const pages = {
 'sobre-esther': {
+    metaTitle: "Esther Pujol Wilkie, abogada en Sotogrande",
+    metaDesc: "Colegiada nº 1432 del Colegio de Abogados de Cádiz y ejerciente desde 1990, trabajando casi siempre con clientes extranjeros que afrontan el derecho español.",
     en: 'about', legacy: true, image: 'esther', imageAlt: 'Esther Pujol Wilkie, abogada, en su despacho de Sotogrande', eyebrow: 'Sobre Esther',
     title: 'Esther Pujol Wilkie',
     intro: 'Ejerciendo el derecho español desde 1990, casi siempre para quienes se enfrentan a él por primera vez.',
@@ -27,6 +29,8 @@ const pages = {
               { href: '/es/contacto/', label: 'Solicitar una consulta gratuita' }],
   },
   'contacto': {
+    metaTitle: "Contacto | Abogada en Sotogrande, Cádiz",
+    metaDesc: "Primera consulta gratuita sobre comprar, vender o mantener una propiedad en España. Respuesta en un día laborable, en español o en inglés, desde Sotogrande.",
     en: 'contact', legacy: true, image: 'polo', imageAlt: 'Partido de polo en Sotogrande', eyebrow: 'Contacto',
     title: 'Contacto',
     intro: 'Una primera conversación gratuita sobre lo que tiene en mente, sin compromiso.',
@@ -45,6 +49,8 @@ const pages = {
     related: [{ href: '/es/compraventa/', label: 'Comprar una propiedad en España' }],
   },
   'derecho-inmobiliario': {
+    metaTitle: "Derecho inmobiliario en España | Pujol Wilkie",
+    metaDesc: "Cómo funciona realmente el derecho inmobiliario español para el propietario extranjero: inscripción registral, cargas que siguen a la finca y comprobaciones previas.",
     faq: [
       {
             "q": "¿Qué es la nota simple y por qué importa?",
@@ -103,6 +109,8 @@ const pages = {
               { href: '/es/fiscalidad/', label: 'Fiscalidad y contabilidad' }],
   },
   'golden-visa-espana': {
+    metaTitle: "Golden Visa España: derogada en abril de 2025",
+    metaDesc: "El visado de inversores quedó derogado el 3 de abril de 2025. Qué ocurre con los titulares actuales, qué vías siguen abiertas y la consecuencia fiscal que se pasa por alto.",
     faq: [
       {
             "q": "¿Puedo solicitar todavía la Golden Visa española?",
@@ -163,6 +171,8 @@ const pages = {
               { href: '/es/fiscalidad/', label: 'Residencia fiscal y obligaciones' }],
   },
   'fiscalidad': {
+    metaTitle: "Fiscalidad inmobiliaria para no residentes | Pujol Wilkie",
+    metaDesc: "Impuestos de la compra, modelo 210, IBI y ganancia patrimonial explicados por una abogada en Sotogrande, incluida la diferencia entre residentes UE y terceros países.",
     faq: [
       {
             "q": "¿Debo presentar declaración si mi vivienda está vacía?",
@@ -217,6 +227,8 @@ const pages = {
               { href: '/es/gestion-de-propiedades/', label: 'Gesti\u00f3n de propiedades' }],
   },
   'tramites-de-extranjeria': {
+    metaTitle: "Trámites de extranjería en España | Pujol Wilkie",
+    metaDesc: "NIE, empadronamiento, TIE y tarjetas de residencia tramitados en su nombre, además de la situación de los ciudadanos británicos tras el Brexit.",
     en: 'immigration-and-foreigners-legal-procedures', image: 'management', imageAlt: 'Embarcaciones amarradas en el Puerto de Sotogrande', eyebrow: '\u00c1rea de pr\u00e1ctica',
     title: 'Extranjer\u00eda y tr\u00e1mites administrativos',
     intro: 'La maquinaria administrativa que acompa\u00f1a a vivir o tener algo en Espa\u00f1a siendo extranjero.',
@@ -249,6 +261,8 @@ const pages = {
               { href: '/es/gibraltar-y-espana/', label: 'Gibraltar y Espa\u00f1a' }],
   },
   'gestion-de-propiedades': {
+    metaTitle: "Gestión de propiedades en Sotogrande | Pujol Wilkie",
+    metaDesc: "Suministros, cuotas de comunidad, seguros y custodia de llaves para propietarios que no residen en España todo el año, con representación en la junta.",
     en: 'property-management-services', image: 'selling', imageAlt: 'Entrega de llaves en la firma de una compraventa en España', eyebrow: '\u00c1rea de pr\u00e1ctica',
     title: 'Gesti\u00f3n de propiedades',
     intro: 'Mantener una propiedad en Espa\u00f1a en orden cuando no se reside aqu\u00ed la mayor parte del a\u00f1o.',
@@ -278,6 +292,8 @@ const pages = {
               { href: '/es/fiscalidad/', label: 'Fiscalidad y contabilidad' }],
   },
   'servicio-integral': {
+    metaTitle: "Servicio integral al cliente | Abogada en Sotogrande",
+    metaDesc: "Inmobiliario, fiscal, residencia, herencias y administración atendidos desde un mismo despacho mientras tenga bienes en España, incluido mediante poder notarial.",
     en: 'full-client-service', image: 'polo', imageAlt: 'Partido de polo en Sotogrande', eyebrow: 'C\u00f3mo trabajo',
     title: 'Servicio integral al cliente',
     intro: 'Asuntos legales, fiscales y administrativos atendidos desde un mismo despacho, mientras tenga algo aqu\u00ed.',
@@ -305,6 +321,8 @@ const pages = {
               { href: '/es/gestion-de-propiedades/', label: 'Gesti\u00f3n de propiedades' }],
   },
   'compraventa': {
+    metaTitle: "Comprar una propiedad en España | Abogada Sotogrande",
+    metaDesc: "Asesoramiento independiente para el comprador, del NIE a las llaves: comprobaciones, cláusulas del contrato de arras, plazos reales y coste total de la operación.",
     faq: [
       {
             "q": "¿Cuánto se tarda en comprar una vivienda en España?",
@@ -370,6 +388,8 @@ const pages = {
               { href: '/es/residencia-y-visados/', label: 'Si la residencia forma parte del plan' }],
   },
   'venta-de-propiedades': {
+    metaTitle: "Vender una propiedad en España | Abogada Sotogrande",
+    metaDesc: "Ganancia patrimonial, la retención del 3% a no residentes y cómo recuperarla, la plusvalía tras la reforma de 2021 y la repatriación del importe de la venta.",
     image: 'selling', imageAlt: 'Entrega de llaves en la firma de una compraventa en España', eyebrow: 'Servicio', title: 'Vender una propiedad en Espa\u00f1a',
     intro: 'Ganancia patrimonial, la retenci\u00f3n del 3% a no residentes y la repatriaci\u00f3n del importe.',
     nav: 'Vender una propiedad',
@@ -399,6 +419,8 @@ const pages = {
               { href: '/es/derecho-inmobiliario/', label: 'Derecho inmobiliario en Espa\u00f1a' }],
   },
   'residencia-y-visados': {
+    metaTitle: "Residencia y visados en España 2026 | Pujol Wilkie",
+    metaDesc: "No lucrativa, nómada digital, emprendimiento y vías familiares comparadas, con sus umbrales de ingresos y la regla de los 183 días de residencia fiscal.",
     faq: [
       {
             "q": "¿Qué visado me corresponde?",
@@ -449,6 +471,8 @@ const pages = {
               { href: '/es/tramites-de-extranjeria/', label: 'Tr\u00e1mites de extranjer\u00eda' }],
   },
   'gibraltar-y-espana': {
+    metaTitle: "Gibraltar y España: asesoramiento transfronterizo",
+    metaDesc: "Trabajadores transfronterizos, sociedades gibraltareñas con inmuebles en España y modelo 720, con una abogada que ha ejercido en Reino Unido, Gibraltar y España.",
     image: 'gibraltar', imageAlt: 'El Peñón de Gibraltar visto desde la costa española', eyebrow: 'Servicio', title: 'Gibraltar y Espa\u00f1a',
     intro: 'Asuntos transfronterizos para trabajadores, sociedades gibraltare\u00f1as y residentes entre ambas jurisdicciones.',
     nav: 'Gibraltar y Espa\u00f1a',

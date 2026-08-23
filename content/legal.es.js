@@ -5,6 +5,8 @@
 
 const legal = {
   'aviso-legal': {
+    metaTitle: "Aviso legal | Esther Pujol Wilkie & Associates",
+    metaDesc: "Aviso legal conforme al art. 10 LSSI: identidad del despacho, NIF, domicilio, colegio y número de colegiada, normativa profesional aplicable y jurisdicción.",
     eyebrow: 'Legal', title: 'Aviso legal',
     intro: 'Información exigida por la normativa española de servicios de la sociedad de la información.',
     sections: [
@@ -45,6 +47,8 @@ const legal = {
   },
 
   'politica-de-privacidad': {
+    metaTitle: "Política de privacidad | Esther Pujol Wilkie & Associates",
+    metaDesc: "Tratamiento de los datos del formulario conforme al RGPD: bases jurídicas, plazos de conservación, encargados del tratamiento y ejercicio de sus derechos.",
     eyebrow: 'Legal', title: 'Política de privacidad',
     intro: 'Tratamiento de los datos personales facilitados a través de este sitio web, conforme al RGPD y a la LOPDGDD.',
     sections: [
@@ -86,6 +90,8 @@ const legal = {
   },
 
   'politica-de-cookies': {
+    metaTitle: "Política de cookies | Esther Pujol Wilkie & Associates",
+    metaDesc: "Este sitio no utiliza cookies de analítica, publicidad ni perfilado, por eso no muestra banner de consentimiento. Qué se usa, qué no y cómo gestionarlas.",
     eyebrow: 'Legal', title: 'Política de cookies',
     intro: 'Qué almacena este sitio web en su dispositivo y qué no.',
     sections: [

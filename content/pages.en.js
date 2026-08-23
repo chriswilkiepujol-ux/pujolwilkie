@@ -3,6 +3,8 @@
 const pages = {
 // ---- non-service pages ----
   'about': {
+    metaTitle: "Esther Pujol Wilkie, Abogada in Sotogrande",
+    metaDesc: "Colegiada nº 1432 of the Colegio de Abogados de Cadiz and practising since 1990, working almost entirely with foreign clients meeting Spanish law for the first time.",
     legacy: true, image: 'esther', imageAlt: 'Esther Pujol Wilkie, abogada, at her desk in Sotogrande', eyebrow: 'About',
     title: 'Esther Pujol Wilkie',
     intro: 'Practising Spanish law since 1990, almost entirely for people meeting it for the first time.',
@@ -29,6 +31,8 @@ const pages = {
               { href: '/contact/', label: 'Arrange a free consultation' }],
   },
   'contact': {
+    metaTitle: "Contact | English Speaking Lawyer in Sotogrande",
+    metaDesc: "Free initial consultation on buying, selling or owning property in Spain. Reply within one working day, in English or Spanish, from an office in Sotogrande.",
     legacy: true, image: 'polo', imageAlt: 'Polo match at Sotogrande', eyebrow: 'Contact',
     title: 'Contact',
     intro: 'A free initial conversation about what you are planning, with no obligation.',
@@ -50,6 +54,8 @@ const pages = {
               { href: '/about/', label: 'About Esther Pujol Wilkie' }],
   },
   'property-law': {
+    metaTitle: "Property Law in Spain | Pujol Wilkie, Sotogrande",
+    metaDesc: "How Spanish property law actually works for foreign owners: registered title, what debts follow the property, and the checks that matter before you sign.",
     faq: [
       {
             "q": "What is a nota simple and why does it matter?",
@@ -111,6 +117,8 @@ const pages = {
   },
 
   'spanish-golden-visa': {
+    metaTitle: "Spain Golden Visa: Closed April 2025 | Pujol Wilkie",
+    metaDesc: "Spain's investor visa was repealed on 3 April 2025. What happens to existing holders, which residency routes remain open, and the tax consequence most people miss.",
     faq: [
       {
             "q": "Can I still apply for the Spanish Golden Visa?",
@@ -181,6 +189,8 @@ const pages = {
   },
 
   'tax-and-accountancy': {
+    metaTitle: "Spanish Property Tax for Non Residents | Pujol Wilkie",
+    metaDesc: "Purchase taxes, Modelo 210, IBI and capital gains explained by a Sotogrande abogada. Includes the EU and third country split that now affects British owners.",
     faq: [
       {
             "q": "Do I have to file a Spanish tax return if my property is empty?",
@@ -244,6 +254,8 @@ const pages = {
   },
 
   'immigration-and-foreigners-legal-procedures': {
+    metaTitle: "Immigration Procedures in Spain | Pujol Wilkie",
+    metaDesc: "NIE, empadronamiento, TIE and residence cards handled on your behalf, plus the post Brexit position for British nationals resident in Spain.",
     legacy: true, image: 'management', imageAlt: 'Yachts moored in the marina at Puerto de Sotogrande', eyebrow: 'Practice area',
     title: 'Immigration and Foreigners\u2019 Legal Procedures',
     intro: 'The administrative machinery that comes with living in, or owning something in, Spain as a foreign national.',
@@ -280,6 +292,8 @@ const pages = {
   },
 
   'property-management-services': {
+    metaTitle: "Property Management in Sotogrande | Pujol Wilkie",
+    metaDesc: "Utilities, community fees, insurance and keyholding for owners who are not in Spain year round, plus representation at the junta de propietarios.",
     legacy: true, image: 'selling', imageAlt: 'Keys being handed over on completion of a Spanish property sale', eyebrow: 'Practice area',
     title: 'Property Management Services',
     intro: 'Keeping a Spanish property running properly when you are not here for most of the year.',
@@ -312,6 +326,8 @@ const pages = {
   },
 
   'full-client-service': {
+    metaTitle: "Full Client Service | Sotogrande Abogada",
+    metaDesc: "Property, tax, residency, wills and administration handled by one office for as long as you own something in Spain, including work under power of attorney.",
     legacy: true, image: 'polo', imageAlt: 'Polo match at Sotogrande', eyebrow: 'How I work',
     title: 'Full Client Service',
     intro: 'Legal, fiscal and administrative matters handled together, by the same office, for as long as you own something here.',
@@ -347,6 +363,8 @@ const pages = {
 
   // ---- new services, new URLs ----
   'buying-property': {
+    metaTitle: "Buying Property in Spain: Lawyer in Sotogrande",
+    metaDesc: "Independent conveyancing for buyers, from NIE to keys. The searches, the arras contract clauses that cost people deposits, real timescales and true costs.",
     faq: [
       {
             "q": "How long does it take to buy a property in Spain?",
@@ -421,6 +439,8 @@ const pages = {
   },
 
   'selling-property': {
+    metaTitle: "Selling Property in Spain | Sotogrande Lawyer",
+    metaDesc: "Capital gains, the 3% non resident retention and how to recover it, plusvalia after the 2021 reform, and getting your proceeds out of Spain cleanly.",
     faq: [
       {
             "q": "Why is the buyer withholding 3% of my sale price?",
@@ -478,6 +498,8 @@ const pages = {
   },
 
   'residency-and-visas': {
+    metaTitle: "Spanish Residency and Visas in 2026 | Pujol Wilkie",
+    metaDesc: "Non lucrative, digital nomad, entrepreneur and family routes compared, with the income thresholds and the 183 day tax residence rule that follows each one.",
     faq: [
       {
             "q": "Which visa is right for me?",
@@ -539,6 +561,8 @@ const pages = {
   },
 
   'gibraltar-and-spain': {
+    metaTitle: "Gibraltar and Spain Cross Border Legal Advice",
+    metaDesc: "Frontier workers, Gibraltar companies holding Spanish property and Modelo 720, advised by a lawyer who has practised in the UK, Gibraltar and Spain.",
     faq: [
       {
             "q": "I live in Spain and work in Gibraltar. Where do I pay tax?",

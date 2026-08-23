@@ -14,7 +14,7 @@ export async function generateMetadata({ params }) {
   const post = en.insights.items.find((p) => p.slug === slug);
   if (!post) return {};
   return {
-    title: `${post.title} | Esther Pujol Wilkie & Associates`,
+    title: post.title,
     description: post.text,
     alternates: { canonical: `${BASE}/${slug}/` },
   };
