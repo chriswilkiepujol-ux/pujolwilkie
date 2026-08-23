@@ -151,6 +151,7 @@ export const en = {
         a: 'Yes, English and Spanish both fluently. Most of my clients speak no Spanish at all. Everything is explained in plain English, including every document you will be asked to sign.' },
     ],
   },
+  blogBase: '/blog',
   insights: {
     eyebrow: 'Insights',
     h2: 'Notes on Spanish property law',

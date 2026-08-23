@@ -151,6 +151,7 @@ export const es = {
         a: 'Sí, español e inglés con fluidez. La mayoría de mis clientes no habla español y todo se explica con claridad, incluido cada documento que se le pida firmar.' },
     ],
   },
+  blogBase: '/es/articulos',
   insights: {
     eyebrow: 'Artículos',
     h2: 'Apuntes de derecho inmobiliario español',

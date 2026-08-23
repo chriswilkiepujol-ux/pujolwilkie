@@ -198,7 +198,7 @@ export function Insights({ t }) {
       <h2 className="sh">{t.insights.h2}</h2>
       <div className="posts">
         {t.insights.items.map((p) => (
-          <Link className="post" href={`${t.locale === 'es' ? '/es' : ''}/blog/${p.slug}`} key={p.slug}>
+          <Link className="post" href={`${t.blogBase}/${p.slug}/`} key={p.slug}>
             <span className="dt">{p.cat}</span>
             <h3>{p.title}</h3>
             <p>{p.text}</p>

@@ -4,7 +4,7 @@ import ContactForm from './ContactForm';
 import { Footer, MobileCta, Trust } from './Sections';
 
 export default function BlogIndex({ t }) {
-  const base = t.locale === 'es' ? '/es/articulos' : '/blog';
+  const base = t.blogBase;
   return (
     <>
       <Header t={t} />
