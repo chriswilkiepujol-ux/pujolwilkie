@@ -34,6 +34,8 @@ export default function ContactForm({ t }) {
           <dd>{site.street}<br />{site.district}<br />{site.postal} {site.city}, {site.region}</dd>
           <dt>{L.phone}</dt>
           <dd><a href={`tel:${site.phoneHref}`}>{site.phone}</a></dd>
+          <dt>{L.email}</dt>
+          <dd><a href={`mailto:${site.email}`}>{site.email}</a></dd>
           <dt>{L.hours}</dt><dd>{t.topbar.hours}</dd>
           <dt>{L.languages}</dt><dd>{t.locale === 'en' ? 'English and Spanish' : 'Español e inglés'}</dd>
         </dl>

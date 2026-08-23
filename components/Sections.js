@@ -219,6 +219,10 @@ export function Footer({ t }) {
               <span className="bs">&amp; Associates · Abogados</span></span>
           </div>
           {t.footer.blurb}
+          <p className="fcontact">
+            <a href={`tel:${site.phoneHref}`}>{site.phone}</a>
+            <a href={`mailto:${site.email}`}>{site.email}</a>
+          </p>
         </div>
         <div>
           <h5>{t.footer.services}</h5>

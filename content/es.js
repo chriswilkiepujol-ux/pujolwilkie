@@ -168,7 +168,7 @@ export const es = {
     eyebrow: 'Contacto',
     h2: 'Primera consulta gratuita',
     sub: 'Cuénteme brevemente qué tiene en mente. Le respondo personalmente, normalmente en un día laborable, con una idea de lo que implica y de lo que costará.',
-    labels: { office: 'Despacho', phone: 'Teléfono', hours: 'Horario', languages: 'Idiomas',
+    labels: { office: 'Despacho', phone: 'Teléfono', email: 'Correo electrónico', hours: 'Horario', languages: 'Idiomas',
       first: 'Nombre', surname: 'Apellidos', email: 'Correo electrónico', tel: 'Teléfono',
       matter: '¿En qué puedo ayudarle?', area: 'Zona', message: 'Su mensaje' },
     placeholder: 'Con una o dos frases sobre lo que tiene en mente es suficiente.',

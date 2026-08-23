@@ -78,7 +78,8 @@ export default function Header({ t }) {
             <Link key={n.href} href={n.href} onClick={() => setOpen(false)}>{n.label}</Link>
           ))}
         </nav>
-        <p className="dmeta">{site.street}<br />{site.district}, {site.postal} {site.region}<br />{t.topbar.hours}</p>
+        <p className="dmeta">{site.street}<br />{site.district}, {site.postal} {site.region}<br />{t.topbar.hours}<br />
+          <a href={`mailto:${site.email}`} style={{ color: 'var(--pine)' }}>{site.email}</a></p>
         <div className="dfoot">
           <div className="dlang">
             <a className="cur" href="#" onClick={(e) => e.preventDefault()}>{t.locale === 'en' ? 'ENGLISH' : 'ESPAÑOL'}</a>

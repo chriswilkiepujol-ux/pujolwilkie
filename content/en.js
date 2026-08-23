@@ -168,7 +168,7 @@ export const en = {
     eyebrow: 'Get in touch',
     h2: 'Free initial consultation',
     sub: 'Tell me briefly what you are planning. I reply personally, usually within one working day, with an idea of what is involved and what it will cost.',
-    labels: { office: 'Office', phone: 'Telephone', hours: 'Hours', languages: 'Languages',
+    labels: { office: 'Office', phone: 'Telephone', email: 'Email', hours: 'Hours', languages: 'Languages',
       first: 'First name', surname: 'Surname', email: 'Email', tel: 'Telephone',
       matter: 'How can I help?', area: 'Area', message: 'Your message' },
     placeholder: 'A sentence or two about what you are planning is plenty.',

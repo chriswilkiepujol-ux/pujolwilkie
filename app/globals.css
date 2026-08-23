@@ -428,3 +428,8 @@ footer .fl svg{width:32px;height:36px;color:var(--brass)}
 .pfaq{margin-top:clamp(30px,4vw,48px);padding-top:clamp(24px,3vw,34px);border-top:1px solid var(--line)}
 .pfaq h2{font-size:clamp(21px,2.8vw,29px);margin-bottom:6px}
 .pfaq .faq{margin-top:14px;border-top:1px solid var(--line)}
+
+/* footer contact details */
+.fcontact{margin:14px 0 0;display:flex;flex-direction:column;gap:2px}
+.fcontact a{color:var(--brass);text-decoration:none;padding:2px 0}
+.fcontact a:hover{color:#fff}
