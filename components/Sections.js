@@ -159,10 +159,12 @@ export function About({ t }) {
             {t.about.creds.map(([k, v]) => (
               <div className="cr" key={k}><dt>{k}</dt><dd>{v}</dd></div>
             ))}
-            <div className="cr">
-              <dt>{t.about.credPending[0]}</dt>
-              <dd><span className="todo">{t.about.credPending[1]}</span></dd>
-            </div>
+            {t.about.credPending && (
+              <div className="cr">
+                <dt>{t.about.credPending[0]}</dt>
+                <dd><span className="todo">{t.about.credPending[1]}</span></dd>
+              </div>
+            )}
           </dl>
         </div>
       </div>

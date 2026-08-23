@@ -3,12 +3,12 @@ const pages = {
 'sobre-esther': {
     en: 'about', legacy: true, image: 'esther', eyebrow: 'Sobre Esther',
     title: 'Esther Pujol Wilkie',
-    intro: 'Treinta y cinco años de derecho español, casi siempre para quienes se enfrentan a él por primera vez.',
+    intro: 'Ejerciendo el derecho español desde 1990, casi siempre para quienes se enfrentan a él por primera vez.',
     nav: 'Sobre Esther',
     sections: [
       { h2: 'Barcelona, Londres, Gibraltar, Sotogrande',
         p: ['Nací en Barcelona y allí estudié Derecho. Antes de establecerme en esta costa ejercí en el Reino Unido y en Gibraltar, y cuento además con formación bancaria, algo que en materia inmobiliaria resulta útil más a menudo de lo que cabría esperar.',
-            'Desde hace unos treinta años trabajo desde Sotogrande. Mis clientes son en su mayoría extranjeros que se enfrentan por primera vez al derecho español, normalmente con motivo de una compra y con frecuencia desde fuera de España.'] },
+            'Desde mi colegiación en el Colegio de Abogados de Cádiz en 1990 trabajo desde Sotogrande. Mis clientes son en su mayoría extranjeros que se enfrentan por primera vez al derecho español, normalmente con motivo de una compra y con frecuencia desde fuera de España.'] },
       { h2: 'Cómo funciona el despacho',
         p: ['Trabajo para el cliente y para nadie más. Sin acuerdos de comisión con agencias ni con promotoras, sin lealtades divididas. Parece obvio hasta que se comprende qué proporción del trabajo inmobiliario en esta costa llega por la parte vendedora.',
             'La mayoría de los asuntos empiezan con una operación y continúan durante años: la compra lleva a las declaraciones, las declaraciones a la residencia y, con el tiempo, el mismo despacho gestiona la venta o la herencia.'] },

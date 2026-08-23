@@ -5,7 +5,7 @@ const pages = {
   'about': {
     legacy: true, image: 'esther', eyebrow: 'About',
     title: 'Esther Pujol Wilkie',
-    intro: 'Thirty five years of Spanish law, almost entirely for people meeting it for the first time.',
+    intro: 'Practising Spanish law since 1990, almost entirely for people meeting it for the first time.',
     nav: 'About',
     sections: [
       { h2: 'Barcelona, London, Gibraltar, Sotogrande',
