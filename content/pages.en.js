@@ -5,7 +5,7 @@ const pages = {
   'about': {
     metaTitle: "Esther Pujol Wilkie, Abogada in Sotogrande",
     metaDesc: "Colegiada nº 1432 of the Colegio de Abogados de Cadiz and practising since 1990, working almost entirely with foreign clients meeting Spanish law for the first time.",
-    legacy: true, image: 'esther-pujol-wilkie-abogada-sotogrande', imageAlt: 'Esther Pujol Wilkie, abogada, in her Sotogrande office', eyebrow: 'About',
+    legacy: true, image: 'esther-pujol-wilkie-abogada-sotogrande', portrait: true, imageCaption: 'Esther Pujol Wilkie, abogada · Colegiada nº 1432, ICA Cádiz', imageAlt: 'Esther Pujol Wilkie, abogada, in her Sotogrande office', eyebrow: 'About',
     title: 'Esther Pujol Wilkie',
     intro: 'Practising Spanish law since 1990, almost entirely for people meeting it for the first time.',
     nav: 'About',

@@ -3,7 +3,7 @@ const pages = {
 'sobre-esther': {
     metaTitle: "Esther Pujol Wilkie, abogada en Sotogrande",
     metaDesc: "Colegiada nº 1432 del Colegio de Abogados de Cádiz y ejerciente desde 1990, trabajando casi siempre con clientes extranjeros que afrontan el derecho español.",
-    en: 'about', legacy: true, image: 'esther-pujol-wilkie-abogada-sotogrande', imageAlt: 'Esther Pujol Wilkie, abogada, en su despacho de Sotogrande', eyebrow: 'Sobre Esther',
+    en: 'about', legacy: true, image: 'esther-pujol-wilkie-abogada-sotogrande', portrait: true, imageCaption: 'Esther Pujol Wilkie, abogada · Colegiada nº 1432, ICA Cádiz', imageAlt: 'Esther Pujol Wilkie, abogada, en su despacho de Sotogrande', eyebrow: 'Sobre Esther',
     title: 'Esther Pujol Wilkie',
     intro: 'Ejerciendo el derecho español desde 1990, casi siempre para quienes se enfrentan a él por primera vez.',
     nav: 'Sobre Esther',

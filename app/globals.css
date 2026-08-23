@@ -442,3 +442,10 @@ footer .fl svg{width:32px;height:36px;color:var(--brass)}
 @media(max-width:980px){.langm{display:inline-flex}}
 .dlang .cur{flex:1;text-align:center;font-family:var(--m);font-size:12px;letter-spacing:.1em;
   padding:10px;border-radius:3px;background:var(--pine);color:#fff}
+
+/* portrait images: contained, never cropped into a banner */
+.iportrait{margin:clamp(24px,4vw,40px) 0 0;max-width:300px}
+.iportrait img{width:100%;height:auto;border-radius:5px;box-shadow:var(--sh);display:block}
+.iportrait figcaption{font-family:var(--m);font-size:10.5px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--stone);margin-top:10px;line-height:1.5}
+@media(max-width:600px){.iportrait{max-width:200px}}

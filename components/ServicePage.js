@@ -22,9 +22,20 @@ export default function ServicePage({ t, page, jsonLd = [] }) {
       <Trust t={t} />
 
       {page.image && (
-        <div className="wrap"><div className="iband">
-          <Image src={`/images/${page.image}.jpg`} alt={page.imageAlt || page.title} width={1300} height={498} priority sizes="100vw" />
-        </div></div>
+        <div className="wrap">
+          {page.portrait ? (
+            <figure className="iportrait">
+              <Image src={`/images/${page.image}.jpg`} alt={page.imageAlt || page.title}
+                width={520} height={600} priority sizes="(max-width:600px) 60vw, 300px" />
+              {page.imageCaption && <figcaption>{page.imageCaption}</figcaption>}
+            </figure>
+          ) : (
+            <div className="iband">
+              <Image src={`/images/${page.image}.jpg`} alt={page.imageAlt || page.title}
+                width={1300} height={498} priority sizes="100vw" />
+            </div>
+          )}
+        </div>
       )}
 
       <section><div className="wrap">
