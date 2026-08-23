@@ -1,15 +1,16 @@
-import InnerPage from '@/components/InnerPage';
+import ServicePage from '@/components/ServicePage';
 import es from '@/content/es';
+import legal from '@/content/legal.es';
+
+const page = legal['aviso-legal'];
 
 export const metadata = {
-  title: "Aviso legal",
-  description: "Aviso legal e informaci\u00f3n de la firma.",
-  alternates: { canonical: "/es/aviso-legal" },
+  title: `${page.title} | Esther Pujol Wilkie & Associates`,
+  description: page.intro,
+  alternates: { canonical: '/es/aviso-legal' },
+  robots: { index: false, follow: true },
 };
 
 export default function P() {
-  return (
-    <InnerPage t={es} eyebrow="Legal" title="Aviso legal"
-      intro="Aviso legal e informaci\u00f3n de la firma." />
-  );
+  return <ServicePage t={es} page={page} />;
 }

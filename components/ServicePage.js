@@ -29,7 +29,13 @@ export default function ServicePage({ t, page }) {
             <div className="pblock" key={s.h2}>
               <h2>{s.h2}</h2>
               {s.p && s.p.map((para, i) => <p key={i}>{para}</p>)}
-              {s.list && <ul className="plist">{s.list.map((li) => <li key={li}>{li}</li>)}</ul>}
+              {s.list && (
+                <ul className="plist">
+                  {s.list.map((li) => (
+                    <li key={li} className={li.includes('[pendiente]') ? 'pending' : undefined}>{li}</li>
+                  ))}
+                </ul>
+              )}
             </div>
           ))}
 

@@ -412,3 +412,8 @@ footer .fl svg{width:32px;height:36px;color:var(--brass)}
   .plist li{font-size:15px;padding:8px 0 8px 22px}
   .related a{font-size:15.5px}
 }
+
+/* pending client details on legal pages: visible, never shipped quietly */
+.plist li.pending{background:rgba(176,137,74,.12);border-left:3px solid var(--brass);
+  padding-left:22px;font-family:var(--m);font-size:14px}
+.plist li.pending::before{display:none}

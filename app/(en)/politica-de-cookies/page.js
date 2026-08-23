@@ -1,15 +1,16 @@
-import InnerPage from '@/components/InnerPage';
+import ServicePage from '@/components/ServicePage';
 import en from '@/content/en';
+import legal from '@/content/legal.en';
+
+const page = legal['politica-de-cookies'];
 
 export const metadata = {
-  title: "Pol\u00edtica de cookies",
-  description: "Cookies used on this website.",
-  alternates: { canonical: "/politica-de-cookies" },
+  title: `${page.title} | Esther Pujol Wilkie & Associates`,
+  description: page.intro,
+  alternates: { canonical: '/politica-de-cookies' },
+  robots: { index: false, follow: true },
 };
 
 export default function P() {
-  return (
-    <InnerPage t={en} eyebrow="Legal" title="Pol\u00edtica de cookies"
-      intro="Cookies used on this website." />
-  );
+  return <ServicePage t={en} page={page} />;
 }

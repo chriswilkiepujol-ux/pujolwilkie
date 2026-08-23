@@ -1,15 +1,16 @@
-import InnerPage from '@/components/InnerPage';
+import ServicePage from '@/components/ServicePage';
 import es from '@/content/es';
+import legal from '@/content/legal.es';
+
+const page = legal['politica-de-privacidad'];
 
 export const metadata = {
-  title: "Pol\u00edtica de privacidad",
-  description: "Tratamiento de datos personales.",
-  alternates: { canonical: "/es/politica-de-privacidad" },
+  title: `${page.title} | Esther Pujol Wilkie & Associates`,
+  description: page.intro,
+  alternates: { canonical: '/es/politica-de-privacidad' },
+  robots: { index: false, follow: true },
 };
 
 export default function P() {
-  return (
-    <InnerPage t={es} eyebrow="Legal" title="Pol\u00edtica de privacidad"
-      intro="Tratamiento de datos personales." />
-  );
+  return <ServicePage t={es} page={page} />;
 }
