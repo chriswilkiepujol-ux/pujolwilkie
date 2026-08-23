@@ -78,7 +78,7 @@ const pages = {
             "a": "If you own property here, yes. Without one, the process for your heirs is slower, more expensive and conducted entirely in Spanish. A Spanish will is also the natural place to make the EU 650/2012 election of your national law, which for common law nationals avoids the Spanish forced heirship rules."
       }
     ],
-    legacy: true, image: 'villa-pool-costa-del-sol', imageAlt: 'Villa with pool on the Costa del Sol, typical of resale purchases in Sotogrande', eyebrow: 'Practice area',
+    legacy: true, image: 'scales-of-justice-spanish-law', imageAlt: 'Scales of justice, representing Spanish legal practice', eyebrow: 'Practice area',
     title: 'Property Law in Spain',
     intro: 'The legal framework behind every Spanish property transaction, and what it means for a foreign owner.',
     nav: 'Property law',

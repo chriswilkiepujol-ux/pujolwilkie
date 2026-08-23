@@ -73,7 +73,7 @@ const pages = {
             "a": "Si posee un inmueble aquí, sí. Sin él, el procedimiento para sus herederos resulta más lento, más caro e íntegramente en español. El testamento español es además el lugar natural para hacer la elección del Reglamento UE 650/2012."
       }
     ],
-    en: 'property-law', image: 'villa-pool-costa-del-sol', imageAlt: 'Villa con piscina en la Costa del Sol, típica de las compraventas en Sotogrande', eyebrow: '\u00c1rea de pr\u00e1ctica',
+    en: 'property-law', image: 'scales-of-justice-spanish-law', imageAlt: 'La balanza de la justicia, en representación del ejercicio del derecho español', eyebrow: '\u00c1rea de pr\u00e1ctica',
     title: 'Derecho inmobiliario en Espa\u00f1a',
     intro: 'El marco legal que hay detr\u00e1s de cada compraventa en Espa\u00f1a y lo que significa para un propietario extranjero.',
     nav: 'Derecho inmobiliario',

@@ -9,7 +9,7 @@ const img = (n) => `/images/${n}.jpg`;
 export function Hero({ t }) {
   return (
     <div className="hero">
-      <Image src={img('hero')} alt="La Marina de Sotogrande, Cádiz" fill priority sizes="100vw"
+      <Image src={img('hero')} alt="La Marina de Sotogrande, Cádiz, on the Costa del Sol" fill priority sizes="100vw"
         style={{ objectFit: 'cover' }} />
       <div className="wrap hin">
         <span className="eyebrow">{t.hero.eyebrow}</span>
@@ -53,7 +53,7 @@ export function Intro({ t }) {
         <p className="sub intro-extra">{t.intro.p2}</p>
         <a className="btn dk" href="#contact" style={{ marginTop: 14 }}>{t.intro.cta}</a>
       </div>
-      <Image src={img('polo')} alt="Polo in Sotogrande" width={900} height={498} sizes="(max-width:860px) 100vw, 45vw" />
+      <Image src={img('polo')} alt="Polo match at Sotogrande" width={900} height={498} sizes="(max-width:860px) 100vw, 45vw" />
     </div></section>
   );
 }
