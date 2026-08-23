@@ -42,6 +42,28 @@ const pages = {
     related: [{ href: '/es/compraventa/', label: 'Comprar una propiedad en España' }],
   },
   'derecho-inmobiliario': {
+    faq: [
+      {
+            "q": "¿Qué es la nota simple y por qué importa?",
+            "a": "Es el extracto del Registro que acredita quién es el titular, cómo se describe la finca y qué cargas pesan sobre ella. Cuesta muy poco y es el punto de partida de toda compra, porque las deudas y las cargas siguen a la finca y no a quien las generó."
+      },
+      {
+            "q": "¿Puedo heredar las deudas del anterior propietario?",
+            "a": "En la práctica, sí. Hipotecas, cuotas de comunidad impagadas del año en curso y los tres anteriores, IBI atrasado y embargos quedan afectos a la finca. Quien no comprueba puede acabar pagando atrasos ajenos."
+      },
+      {
+            "q": "¿Y si la vivienda tiene una ampliación no declarada?",
+            "a": "Es uno de los tres problemas más frecuentes y rara vez se aprecia en una visita. Según la antigüedad de la obra y la situación urbanística, puede ser legalizable, puede estar sujeta a expediente o puede simplemente restar valor en una futura venta. Debe detectarse antes de firmar."
+      },
+      {
+            "q": "¿El notario comprueba la finca por mí?",
+            "a": "No. El notario es un funcionario público que da fe de la escritura y verifica identidad y capacidad. Comprobar la situación física, urbanística y de cargas no forma parte de esa función, y ni la agencia ni el abogado de la promotora trabajan para usted."
+      },
+      {
+            "q": "¿Debo otorgar testamento en España?",
+            "a": "Si posee un inmueble aquí, sí. Sin él, el procedimiento para sus herederos resulta más lento, más caro e íntegramente en español. El testamento español es además el lugar natural para hacer la elección del Reglamento UE 650/2012."
+      }
+    ],
     en: 'property-law', image: 'buying', eyebrow: '\u00c1rea de pr\u00e1ctica',
     title: 'Derecho inmobiliario en Espa\u00f1a',
     intro: 'El marco legal que hay detr\u00e1s de cada compraventa en Espa\u00f1a y lo que significa para un propietario extranjero.',
@@ -78,6 +100,28 @@ const pages = {
               { href: '/es/fiscalidad/', label: 'Fiscalidad y contabilidad' }],
   },
   'golden-visa-espana': {
+    faq: [
+      {
+            "q": "¿Puedo solicitar todavía la Golden Visa española?",
+            "a": "No. La Ley Orgánica 1/2025 derogó el régimen y dejó de admitir solicitudes el 3 de abril de 2025. No hay sustituto, ni periodo transitorio, ni umbral a partir del cual la compra otorgue residencia. Comprar sigue estando plenamente abierto a extranjeros, pero sin consecuencia migratoria."
+      },
+      {
+            "q": "Ya soy titular. ¿Qué ocurre con mi permiso?",
+            "a": "Las disposiciones transitorias protegen a los titulares. Si la autorización se concedió, o la solicitud se presentó, antes de la fecha de corte, su situación continúa y la renovación sigue siendo posible mientras se mantengan las condiciones originales, incluida la inversión."
+      },
+      {
+            "q": "¿Puedo vender el inmueble que dio derecho a mi Golden Visa?",
+            "a": "Puede venderlo, pero la venta extingue por lo general la base de la renovación. La transmisión debe planificarse junto con su situación de residencia. Si se acerca a los diez años de residencia legal, la residencia de larga duración o la nacionalidad pueden eliminar la dependencia de la inversión."
+      },
+      {
+            "q": "¿Qué sustituyó a la Golden Visa?",
+            "a": "Nada de forma directa. Siguen abiertas la no lucrativa, la de nómada digital, las vías de emprendimiento, la tarjeta azul UE y la reagrupación familiar, pero todas esperan que resida efectivamente en España buena parte del año. La Golden Visa era inusual precisamente porque no lo exigía."
+      },
+      {
+            "q": "¿Comprar una vivienda más cara sigue dando derecho?",
+            "a": "No. El umbral de 500.000 euros no se ha elevado: se ha suprimido. Ninguna compra, por elevado que sea su importe, genera derecho de residencia."
+      }
+    ],
     en: 'spanish-golden-visa', image: 'residency', eyebrow: 'Residencia',
     title: 'La Golden Visa espa\u00f1ola',
     intro: 'La v\u00eda de residencia por inversi\u00f3n se cerr\u00f3 el 3 de abril de 2025. Qu\u00e9 ocurre si ya la tiene y qu\u00e9 alternativas existen.',
@@ -116,6 +160,28 @@ const pages = {
               { href: '/es/fiscalidad/', label: 'Residencia fiscal y obligaciones' }],
   },
   'fiscalidad': {
+    faq: [
+      {
+            "q": "¿Debo presentar declaración si mi vivienda está vacía?",
+            "a": "Sí. El propietario no residente presenta el modelo 210 se alquile o no el inmueble. Si permanece vacío, se tributa por una renta imputada calculada sobre el valor catastral. Las declaraciones no presentadas se acumulan y afloran al vender."
+      },
+      {
+            "q": "¿Cuánto tributa el alquiler siendo no residente?",
+            "a": "Los residentes en la UE, Noruega e Islandia tributan al diecinueve por ciento y pueden deducir gastos en proporción al periodo arrendado. Los residentes en terceros países tributan al veinticuatro por ciento sobre el ingreso bruto sin deducción alguna. Desde el Brexit, los propietarios británicos quedan en el segundo grupo."
+      },
+      {
+            "q": "¿Qué es el valor de referencia?",
+            "a": "Una base mínima de tributación fijada por el Catastro desde 2022. Si el precio pactado queda por debajo, el ITP se liquida sobre el valor de referencia y no sobre lo pagado. Puede impugnarse, pero solo después de ingresar, de modo que conviene comprobarlo antes de cerrar el precio."
+      },
+      {
+            "q": "¿Qué es la retención del 3% al vender?",
+            "a": "Si el vendedor no es residente fiscal en España, el comprador retiene el tres por ciento del precio y lo ingresa en Hacienda a cuenta de la ganancia patrimonial. Si la deuda real es menor, el exceso se recupera presentando en plazo, aunque la devolución suele tardar entre seis y doce meses."
+      },
+      {
+            "q": "¿Qué gastos reducen la ganancia patrimonial?",
+            "a": "El ITP satisfecho en la compra, la notaría, el Registro, los honorarios y las mejoras documentadas incrementan el valor de adquisición. El mantenimiento ordinario y la redecoración no. Conservar las facturas de una cubierta nueva o una ampliación suele valer varios miles de euros."
+      }
+    ],
     en: 'tax-and-accountancy', image: 'tax', eyebrow: '\u00c1rea de pr\u00e1ctica',
     title: 'Fiscalidad y contabilidad',
     intro: 'Los impuestos de la compra, los que se repiten cada a\u00f1o y las declaraciones que hay que presentar viva o no en Espa\u00f1a.',
@@ -236,6 +302,32 @@ const pages = {
               { href: '/es/gestion-de-propiedades/', label: 'Gesti\u00f3n de propiedades' }],
   },
   'compraventa': {
+    faq: [
+      {
+            "q": "¿Cuánto se tarda en comprar una vivienda en España?",
+            "a": "Una segunda transmisión sencilla suele completarse en seis a diez semanas desde la firma del contrato de arras hasta la escritura. Lo que alarga el plazo casi nunca es la tramitación en sí, sino la espera de cita para el NIE, la tasación de la hipoteca o la resolución de algo detectado en las comprobaciones, como una ampliación no inscrita o una herencia sin completar en el título del vendedor."
+      },
+      {
+            "q": "¿Tengo que estar en España para comprar?",
+            "a": "No. Con un poder notarial puedo completar toda la compra en su nombre, incluida la firma ante notario. Puede otorgarse ante notario español, en un consulado o ante notario local con apostilla y traducción jurada. Una parte considerable de las compras se cierra sin que el comprador viaje."
+      },
+      {
+            "q": "¿Cuánto debo prever además del precio?",
+            "a": "Entre un diez y un doce por ciento en una segunda transmisión en Andalucía. El ITP está en el siete por ciento, y notaría, Registro y honorarios completan el resto. La obra nueva del promotor tributa por IVA al diez por ciento más AJD, lo que resulta algo superior."
+      },
+      {
+            "q": "¿Qué es el contrato de arras y cuánto se entrega?",
+            "a": "Es el contrato de reserva, y la señal suele situarse entre el tres y el diez por ciento del precio. En las arras penitenciales, quien desiste pierde la señal y el vendedor que desiste devuelve el doble. No todo contrato que se presenta sigue ese modelo, por eso debe leerse antes de firmar."
+      },
+      {
+            "q": "¿Qué ocurre si me deniegan la hipoteca después de entregar la señal?",
+            "a": "Sin condición expresa de financiación en el contrato de arras, la denegación es problema del comprador y la señal se pierde. Es una de las dos cláusulas que siempre negocio, y la forma más habitual en que un comprador extranjero pierde dinero en España."
+      },
+      {
+            "q": "¿Puedo comprar si no soy ciudadano de la UE?",
+            "a": "Sí. No existe restricción para que un extranjero compre en España, sea cual sea el importe. Lo que cambió en abril de 2025 es que la compra ya no otorga derecho de residencia, al derogarse la Golden Visa. Comprar y residir son ahora cuestiones independientes."
+      }
+    ],
     image: 'buying', eyebrow: 'Servicio', title: 'Comprar una propiedad en Espa\u00f1a',
     intro: 'Asesoramiento independiente desde la primera b\u00fasqueda hasta las llaves, actuando solo para el comprador.',
     nav: 'Comprar una propiedad',
@@ -304,6 +396,24 @@ const pages = {
               { href: '/es/derecho-inmobiliario/', label: 'Derecho inmobiliario en Espa\u00f1a' }],
   },
   'residencia-y-visados': {
+    faq: [
+      {
+            "q": "¿Qué visado me corresponde?",
+            "a": "Depende de cómo genera sus ingresos y no de lo que posee. Las rentas pasivas apuntan a la no lucrativa. El trabajo en remoto para empresas de fuera, a la de nómada digital. Un negocio real aquí, a las vías de cuenta propia o emprendimiento."
+      },
+      {
+            "q": "¿Puedo trabajar en remoto con una no lucrativa?",
+            "a": "No, y esa es precisamente la diferencia con el visado de nómada digital. La no lucrativa exige no trabajar, de modo que quien trabaja en remoto debe solicitar por la vía de nómada digital."
+      },
+      {
+            "q": "¿Cuánto tarda la tramitación?",
+            "a": "Varía bastante según consulado y vía. La parte más larga suele ser reunir la documentación, porque los certificados extranjeros requieren apostilla y traducción jurada y tienen periodos de validez de tres o seis meses. El orden importa más que la rapidez."
+      },
+      {
+            "q": "¿Seré residente fiscal en España?",
+            "a": "Si permanece más de 183 días al año, por regla general sí, por su renta mundial. Tener aquí el núcleo principal de intereses económicos puede producir el mismo resultado incluso por debajo de ese umbral. Conviene calcularlo antes de solicitar."
+      }
+    ],
     image: 'residency', eyebrow: 'Servicio', title: 'Residencia y visados',
     intro: 'Las v\u00edas que siguen abiertas en 2026 y cu\u00e1l encaja en su situaci\u00f3n.',
     nav: 'Residencia y visados',

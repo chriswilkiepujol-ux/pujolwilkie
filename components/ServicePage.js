@@ -43,6 +43,17 @@ export default function ServicePage({ t, page, jsonLd = [] }) {
             </div>
           ))}
 
+          {page.faq && (
+            <div className="pfaq">
+              <h2>{t.locale === 'es' ? 'Preguntas frecuentes' : 'Common questions'}</h2>
+              <div className="faq">
+                {page.faq.map((f) => (
+                  <details key={f.q}><summary>{f.q}</summary><p>{f.a}</p></details>
+                ))}
+              </div>
+            </div>
+          )}
+
           {page.related && (
             <div className="related">
               <h3>{t.locale === 'es' ? 'También le puede interesar' : 'Related'}</h3>

@@ -47,6 +47,28 @@ const pages = {
               { href: '/about/', label: 'About Esther Pujol Wilkie' }],
   },
   'property-law': {
+    faq: [
+      {
+            "q": "What is a nota simple and why does it matter?",
+            "a": "It is the Land Registry extract showing who owns the property, how it is described and every charge inscribed against it. It costs very little and it is the starting point of every purchase, because debts and charges follow the property rather than the person who created them."
+      },
+      {
+            "q": "Can I inherit the previous owner's debts?",
+            "a": "Effectively, yes. Mortgages, unpaid community fees for the current year and three preceding ones, IBI arrears and embargoes all attach to the property. A buyer who does not check can find themselves paying for someone else's arrears."
+      },
+      {
+            "q": "What if the property has an extension that was never declared?",
+            "a": "It is one of the three most common problems and often invisible on a viewing. Depending on the age of the work and the planning position, it may be regularisable, it may be subject to enforcement, or it may simply reduce what the property is worth at resale. It needs identifying before completion, not after."
+      },
+      {
+            "q": "Does the notary check the property for me?",
+            "a": "No. The notary is a public official who witnesses the deed and confirms identities and capacity. Verifying the physical, planning and debt position of the property is not part of that function, and neither the estate agent nor the developer's lawyer acts for you either."
+      },
+      {
+            "q": "Should I make a Spanish will?",
+            "a": "If you own property here, yes. Without one, the process for your heirs is slower, more expensive and conducted entirely in Spanish. A Spanish will is also the natural place to make the EU 650/2012 election of your national law, which for common law nationals avoids the Spanish forced heirship rules."
+      }
+    ],
     legacy: true, image: 'buying', eyebrow: 'Practice area',
     title: 'Property Law in Spain',
     intro: 'The legal framework behind every Spanish property transaction, and what it means for a foreign owner.',
@@ -86,6 +108,32 @@ const pages = {
   },
 
   'spanish-golden-visa': {
+    faq: [
+      {
+            "q": "Can I still apply for the Spanish Golden Visa?",
+            "a": "No. Organic Law 1/2025 repealed the scheme and it stopped accepting new applications on 3 April 2025. There is no replacement, no grace period and no threshold at which property purchase grants residence. Buying remains completely open to foreign nationals; it simply carries no immigration consequence."
+      },
+      {
+            "q": "I already hold a Golden Visa. What happens to it?",
+            "a": "Transitional provisions protect existing holders. If your authorisation was granted, or your application filed, before the cutoff, your status continues and renewal remains available provided you still meet the original conditions, including maintaining the qualifying investment."
+      },
+      {
+            "q": "Can I sell the property my Golden Visa was based on?",
+            "a": "You can sell it, but selling will generally end the basis for renewal. A disposal needs to be planned against your residence position rather than treated separately. If you are approaching ten years of legal residence, long term residence or naturalisation may remove the dependence on the investment altogether."
+      },
+      {
+            "q": "What replaced the Golden Visa?",
+            "a": "Nothing directly. The non-lucrative visa, digital nomad visa, entrepreneur routes, EU Blue Card and family reunification all remain open, but every one of them expects you to actually live in Spain for a meaningful part of the year. The Golden Visa was unusual precisely because it did not."
+      },
+      {
+            "q": "Does buying a more expensive property still qualify?",
+            "a": "No. The 500,000 euro threshold has not been raised, it has been abolished. No purchase at any value produces a residence right."
+      },
+      {
+            "q": "Will holding Spanish residence make me tax resident in Spain?",
+            "a": "Spending more than 183 days in Spain in a calendar year generally makes you tax resident here on worldwide income, whatever permit you hold. Because the replacement routes expect real presence and the Golden Visa did not, this now affects far more applicants than it used to."
+      }
+    ],
     legacy: true, image: 'residency', eyebrow: 'Residency',
     title: 'The Spanish Golden Visa',
     intro: 'The investor residence route closed on 3 April 2025. What that means if you hold one, and what is available if you do not.',
@@ -130,6 +178,32 @@ const pages = {
   },
 
   'tax-and-accountancy': {
+    faq: [
+      {
+            "q": "Do I have to file a Spanish tax return if my property is empty?",
+            "a": "Yes. Non-resident owners file Modelo 210 whether or not the property is let. Where it sits empty, tax is charged on an imputed income derived from the cadastral value. Unfiled returns accumulate quietly and surface when the property is sold."
+      },
+      {
+            "q": "How much tax do I pay on rental income as a non-resident?",
+            "a": "Residents of the EU, Norway and Iceland pay nineteen per cent and may deduct expenses proportionate to the letting period. Residents of third countries pay twenty-four per cent on gross income with no deductions at all. Since Brexit that second category includes British owners, which materially reduces the net return."
+      },
+      {
+            "q": "What is the valor de referencia?",
+            "a": "A minimum taxable value set by the Catastro since 2022. If the price you agree is below it, transfer tax is calculated on the reference figure rather than what you actually paid. It can be challenged, but only after paying, so it is worth checking before agreeing a price."
+      },
+      {
+            "q": "What is the 3% retention when I sell?",
+            "a": "Where the seller is not tax resident in Spain, the buyer must retain three per cent of the price and pay it to the tax authority on account of the seller's capital gains. If your actual liability is lower, the excess is recoverable by filing within three months, though refunds typically take six to twelve."
+      },
+      {
+            "q": "Which costs reduce my capital gains bill?",
+            "a": "ITP paid on purchase, notary and registry fees, legal fees, and documented capital improvements all increase the acquisition value. Ordinary maintenance and redecoration do not. Keeping invoices for a new roof or an extension is often worth several thousand euros at sale."
+      },
+      {
+            "q": "Do I have to declare assets I hold outside Spain?",
+            "a": "If you are tax resident in Spain, yes, through Modelo 720 where assets exceed fifty thousand euros in a category. The penalty regime was found disproportionate by the Court of Justice of the EU in 2022 and has been revised, but the obligation to declare remains."
+      }
+    ],
     legacy: true, image: 'tax', eyebrow: 'Practice area',
     title: 'Tax and Accountancy',
     intro: 'The taxes that arise on purchase, the ones that recur every year, and the returns that have to be filed whether or not you live here.',
@@ -270,6 +344,36 @@ const pages = {
 
   // ---- new services, new URLs ----
   'buying-property': {
+    faq: [
+      {
+            "q": "How long does it take to buy a property in Spain?",
+            "a": "A straightforward resale generally takes six to ten weeks from signing the reservation contract to completion at the notary. What extends it is almost never the conveyancing itself: it is waiting for an NIE appointment, a mortgage valuation, or the resolution of something found in the searches such as an unregistered extension or an incomplete inheritance in the seller's title."
+      },
+      {
+            "q": "Do I need to be in Spain to buy?",
+            "a": "No. With a power of attorney I can complete the entire purchase on your behalf, including signing at the notary. It can be granted before a Spanish notary, at a Spanish consulate, or before a local notary with an apostille and sworn translation. A significant proportion of purchases complete without the buyer travelling."
+      },
+      {
+            "q": "How much should I budget beyond the purchase price?",
+            "a": "Ten to twelve per cent for a resale in Andalucía. Transfer tax (ITP) is currently seven per cent, with notary, land registry and legal fees making up the rest. A new build from a developer attracts IVA at ten per cent plus stamp duty instead, which works out slightly higher."
+      },
+      {
+            "q": "What is the contrato de arras and how much is the deposit?",
+            "a": "It is the reservation contract, and the deposit is usually between three and ten per cent of the price. Under arras penitenciales a buyer who withdraws forfeits the deposit and a seller who withdraws repays double. Not every contract presented follows that model, which is why it should be read before signature rather than after."
+      },
+      {
+            "q": "What happens if my mortgage is refused after I have paid the deposit?",
+            "a": "Without an express financing condition in the reservation contract, a refused mortgage is the buyer's problem and the deposit is lost. This is one of the two clauses I always negotiate, and it is the most common way foreign buyers lose money in Spain."
+      },
+      {
+            "q": "Can I buy if I am not an EU citizen?",
+            "a": "Yes. There is no restriction on foreign nationals buying property in Spain, at any value. What changed in April 2025 is that a purchase no longer grants any residence right, since the Golden Visa was repealed. Buying and residency are now entirely separate questions."
+      },
+      {
+            "q": "Do I need a Spanish bank account?",
+            "a": "In practice yes, for paying the purchase, the taxes and the ongoing utilities and community fees. It is worth opening it early, because banks apply anti money laundering checks on the origin of funds and those take longer than people expect."
+      }
+    ],
     image: 'buying', eyebrow: 'Service',
     title: 'Buying a Property in Spain',
     intro: 'Independent conveyancing from the first search to the keys, acting only for the buyer.',
@@ -314,6 +418,28 @@ const pages = {
   },
 
   'selling-property': {
+    faq: [
+      {
+            "q": "Why is the buyer withholding 3% of my sale price?",
+            "a": "Because you are not tax resident in Spain. The buyer is legally obliged to retain it and pay it to the tax authority against your capital gains liability. It is not negotiable, and a buyer who fails to do it becomes liable for the amount themselves."
+      },
+      {
+            "q": "How do I get the 3% retention back?",
+            "a": "By filing Modelo 210 within three months of the retention being paid, with the acquisition documentation supporting your actual gain or loss. Refunds are not automatic and six to twelve months is normal, which is why the file should be in order before the sale rather than reconstructed afterwards."
+      },
+      {
+            "q": "Do I have to pay plusvalía municipal?",
+            "a": "Usually, as the seller, though the parties can agree otherwise. Since the 2021 Constitutional Court ruling two calculation methods exist and you may choose the more favourable. Where there has been no real increase in land value, none is due, but proving that requires both deeds."
+      },
+      {
+            "q": "What documents do I need before putting the property on the market?",
+            "a": "An energy performance certificate is a legal requirement to market it. Beyond that: a clean nota simple, a community fee certificate, IBI receipts, the licencia de primera ocupación where applicable, and evidence of your acquisition cost and improvements."
+      },
+      {
+            "q": "Can I sell without coming to Spain?",
+            "a": "Yes, under a power of attorney. For a non-resident seller it is usually the practical route, since the tax filings and any refund claim continue for months after completion."
+      }
+    ],
     image: 'selling', eyebrow: 'Service',
     title: 'Selling a Property in Spain',
     intro: 'Capital gains, the non-resident retention, and getting the proceeds out cleanly.',
@@ -349,6 +475,28 @@ const pages = {
   },
 
   'residency-and-visas': {
+    faq: [
+      {
+            "q": "Which visa is right for me?",
+            "a": "It depends on how you earn rather than what you own. Passive income points to the non-lucrative visa. Remote work for companies outside Spain points to the digital nomad visa. A genuine business here points to the self-employment or entrepreneur routes. Each has different income thresholds and presence expectations."
+      },
+      {
+            "q": "How much income do I need for a non-lucrative visa?",
+            "a": "The threshold is set as a multiple of the IPREM indicator with an additional amount for each dependent family member, and it must come from savings, pensions, rentals or investments rather than employment. Because IPREM is revised, the current figure should be confirmed at the point of applying."
+      },
+      {
+            "q": "Can I work remotely on a non-lucrative visa?",
+            "a": "No, that is the distinction between it and the digital nomad visa. The non-lucrative route requires that you do not work, which is why remote workers should be applying under the digital nomad framework instead."
+      },
+      {
+            "q": "How long does an application take?",
+            "a": "It varies considerably by consulate and by route. The document gathering is usually the longer part, because foreign certificates need apostille and sworn translation and carry validity periods of three or six months, so sequencing matters more than speed."
+      },
+      {
+            "q": "Will I become tax resident in Spain?",
+            "a": "If you spend more than 183 days a year here, generally yes, on worldwide income. Having your main centre of economic interests in Spain can produce the same result below that threshold. This should be modelled before applying, not after arriving."
+      }
+    ],
     image: 'residency', eyebrow: 'Service',
     title: 'Residency and Visa Applications',
     intro: 'The routes that remain open in 2026, and which one fits your circumstances.',
@@ -388,6 +536,24 @@ const pages = {
   },
 
   'gibraltar-and-spain': {
+    faq: [
+      {
+            "q": "I live in Spain and work in Gibraltar. Where do I pay tax?",
+            "a": "Generally you are tax resident in Spain on worldwide income while paying Gibraltar social insurance on the employment. The 2019 tax treaty between Spain and the UK in respect of Gibraltar sets out tie-breaker rules for residence and provides for exchange of information between both administrations."
+      },
+      {
+            "q": "I hold Spanish property through a Gibraltar company. Is that still worthwhile?",
+            "a": "Considerably less than it once was. The 2019 treaty allows a Gibraltar company owning Spanish assets to be treated as Spanish tax resident, and Spain applies an annual levy on real estate held by entities in jurisdictions it classifies as non-cooperative. Whether to unwind such a structure needs both jurisdictions considered together."
+      },
+      {
+            "q": "Do I need to declare my Gibraltar bank account in Spain?",
+            "a": "If you are tax resident in Spain and your assets abroad exceed the reporting thresholds, yes, through Modelo 720. The treaty's information exchange provisions mean arrangements that were once informal are now visible to both administrations."
+      },
+      {
+            "q": "Has the frontier situation been settled since Brexit?",
+            "a": "The treaty framework governing Gibraltar's relationship with the EU has been under negotiation for years and arrangements have been subject to transitional measures throughout. Anything time sensitive should be confirmed at the point of decision rather than relying on a general description."
+      }
+    ],
     image: 'gibraltar', eyebrow: 'Service',
     title: 'Gibraltar and Spain',
     intro: 'Cross-border matters for frontier workers, Gibraltar companies and residents moving between the two jurisdictions.',
