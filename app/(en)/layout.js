@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     title: en.meta.title, description: en.meta.description, url: '/',
     siteName: 'Esther Pujol Wilkie & Associates', locale: 'en_GB', type: 'website',
-    images: [{ url: '/images/hero.jpg', width: 1800, height: 972 }],
+    images: [{ url: '/images/sotogrande-marina-cadiz.jpg', width: 1800, height: 972 }],
   },
   robots: { index: process.env.ALLOW_INDEXING === 'true', follow: true },
 };

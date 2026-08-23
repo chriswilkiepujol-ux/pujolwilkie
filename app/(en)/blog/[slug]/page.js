@@ -26,7 +26,7 @@ export default async function Post({ params }) {
   if (!post) notFound();
   const path = `${BASE}/${slug}/`;
   const page = {
-    eyebrow: post.cat, title: post.title, intro: post.text, image: 'hero',
+    eyebrow: post.cat, title: post.title, intro: post.text, image: 'sotogrande-marina-cadiz',
     sections: post.sections || [{ h2: post.title, p: [post.text] }],
     related: en.insights.items.filter((p) => p.slug !== slug)
       .map((p) => ({ href: `${BASE}/${p.slug}/`, label: p.title })),
