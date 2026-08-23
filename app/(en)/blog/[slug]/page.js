@@ -2,6 +2,7 @@ import ServicePage from '@/components/ServicePage';
 import en from '@/content/en';
 import { articleSchema, breadcrumbSchema } from '@/lib/schema';
 import { notFound } from 'next/navigation';
+import { languagesFor } from '@/lib/locale';
 
 const BASE = '/blog';
 
@@ -16,7 +17,7 @@ export async function generateMetadata({ params }) {
   return {
     title: post.title,
     description: post.metaDesc || post.text,
-    alternates: { canonical: `${BASE}/${slug}/` },
+    alternates: { canonical: `${BASE}/${slug}/`, languages: languagesFor(`${BASE}/${slug}/`) },
   };
 }
 

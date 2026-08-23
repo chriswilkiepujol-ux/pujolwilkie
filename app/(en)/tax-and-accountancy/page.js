@@ -1,6 +1,7 @@
 import ServicePage from '@/components/ServicePage';
 import en from '@/content/en';
 import pages from '@/content/pages.en';
+import { languagesFor } from '@/lib/locale';
 import { servicePageSchema, breadcrumbSchema, faqSchemaFrom } from '@/lib/schema';
 
 const slug = 'tax-and-accountancy';
@@ -10,7 +11,7 @@ const path = '/' + slug + '/';
 export const metadata = {
   title: page.metaTitle || `${page.title} | Esther Pujol Wilkie & Associates`,
   description: page.metaDesc || page.intro,
-  alternates: { canonical: path },
+  alternates: { canonical: path, languages: languagesFor(path) },
   openGraph: {
     title: page.metaTitle || page.title,
     description: page.metaDesc || page.intro,

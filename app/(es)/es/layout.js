@@ -10,7 +10,7 @@ export const metadata = {
   description: es.meta.description,
   alternates: {
     canonical: '/es',
-    languages: { 'en-GB': '/', 'es-ES': '/es', 'x-default': '/' },
+    languages: { 'en-GB': '/', 'es-ES': '/es/', 'x-default': '/' },
   },
   openGraph: {
     title: es.meta.title, description: es.meta.description, url: '/es',

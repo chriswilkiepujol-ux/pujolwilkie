@@ -1,10 +1,14 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Logo from './Logo';
 import site from '@/lib/site';
+import { altPath } from '@/lib/locale';
 
 export default function Header({ t }) {
+  const pathname = usePathname();
+  const alt = altPath(pathname);
   const [open, setOpen] = useState(false);
   const drawer = useRef(null);
   const closeBtn = useRef(null);
@@ -51,10 +55,13 @@ export default function Header({ t }) {
       <header><div className="wrap hbar">
         <Link className="brand" href={t.home}><Logo className="brandmark" />{brand}</Link>
         <nav>{t.nav.map((n) => <Link key={n.href} href={n.href}>{n.label}</Link>)}</nav>
-        <Link className="lang" href={t.altLocale.href} hrefLang={t.altLocale.code}>
+        <Link className="lang" href={alt} hrefLang={t.altLocale.code}
+          aria-label={t.altLocale.label}>
           <b>{t.locale.toUpperCase()}</b> / {t.altLocale.code.toUpperCase()}
         </Link>
         <a className="btn dk" href="#contact">{t.cta.primary}</a>
+        <Link className="langm" href={alt} hrefLang={t.altLocale.code}
+          aria-label={t.altLocale.label}>{t.altLocale.code.toUpperCase()}</Link>
         <button className="burger" aria-expanded={open} aria-controls="drawer"
           aria-label={open ? 'Close menu' : 'Open menu'} onClick={() => setOpen(!open)}>
           <span /><span /><span />
@@ -82,8 +89,10 @@ export default function Header({ t }) {
           <a href={`mailto:${site.email}`} style={{ color: 'var(--pine)' }}>{site.email}</a></p>
         <div className="dfoot">
           <div className="dlang">
-            <a className="cur" href="#" onClick={(e) => e.preventDefault()}>{t.locale === 'en' ? 'ENGLISH' : 'ESPAÑOL'}</a>
-            <Link href={t.altLocale.href} hrefLang={t.altLocale.code}>{t.altLocale.label.toUpperCase()}</Link>
+            <span className="cur">{t.locale === 'en' ? 'ENGLISH' : 'ESPAÑOL'}</span>
+            <Link href={alt} hrefLang={t.altLocale.code} onClick={() => setOpen(false)}>
+              {t.altLocale.label.toUpperCase()}
+            </Link>
           </div>
           <a className="btn" href="#contact" onClick={() => setOpen(false)}>{t.cta.primary}</a>
           <a className="btn dk" href={`tel:${site.phoneHref}`}>{t.cta.call} {site.phone}</a>

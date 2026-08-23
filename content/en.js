@@ -1,5 +1,6 @@
 export const en = {
   locale: 'en',
+  altHome: '/es/',
   altLocale: { code: 'es', label: 'Español', href: '/es' },
   home: '/',
   meta: {
