@@ -486,3 +486,7 @@ footer .fl svg{width:32px;height:36px;color:var(--brass)}
 .iportrait figcaption{font-family:var(--m);font-size:10.5px;letter-spacing:.08em;
   text-transform:uppercase;color:var(--stone);margin-top:10px;line-height:1.5}
 @media(max-width:600px){.iportrait{max-width:200px}}
+
+/* the Google rating summary is a link */
+a.ghead{text-decoration:none;color:inherit;transition:.18s}
+a.ghead:hover{border-color:rgba(20,72,58,.4);box-shadow:0 2px 14px rgba(19,32,27,.09)}

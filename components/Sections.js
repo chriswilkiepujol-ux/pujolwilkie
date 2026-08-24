@@ -117,11 +117,11 @@ export function Reviews({ t }) {
       <span className="eyebrow">{t.reviews.eyebrow}</span>
       <h2 className="sh">{t.reviews.h2}</h2>
       <p className="sub">{t.reviews.sub}</p>
-      <div className="ghead">
+      <a className="ghead" href={site.gbpUrl} target="_blank" rel="noopener">
         <span className="big">{site.ratingValue}</span>
         <div className="mid"><Stars /><div>{t.reviews.average}</div></div>
         <span className="glogo"><GoogleG />{t.reviews.verified}</span>
-      </div>
+      </a>
       <div className="revs">
         {t.reviews.items.map((r) => (
           <div className="rev" key={r.name}>
