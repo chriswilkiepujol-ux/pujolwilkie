@@ -9,26 +9,34 @@ const img = (n) => `/images/${n}.jpg`;
 export function Hero({ t }) {
   return (
     <div className="hero">
-      <Image src={img('hero')} alt="La Marina de Sotogrande, Cádiz, on the Costa del Sol" fill priority sizes="100vw"
-        style={{ objectFit: 'cover' }} />
       <div className="wrap hin">
-        <span className="eyebrow">{t.hero.eyebrow}</span>
-        <h1>{t.hero.h1}</h1>
-        <p className="hsub">{t.hero.sub}</p>
-        <p className="hlede">{t.hero.lede}</p>
-        <p className="strap">{t.hero.strap}</p>
-        <div className="hcta">
-          <a className="btn" href="#contact">{t.cta.consult}</a>
-          <a className="btn gh" href="#checks">{t.hero.secondary}</a>
-        </div>
-        <a className="gbadge" href={site.gbpUrl} target="_blank" rel="noopener">
-          <GoogleG />
-          <div>
-            <div className="gt"><b>{site.ratingValue}</b> <Stars /></div>
-            <div className="gs">{t.hero.reviews}</div>
+        <div className="herocopy">
+          <span className="eyebrow">{t.hero.eyebrow}</span>
+          <h1>{t.hero.h1}</h1>
+          <p className="hsub">{t.hero.sub}</p>
+          <p className="hlede">{t.hero.lede}</p>
+          <p className="strap">{t.hero.strap}</p>
+          <div className="hcta">
+            <a className="btn" href="#contact">{t.cta.consult}</a>
+            <a className="btn gh" href="#checks">{t.hero.secondary}</a>
           </div>
-        </a>
+          <a className="gbadge" href={site.gbpUrl} target="_blank" rel="noopener">
+            <GoogleG />
+            <div>
+              <div className="gt"><b>{site.ratingValue}</b> <Stars /></div>
+              <div className="gs">{t.hero.reviews}</div>
+            </div>
+          </a>
+        </div>
+        <figure className="heroimg">
+          <Image src={img('sotogrande-marina-cadiz')} alt="La Marina de Sotogrande, Cádiz, on the Costa del Sol"
+            width={1200} height={900} priority sizes="(min-width:1000px) 45vw, 100vw" />
+        </figure>
       </div>
+      <figure className="herofig">
+        <Image src={img('sotogrande-marina-cadiz')} alt="La Marina de Sotogrande, Cádiz, on the Costa del Sol"
+          width={2400} height={800} priority sizes="100vw" />
+      </figure>
     </div>
   );
 }
