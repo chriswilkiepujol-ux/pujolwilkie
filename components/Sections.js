@@ -9,6 +9,8 @@ const img = (n) => `/images/${n}.jpg`;
 export function Hero({ t }) {
   return (
     <div className="hero">
+      <Image className="herobg" src={img('sotogrande-marina-cadiz')}
+        alt="" aria-hidden="true" fill priority sizes="100vw" style={{ objectFit: 'cover' }} />
       <div className="wrap hin">
         <div className="herocopy">
           <span className="eyebrow">{t.hero.eyebrow}</span>
@@ -33,10 +35,6 @@ export function Hero({ t }) {
             width={1200} height={900} priority sizes="(min-width:1000px) 45vw, 100vw" />
         </figure>
       </div>
-      <figure className="herofig">
-        <Image src={img('sotogrande-marina-cadiz')} alt="La Marina de Sotogrande, Cádiz, on the Costa del Sol"
-          width={2400} height={800} priority sizes="100vw" />
-      </figure>
     </div>
   );
 }

@@ -107,13 +107,21 @@ body.lock{overflow:hidden}
 .hero{position:relative;color:var(--ink);overflow:hidden;background:var(--stucco);
   border-bottom:1px solid var(--line)}
 .hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero::after{content:none}
-.hero>img{display:none}
-.herofig{margin:0;border-top:1px solid var(--line)}
-.herofig img{width:100%;height:clamp(200px,32vw,420px);object-fit:cover;display:block}
-.hin{position:relative;z-index:2;padding-block:clamp(40px,5.5vw,76px) clamp(30px,4vw,56px)}
+/* Photo sits behind the hero on mobile and tablet, under a light scrim so the
+   copy stays legible and the section still reads white rather than dark. */
+.herobg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,
+    rgba(255,255,255,.97) 0%,
+    rgba(255,255,255,.93) 42%,
+    rgba(255,255,255,.72) 74%,
+    rgba(255,255,255,.42) 100%)}
+.herofig{display:none}
+.hin{position:relative;z-index:2;padding-block:clamp(40px,5.5vw,76px) clamp(44px,8vw,64px)}
 .heroimg{display:none}
 @media(min-width:1000px){
+  .herobg{display:none}
+  .hero::after{content:none}
   .hero .wrap.hin{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.9fr);
     gap:clamp(32px,5vw,64px);align-items:center}
   .hero h1{max-width:none}
@@ -329,11 +337,12 @@ footer .fl svg{width:32px;height:36px;color:var(--brass)}
 
 /* sticky mobile CTA */
 .mcta{position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;
-  background:var(--ink);border-top:1px solid rgba(255,255,255,.16);padding:9px 12px;gap:9px}
+  background:var(--white);border-top:1px solid var(--line);padding:9px 12px;gap:9px;
+  box-shadow:0 -4px 18px rgba(19,32,27,.08)}
 .mcta a{flex:1;text-align:center;text-decoration:none;font-size:14px;font-weight:600;
   padding:12px 6px;border-radius:3px}
-.mcta .c1{background:var(--brass);color:#1B1408}
-.mcta .c2{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.25)}
+.mcta .c1{background:var(--pine);color:#fff}
+.mcta .c2{background:var(--alt);color:var(--pine);border:1px solid var(--line)}
 @media(max-width:720px){.mcta{display:flex}body{padding-bottom:calc(72px + env(safe-area-inset-bottom))}}
 :focus-visible{outline:2px solid var(--brass);outline-offset:3px}
 /* ---- mobile density: fewer screens of scrolling ---- */
