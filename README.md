@@ -64,11 +64,28 @@ they keep their indexing and pass link equity forward.
 `trailingSlash: true` matches WordPress exactly, so preserved URLs resolve with no
 redirect hop at all.
 
-Verify any deployment before cutover. All 22 cases must pass:
+## Verification
+
+Two checks. Run both before cutover, and again against production afterwards.
 
 ```bash
-npm run verify:urls -- https://your-preview.vercel.app
+npm run verify:urls  -- https://pujolwilkie.com    # 22 legacy URL cases
+npm run verify:links -- https://pujolwilkie.com    # crawls every page
 ```
+
+`verify:urls` confirms each legacy WordPress URL either resolves at its
+original path or redirects where intended. All 22 must pass.
+
+`verify:links` crawls the site and checks that every link resolves, internal
+and external. External matters: the Google review buttons are load bearing for
+the review strategy and can rot without any internal check noticing. A dead
+profile link went unnoticed for several deploys because both earlier checks
+only looked inward.
+
+It inspects anchors only. Canonical and hreflang tags point at the production
+domain, which is still the old WordPress site until cutover, so including them
+would report failures forever. Pass `--internal-only` to skip external checks
+when offline.
 
 ## Migration notes
 
