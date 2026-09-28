@@ -77,19 +77,22 @@ The first thing to watch after cutover is whether the search snippets convert: t
 
 Allow an hour. Do it on a weekday morning so a problem can be dealt with the same day.
 
-**1. Lower the DNS TTL, the day before**
-- Cloudflare → DNS → edit the `@` A record and the `www` record → set TTL to 5 minutes (or Auto if proxied)
-- This makes the switch, and any rollback, take effect quickly
+**1. DNS TTL: nothing to do**
+- Cloudflare's Auto TTL is already about 5 minutes, so the switch and any rollback take effect quickly
 
 **2. Add the domain in Vercel**
-- Vercel → pujolwilkie → Settings → Domains → Add `pujolwilkie.com`, then add `www.pujolwilkie.com`
-- Vercel shows the records it wants. Use the values it shows, not values from memory
-- Set `www` to redirect to the apex (or the other way round, but be consistent)
+- Do this **before** touching Cloudflare. If DNS pointed at Vercel first, visitors would arrive before Vercel knew which site to serve them
+- Vercel → pujolwilkie → Settings → Domains → Add Domain → `pujolwilkie.com`. Accept the prompt to add `www.pujolwilkie.com` too and set it to redirect to the apex. If Domains is not in the Settings sidebar, use the Find box at the top left (press F) and type Domains
+- It will say Invalid Configuration until DNS is changed. That is expected and changes nothing on the live site, because DNS still points at WordPress
+- Vercel shows the exact records on the domain card. Use those values, not values from memory
 
 **3. Change DNS at Cloudflare**
-- `@` A record: replace the WordPress.com value with the Vercel value shown in step 2
+- This is done at **Cloudflare**, not at the registrar (Register SPA). The nameservers are Cloudflare's, so edits at the registrar would have no effect
+- `@` A record: replace the existing value with the one on the Vercel domain card
+- **Delete any AAAA record on `@`.** Vercel does not support IPv6 for custom domains on outside DNS, so a leftover AAAA record splits traffic and can stall the certificate
 - `www`: CNAME to the value Vercel shows
-- Set both records to **DNS only** (grey cloud) for the cutover so Vercel can issue its certificate. Proxying can be turned back on later if wanted
+- Set both records to **DNS only** (grey cloud). Vercel advises against putting a proxy in front of it, so leave them grey
+- Any wildcard `*` record can stay
 - **Do not touch the MX records, the `_domainconnect` TXT, or anything else**
 
 **4. Wait for the certificate**
@@ -113,7 +116,9 @@ The site has a safety switch. Until it is turned on, every page tells Google "do
 
 - Vercel → project pujolwilkie → Settings → Environment Variables
 - Key `ALLOW_INDEXING`, value `true`
+- If it asks for a type, choose **Config**, not Secret. It is a plain on/off flag, not a secret
 - Tick **Production** only. Leave Preview and Development unticked
+- If Environment Variables is not in the Settings sidebar, use the Find box (press F). In the August 2026 dashboard the sidebar listed Environments instead, so look there. If it still cannot be found, ask Claude to flip it from the repo instead
 - Save. Then Deployments → the latest deployment → the three dots → **Redeploy**. If it offers "Use existing Build Cache", untick it. The switch is read when the site builds, so nothing changes until it redeploys
 - Confirm `https://pujolwilkie.com/robots.txt` now says `Allow: /` and lists the sitemap
 - Confirm the homepage source contains `<meta name="robots" content="index, follow">`
