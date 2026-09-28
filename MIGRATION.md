@@ -82,7 +82,8 @@ Allow an hour. Do it on a weekday morning so a problem can be dealt with the sam
 
 **2. Add the domain in Vercel**
 - Do this **before** touching Cloudflare. If DNS pointed at Vercel first, visitors would arrive before Vercel knew which site to serve them
-- Vercel → pujolwilkie → Settings → Domains → Add Domain → `pujolwilkie.com`. Accept the prompt to add `www.pujolwilkie.com` too and set it to redirect to the apex. If Domains is not in the Settings sidebar, use the Find box at the top left (press F) and type Domains
+- Vercel → pujolwilkie → **Domains** in the project's left sidebar (it sits just below Environment Variables, not under Settings) → Add Existing → `pujolwilkie.com`, and add `www.pujolwilkie.com` too
+- **Check which way the redirect points.** Vercel's default makes www the main address and redirects the bare domain to it (`pujolwilkie.com` 308 to `www.pujolwilkie.com`). That is the wrong way round for this site. Every canonical tag, the sitemap and the hreflang tags use `https://pujolwilkie.com` with no www, the old WordPress site did the same and redirected www to it, and Google has indexed it that way. Edit both entries so that `pujolwilkie.com` is connected to Production with no redirect, and `www.pujolwilkie.com` redirects to `pujolwilkie.com` (308)
 - It will say Invalid Configuration until DNS is changed. That is expected and changes nothing on the live site, because DNS still points at WordPress
 - Vercel shows the exact records on the domain card. Use those values, not values from memory
 
@@ -118,7 +119,7 @@ The site has a safety switch. Until it is turned on, every page tells Google "do
 - Key `ALLOW_INDEXING`, value `true`
 - If it asks for a type, choose **Config**, not Secret. It is a plain on/off flag, not a secret
 - Tick **Production** only. Leave Preview and Development unticked
-- If Environment Variables is not in the Settings sidebar, use the Find box (press F). In the August 2026 dashboard the sidebar listed Environments instead, so look there. If it still cannot be found, ask Claude to flip it from the repo instead
+- Environment Variables is in the project's left sidebar, directly above Domains
 - Save. Then Deployments → the latest deployment → the three dots → **Redeploy**. If it offers "Use existing Build Cache", untick it. The switch is read when the site builds, so nothing changes until it redeploys
 - Confirm `https://pujolwilkie.com/robots.txt` now says `Allow: /` and lists the sitemap
 - Confirm the homepage source contains `<meta name="robots" content="index, follow">`
