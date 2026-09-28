@@ -4,7 +4,7 @@ import pages from '@/content/pages.es';
 import { languagesFor } from '@/lib/locale';
 import { servicePageSchema, breadcrumbSchema, faqSchemaFrom } from '@/lib/schema';
 
-const slug = 'nautica-y-embarcaciones';
+const slug = 'barcos-y-amarres';
 const page = pages[slug];
 const path = '/es/' + slug + '/';
 

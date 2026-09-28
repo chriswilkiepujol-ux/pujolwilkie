@@ -24,7 +24,7 @@ export const es = {
     { label: 'Fiscalidad y contabilidad', href: '/es/fiscalidad/' },
     { label: 'Gestión de propiedades', href: '/es/gestion-de-propiedades/' },
     { label: 'Gibraltar y España', href: '/es/gibraltar-y-espana/' },
-    { label: 'Náutica y atraques', href: '/es/nautica-y-embarcaciones/' },
+    { label: 'Barcos y amarres', href: '/es/barcos-y-amarres/' },
     { label: 'Ley Beckham', href: '/es/ley-beckham/' },
     { label: 'Derecho inmobiliario', href: '/es/derecho-inmobiliario/' },
     { label: 'La Golden Visa', href: '/es/golden-visa-espana/' },

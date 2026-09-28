@@ -4,7 +4,7 @@ import pages from '@/content/pages.en';
 import { languagesFor } from '@/lib/locale';
 import { servicePageSchema, breadcrumbSchema, faqSchemaFrom } from '@/lib/schema';
 
-const slug = 'maritime-and-boats';
+const slug = 'boats-and-moorings';
 const page = pages[slug];
 const path = '/' + slug + '/';
 

@@ -24,7 +24,7 @@ export const en = {
     { label: 'Tax & accountancy', href: '/tax-and-accountancy/' },
     { label: 'Property management', href: '/property-management-services/' },
     { label: 'Gibraltar & Spain', href: '/gibraltar-and-spain/' },
-    { label: 'Boats & moorings', href: '/maritime-and-boats/' },
+    { label: 'Boats & moorings', href: '/boats-and-moorings/' },
     { label: 'Beckham Law', href: '/beckhams-law/' },
     { label: 'Property law', href: '/property-law/' },
     { label: 'The Golden Visa', href: '/spanish-golden-visa/' },
