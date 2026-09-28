@@ -88,8 +88,10 @@ Allow an hour. Do it on a weekday morning so a problem can be dealt with the sam
 - Vercel shows the exact records on the domain card. Use those values, not values from memory
 
 **3. Change DNS at Cloudflare**
+- **Do steps 3 to 7 in one sitting, about 45 minutes.** Once DNS points at Vercel the site is live but still tells Google not to index it, until step 7. Do not leave it in that state overnight or for days: Google would keep seeing a robots.txt that blocks everything on a site it already has indexed
+- **First, screenshot the whole DNS Records list.** It is the rollback: it holds the exact WordPress values to restore
 - This is done at **Cloudflare**, not at the registrar (Register SPA). The nameservers are Cloudflare's, so edits at the registrar would have no effect
-- `@` A record: replace the existing value with the one on the Vercel domain card
+- `@`: delete the existing A record or records, then add a **CNAME** named `@` pointing at the value on the Vercel domain card, currently `68a409c1ec82df06.vercel-dns-017.com`. Copy it with the copy icon rather than retyping it. Vercel now recommends a CNAME on the bare domain, and Cloudflare supports that automatically. The older A record 76.76.21.21 still works as a fallback
 - **Delete any AAAA record on `@`.** Vercel does not support IPv6 for custom domains on outside DNS, so a leftover AAAA record splits traffic and can stall the certificate
 - `www`: CNAME to the value Vercel shows
 - Set both records to **DNS only** (grey cloud). Vercel advises against putting a proxy in front of it, so leave them grey
