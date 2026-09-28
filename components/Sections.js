@@ -59,7 +59,7 @@ export function Intro({ t }) {
         <p className="sub intro-extra">{t.intro.p2}</p>
         <a className="btn dk" href="#contact" style={{ marginTop: 14 }}>{t.intro.cta}</a>
       </div>
-      <Image src={img('polo')} alt="Polo match at Sotogrande" width={900} height={498} sizes="(max-width:860px) 100vw, 45vw" />
+      <Image src={img('polo-sotogrande')} alt="Polo match at Sotogrande" width={900} height={498} sizes="(max-width:860px) 100vw, 45vw" />
     </div></section>
   );
 }
@@ -155,7 +155,7 @@ export function About({ t }) {
       <h2 className="sh">{t.about.h2}</h2>
       <div className="about" style={{ marginTop: 34 }}>
         <div className="ph">
-          <Image src={img('esther')} alt={site.shortName} width={400} height={461} sizes="250px" />
+          <Image src={img('esther-pujol-wilkie-abogada-sotogrande')} alt={`${site.shortName}, abogada, in her Sotogrande office`} width={400} height={461} sizes="250px" />
           <div className="pc">{t.about.role}</div>
         </div>
         <div>

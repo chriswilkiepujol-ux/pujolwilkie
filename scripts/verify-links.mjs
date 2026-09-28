@@ -18,6 +18,7 @@ const seen = new Set();
 const queue = ['/'];
 const internal = new Map();   // path -> Set(pages linking to it)
 const external = new Map();   // url  -> Set(pages linking to it)
+const images   = new Map();   // image path -> Set(pages using it)
 
 const UA = { 'User-Agent': 'Mozilla/5.0 (compatible; link-check/1.0)' };
 
@@ -31,6 +32,12 @@ while (queue.length) {
   // anchors only: <link rel="canonical"> and hreflang tags point at the
   // production domain, which is still the old site until cutover, so they
   // would report as broken forever and drown out real failures
+  // images: next/image encodes the source as url=%2Fimages%2F...; catch raw src too
+  for (const m of html.matchAll(/(?:url=%2Fimages%2F|src="\/images\/)([^&"]+)/g)) {
+    const img = '/images/' + decodeURIComponent(m[1]).split('?')[0];
+    if (!images.has(img)) images.set(img, new Set());
+    images.get(img).add(path);
+  }
   for (const m of html.matchAll(/<a\b[^>]*?href="([^"]+)"/g)) {
     const h = m[1];
     if (h.startsWith('/_next') || h.startsWith('/images') || h.startsWith('#')) continue;
@@ -82,6 +89,17 @@ for (const path of [...internal.keys()].sort()) {
   }
 }
 console.log(`${internal.size} internal links checked`);
+
+console.log('\n--- images ---');
+for (const img of [...images.keys()].sort()) {
+  const st = await check(base + img);
+  if (st !== 200) {
+    broken++;
+    console.log(`BROKEN ${st}  ${img}`);
+    console.log(`         used on: ${[...images.get(img)].join(', ')}`);
+  }
+}
+console.log(`${images.size} images checked`);
 
 if (!internalOnly) {
   console.log('\n--- external ---');

@@ -1,5 +1,6 @@
 import { languagesFor } from '@/lib/locale';
 import BlogIndex from '@/components/BlogIndex';
+import { siteUrl } from '@/lib/site';
 import en from '@/content/en';
 
 export const metadata = {
@@ -9,5 +10,15 @@ export const metadata = {
 };
 
 export default function P() {
-  return <BlogIndex t={en} />;
+  const jsonLd = {
+    '@context': 'https://schema.org', '@type': 'CollectionPage',
+    name: en.insights.h2, url: `${siteUrl}/blog/`,
+    inLanguage: 'en-GB',
+    isPartOf: { '@type': 'WebSite', name: 'Esther Pujol Wilkie & Associates', url: siteUrl },
+    hasPart: en.insights.items.map((p) => ({ '@type': 'Article', headline: p.title, url: `${siteUrl}/blog/${p.slug}/` })),
+  };
+  return (<>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+    <BlogIndex t={en} />
+  </>);
 }
