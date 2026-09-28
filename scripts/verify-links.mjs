@@ -117,6 +117,19 @@ if (!internalOnly) {
   console.log(`${external.size} external links checked`);
 }
 
+// every indexable page the crawl found must be listed in the sitemap
+console.log('\n--- sitemap coverage ---');
+try {
+  const xml = await (await fetch(base + '/sitemap.xml', { headers: UA })).text();
+  const listed = new Set([...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname));
+  const legal = /aviso-legal|politica-de-(privacidad|cookies)/;
+  const missing = [...seen].filter((p) => !legal.test(p) && !listed.has(p));
+  const stale = [...listed].filter((p) => !seen.has(p));
+  for (const p of missing) { broken++; console.log(`NOT IN SITEMAP  ${p}`); }
+  for (const p of stale) { broken++; console.log(`IN SITEMAP BUT NOT LINKED FROM SITE  ${p}`); }
+  console.log(`${listed.size} sitemap entries, ${seen.size} pages crawled`);
+} catch { console.log('could not read sitemap'); }
+
 console.log(`\ncrawled ${seen.size} pages`);
 console.log(broken ? `${broken} BROKEN` : 'all links resolve');
 process.exit(broken ? 1 : 0);

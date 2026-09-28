@@ -15,9 +15,20 @@ const redirects = [
   { source: '/tag/:slug*', destination: '/blog/', permanent: true },
 ];
 
+// Once the site is live (ALLOW_INDEXING=true), the free pujolwilkie.vercel.app
+// address would serve an identical, indexable copy of the site. Forward it to
+// the real domain. Inert until the flag is on, so staging review keeps working.
+const isLive = process.env.ALLOW_INDEXING === 'true';
+const aliasRedirect = {
+  source: '/:path*',
+  has: [{ type: 'host', value: 'pujolwilkie.vercel.app' }],
+  destination: 'https://pujolwilkie.com/:path*',
+  permanent: true,
+};
+
 const nextConfig = {
   trailingSlash: true,
-  async redirects() { return redirects; },
+  async redirects() { return isLive ? [aliasRedirect, ...redirects] : redirects; },
   images: { formats: ['image/avif', 'image/webp'] },
   poweredByHeader: false,
 };
