@@ -10,8 +10,24 @@ export default function Header({ t }) {
   const pathname = usePathname();
   const alt = altPath(pathname);
   const [open, setOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
   const drawer = useRef(null);
   const closeBtn = useRef(null);
+  const moreRef = useRef(null);
+
+  useEffect(() => { setMoreOpen(false); }, [pathname]);
+
+  useEffect(() => {
+    if (!moreOpen) return;
+    const onDoc = (e) => { if (moreRef.current && !moreRef.current.contains(e.target)) setMoreOpen(false); };
+    const onEsc = (e) => { if (e.key === 'Escape') setMoreOpen(false); };
+    document.addEventListener('mousedown', onDoc);
+    document.addEventListener('keydown', onEsc);
+    return () => {
+      document.removeEventListener('mousedown', onDoc);
+      document.removeEventListener('keydown', onEsc);
+    };
+  }, [moreOpen]);
 
   useEffect(() => {
     document.body.classList.toggle('lock', open);
@@ -54,7 +70,30 @@ export default function Header({ t }) {
 
       <header><div className="wrap hbar">
         <Link className="brand" href={t.home}><Logo className="brandmark" />{brand}</Link>
-        <nav>{t.nav.map((n) => <Link key={n.href} href={n.href}>{n.label}</Link>)}</nav>
+        <nav>
+          {t.nav.map((n) => <Link key={n.href} href={n.href}>{n.label}</Link>)}
+          <div className="moreWrap" ref={moreRef}>
+            <button type="button" className="moreBtn" aria-expanded={moreOpen} aria-haspopup="true"
+              onClick={() => setMoreOpen((v) => !v)}>
+              {t.moreLabel}
+              <svg viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </button>
+            <div className={`moreMenu${moreOpen ? ' on' : ''}`} role="menu">
+              <div className="moreCol">
+                <p className="moreHead">{t.navLabels.services}</p>
+                {t.navServices.map((n) => (
+                  <Link key={n.href} href={n.href} role="menuitem" onClick={() => setMoreOpen(false)}>{n.label}</Link>
+                ))}
+              </div>
+              <div className="moreCol">
+                <p className="moreHead">{t.navLabels.firm}</p>
+                {t.navFirm.map((n) => (
+                  <Link key={n.href} href={n.href} role="menuitem" onClick={() => setMoreOpen(false)}>{n.label}</Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </nav>
         <Link className="lang" href={alt} hrefLang={t.altLocale.code}
           aria-label={t.altLocale.label}>
           <b>{t.locale.toUpperCase()}</b> / {t.altLocale.code.toUpperCase()}

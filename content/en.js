@@ -14,8 +14,6 @@ export const en = {
     { label: 'Residency', href: '/residency-and-visas/' },
     { label: 'Tax', href: '/tax-and-accountancy/' },
     { label: 'About', href: '/about/' },
-    { label: 'Insights', href: '/blog/' },
-    { label: 'Contact', href: '/contact/' },
   ],
   navServices: [
     { label: 'Buying property', href: '/buying-property/' },
@@ -37,6 +35,7 @@ export const en = {
     { label: 'Contact', href: '/contact/' },
   ],
   navLabels: { services: 'Services', firm: 'Firm' },
+  moreLabel: 'More services',
   cta: { primary: 'Get in touch', call: 'Call the office', consult: 'Write to Esther' },
   hero: {
     eyebrow: 'Lawyer \u00b7 Sotogrande, C\u00e1diz',

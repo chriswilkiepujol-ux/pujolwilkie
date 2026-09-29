@@ -14,8 +14,6 @@ export const es = {
     { label: 'Residencia', href: '/es/residencia-y-visados/' },
     { label: 'Fiscalidad', href: '/es/fiscalidad/' },
     { label: 'Sobre Esther', href: '/es/sobre-esther/' },
-    { label: 'Artículos', href: '/es/articulos/' },
-    { label: 'Contacto', href: '/es/contacto/' },
   ],
   navServices: [
     { label: 'Comprar una propiedad', href: '/es/compraventa/' },
@@ -37,6 +35,7 @@ export const es = {
     { label: 'Contacto', href: '/es/contacto/' },
   ],
   navLabels: { services: 'Servicios', firm: 'Despacho' },
+  moreLabel: 'Más servicios',
   cta: { primary: 'Contactar', call: 'Llamar al despacho', consult: 'Escribir a Esther' },
   hero: {
     eyebrow: 'Abogada \u00b7 Sotogrande, C\u00e1diz',
