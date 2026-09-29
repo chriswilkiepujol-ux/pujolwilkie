@@ -26,7 +26,7 @@ const legal = {
           'Registration number (nº colegiada): 1432',
           'Registered name: Esther Pujol Andrés, practising under Esther Pujol Wilkie & Associates',
           'Admitted: 2 July 1990. Status: abogada ejerciente',
-          'Profession: Abogada, a regulated profession in Spain',
+          'Profession: Lawyer (abogada), a regulated profession in Spain',
           'Registration may be verified at the national register of the Consejo General de la Abogacía Española, censo.abogacia.es',
           'Applicable professional rules: Estatuto General de la Abogacía Española and the Código Deontológico of the Abogacía Española, available at abogacia.es',
         ] },

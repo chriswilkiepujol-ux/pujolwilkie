@@ -4,10 +4,10 @@ const pages = {
 // ---- non-service pages ----
   'about': {
     legacy: true, image: 'esther-pujol-wilkie-abogada-sotogrande',
-    imageAlt: 'Esther Pujol Wilkie, abogada, in her Sotogrande office',
-    portrait: true, imageCaption: 'Esther Pujol Wilkie, abogada \u00b7 Colegiada n\u00ba 1432, ICA C\u00e1diz',
-    metaTitle: 'Esther Pujol Wilkie, Abogada in Sotogrande',
-    metaDesc: 'Spanish lawyer specialising in property law for foreigners. Qualified in Barcelona in 1983, practised in Scotland and Gibraltar, in Sotogrande since 1990.',
+    imageAlt: 'Esther Pujol Wilkie, lawyer, in her Sotogrande office',
+    portrait: true, imageCaption: 'Esther Pujol Wilkie, lawyer \u00b7 Registered n\u00ba 1432, ICA C\u00e1diz',
+    metaTitle: 'Esther Pujol Wilkie, Lawyer in Sotogrande',
+    metaDesc: 'Spanish lawyer specialising in property law for foreigners. Qualified in Barcelona in 1983, practised in Scotland and Gibraltar, on this coast since 1988.',
     eyebrow: 'About',
     title: 'Esther Pujol Wilkie',
     intro: 'A Spanish lawyer specialising in property law, particularly for foreigners investing in, and relocating to, Spain.',
@@ -26,7 +26,7 @@ const pages = {
       { h2: 'Languages and qualifications',
         list: ['Spanish and English, both fluent, with everything explained clearly',
                'Qualified in Barcelona, 1983',
-               'Colegiada n\u00ba 1432, Ilustre Colegio Provincial de Abogados de C\u00e1diz',
+               'Registered lawyer (colegiada), n\u00ba 1432, Ilustre Colegio Provincial de Abogados de C\u00e1diz',
                'Diploma, Scottish Institute of Bankers',
                'Practised in the United Kingdom, Gibraltar and Spain',
                'Diploma en Competencias Digitales Profesionales, Uni\u00f3n Profesional and CGAE, 2026'] },
@@ -248,7 +248,7 @@ const pages = {
   },
   'full-client-service': {
     legacy: true, image: 'polo-sotogrande', imageAlt: 'Polo match at Sotogrande',
-    metaTitle: 'Full Client Service | Sotogrande Abogada',
+    metaTitle: 'Full Client Service | Sotogrande Lawyer',
     metaDesc: 'A comprehensive service across property, tax, inheritance, family, corporate and planning law, from one office in Sotogrande, in English and Spanish.',
     eyebrow: 'How we work',
     title: 'Full Client Service',

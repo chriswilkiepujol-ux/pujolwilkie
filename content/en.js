@@ -39,7 +39,7 @@ export const en = {
   navLabels: { services: 'Services', firm: 'Firm' },
   cta: { primary: 'Get in touch', call: 'Call the office', consult: 'Write to Esther' },
   hero: {
-    eyebrow: 'Abogada \u00b7 Sotogrande, C\u00e1diz',
+    eyebrow: 'Lawyer \u00b7 Sotogrande, C\u00e1diz',
     h1: 'Property lawyers in Sotogrande and the Costa del Sol',
     sub: 'Independent legal advice for buying, selling and owning property in Spain.',
     lede: 'An English-speaking Spanish lawyer specialising in property law for foreigners investing in, and relocating to, Spain. Qualified in Barcelona in 1983, on this coast since 1988.',
@@ -118,7 +118,7 @@ export const en = {
   about: {
     eyebrow: 'About',
     h2: 'Esther Pujol Wilkie',
-    role: 'Founding partner \u00b7 Abogada',
+    role: 'Founding partner \u00b7 Lawyer',
     p1: 'I was born in Barcelona and studied law there, and I have practised in the United Kingdom, Gibraltar and Spain. For the last thirty years or so I have worked from Sotogrande, almost entirely with foreign clients meeting Spanish law for the first time.',
     p2: 'That means property, but it also means the tax office, the town hall, the immigration office and everything else that comes with owning something here. My clients tend to arrive nervous and stay for decades.',
     creds: [
@@ -131,7 +131,7 @@ export const en = {
     ],
     credPending: null,
     chips: [
-      { icon: 'shield', text: 'Colegiada nº 1432, ICA Cádiz, desde 1990' },
+      { icon: 'shield', text: 'Registered lawyer, nº 1432, ICA Cádiz, since 1990' },
       { icon: 'list', text: 'Agencia Tributaria filings' },
       { icon: 'globe', text: 'Cross border Gibraltar work' },
     ],

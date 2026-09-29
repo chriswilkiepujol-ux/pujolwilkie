@@ -5,7 +5,7 @@ const pages = {
     imageAlt: 'Esther Pujol Wilkie, abogada, en su despacho de Sotogrande',
     portrait: true, imageCaption: 'Esther Pujol Wilkie, abogada \u00b7 Colegiada n\u00ba 1432, ICA C\u00e1diz',
     metaTitle: 'Esther Pujol Wilkie, abogada en Sotogrande',
-    metaDesc: 'Abogada española especializada en derecho inmobiliario para extranjeros. Licenciada en Barcelona en 1983, ejerció en Escocia y Gibraltar, en Sotogrande desde 1990.',
+    metaDesc: 'Abogada española especializada en derecho inmobiliario para extranjeros. Licenciada en Barcelona en 1983, en esta costa desde 1988.',
     eyebrow: 'Sobre Esther',
     title: 'Esther Pujol Wilkie',
     intro: 'Abogada española especializada en derecho inmobiliario, en particular para extranjeros que invierten en España o se trasladan a vivir aquí.',
