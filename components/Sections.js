@@ -218,7 +218,7 @@ export function Insights({ t }) {
 export function Footer({ t }) {
   return (
     <footer><div className="wrap">
-      <div className="fg fg4">
+      <div className="fg">
         <div className="fbrand">
           <div className="fl"><Logo className="footmark" />
             <span><span className="bn" style={{ color: '#fff' }}>{site.shortName}</span>
@@ -232,13 +232,9 @@ export function Footer({ t }) {
         </div>
         <div>
           <h5>{t.footer.services}</h5>
-          {t.services.items.map((s) => (
-            <Link href={`${t.locale === 'es' ? '/es' : ''}/${s.slug}`} key={s.slug}>{s.title}</Link>
+          {t.navServices.map((s) => (
+            <Link href={s.href} key={s.href}>{s.label}</Link>
           ))}
-        </div>
-        <div>
-          <h5>{t.footer.more}</h5>
-          {t.footer.legacyLinks.map((l) => <Link href={l.href} key={l.href}>{l.label}</Link>)}
         </div>
         <div>
           <h5>{t.footer.firm}</h5>

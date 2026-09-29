@@ -309,7 +309,7 @@ details p{font-size:15.5px;color:#4A544E;margin:0 0 20px;max-width:72ch}
 
 /* ============ FOOTER ============ */
 footer{background:var(--ink);color:rgba(244,245,242,.7);padding:54px 0 26px;font-size:14.5px}
-.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:32px}
 .flegal{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:30px;padding-top:18px;
   border-top:1px solid rgba(255,255,255,.13)}
 .flegal a{display:inline;padding:0;font-size:13.5px}
