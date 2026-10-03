@@ -74,7 +74,9 @@ const legal = {
         p: ['Enquiries that do not result in an instruction are retained only as long as necessary to deal with them and to evidence that they were dealt with.',
             'Where you become a client, data is retained for the period required by professional and tax obligations, which for anti money laundering purposes is generally ten years from the end of the relationship.'] },
       { h2: 'Who processes it',
-        p: ['The enquiry form is operated by Formspree, which processes submissions on the firm\u2019s behalf as a data processor. The website is hosted by Vercel Inc. Where these providers process data outside the European Economic Area, transfers are covered by the European Commission\u2019s standard contractual clauses.'] },
+        p: ['The enquiry form is operated by Formspree, which processes submissions on the firm\u2019s behalf as a data processor. The website is hosted by Vercel Inc. Where you have consented to Google Analytics, Google LLC processes the resulting data as a further processor. Where these providers process data outside the European Economic Area, transfers are covered by the European Commission\u2019s standard contractual clauses.'] },
+      { h2: 'Analytics, and only with your consent',
+        p: ['Google Analytics is not active unless you have said yes to it through the cookie banner or the \u201cCookie preferences\u201d link in the footer. Where it is active, it is used only to understand how visitors use the site: which pages are read, roughly how people arrive here, and nothing more. The legal basis for this is your consent (art. 6.1.a RGPD), not legitimate interest, and it can be withdrawn as easily as it was given, with immediate effect.'] },
       { h2: 'Your rights',
         list: [
           'Access to the personal data held about you',

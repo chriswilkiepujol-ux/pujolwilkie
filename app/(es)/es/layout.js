@@ -2,6 +2,8 @@ import '../../globals.css';
 import es from '@/content/es';
 import { siteUrl } from '@/lib/site';
 import { Analytics } from '@vercel/analytics/next';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
+import CookieBanner from '@/components/CookieBanner';
 
 export const viewport = { width: 'device-width', initialScale: 1, themeColor: '#0C3527' };
 
@@ -23,5 +25,5 @@ export const metadata = {
 };
 
 export default function EsLayout({ children }) {
-  return <html lang="es"><body>{children}{process.env.ALLOW_INDEXING === 'true' && <Analytics />}</body></html>;
+  return <html lang="es"><body>{children}{process.env.ALLOW_INDEXING === 'true' && <Analytics />}{process.env.ALLOW_INDEXING === 'true' && <GoogleAnalytics />}{process.env.ALLOW_INDEXING === 'true' && <CookieBanner locale="es" />}</body></html>;
 }

@@ -511,3 +511,26 @@ footer .fl svg{width:32px;height:36px;color:var(--brass)}
 /* the Google rating summary is a link */
 a.ghead{text-decoration:none;color:inherit;transition:.18s}
 a.ghead:hover{border-color:rgba(20,72,58,.4);box-shadow:0 2px 14px rgba(19,32,27,.09)}
+
+/* ---- cookie consent banner ---- */
+.cookieBar{position:fixed;left:16px;right:16px;bottom:16px;z-index:80;
+  max-width:520px;margin-inline:auto;background:var(--white);
+  border:1px solid var(--line);border-radius:8px;box-shadow:var(--sh);
+  padding:18px 20px;display:flex;flex-direction:column;gap:14px;
+  padding-bottom:calc(18px + env(safe-area-inset-bottom,0px))}
+.cookieBar p{margin:0;font-size:14px;line-height:1.55;color:var(--ink)}
+.cookieBar p a{color:var(--pine);text-decoration:underline;text-underline-offset:2px}
+.cookieBtns{display:flex;gap:10px;justify-content:flex-end}
+.cookieBtns .btn{padding:9px 18px;font-size:13.5px}
+@media(max-width:720px){
+  /* clears the fixed mobile call-to-action bar (72px + safe area) rather
+     than stacking on top of it */
+  .cookieBar{bottom:calc(72px + env(safe-area-inset-bottom,0px) + 10px);left:12px;right:12px}
+  .cookieBtns{justify-content:stretch}
+  .cookieBtns .btn{flex:1;text-align:center}
+}
+
+.fcookie{background:none;border:none;color:rgba(244,245,242,.7);font-family:var(--b);
+  font-size:14.5px;cursor:pointer;padding:0;text-align:left;text-decoration:none;
+  display:block}
+.fcookie:hover{color:#fff}

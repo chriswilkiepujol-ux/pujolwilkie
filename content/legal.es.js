@@ -73,7 +73,9 @@ const legal = {
         p: ['Las consultas que no den lugar a un encargo se conservan únicamente durante el tiempo necesario para atenderlas y acreditar que fueron atendidas.',
             'Cuando se formaliza la relación profesional, los datos se conservan durante los plazos exigidos por la normativa profesional y fiscal, que en materia de prevención del blanqueo de capitales es con carácter general de diez años desde la finalización de la relación.'] },
       { h2: 'Encargados del tratamiento',
-        p: ['El formulario de contacto está operado por Formspree, que trata los envíos por cuenta del despacho en calidad de encargado. El alojamiento del sitio corresponde a Vercel Inc. Cuando estos proveedores traten datos fuera del Espacio Económico Europeo, las transferencias se amparan en las cláusulas contractuales tipo de la Comisión Europea.'] },
+        p: ['El formulario de contacto está operado por Formspree, que trata los envíos por cuenta del despacho en calidad de encargado. El alojamiento del sitio corresponde a Vercel Inc. Cuando usted haya consentido Google Analytics, Google LLC trata los datos resultantes como encargado adicional. Cuando estos proveedores traten datos fuera del Espacio Económico Europeo, las transferencias se amparan en las cláusulas contractuales tipo de la Comisión Europea.'] },
+      { h2: 'Analítica, y solo con su consentimiento',
+        p: ['Google Analytics no está activo salvo que usted haya aceptado el banner de cookies o la opción «Preferencias de cookies» del pie de página. Cuando está activo, se utiliza únicamente para entender cómo se usa el sitio: qué páginas se leen, aproximadamente cómo llega la gente hasta aquí, y nada más. La base jurídica es su consentimiento (art. 6.1.a RGPD), no el interés legítimo, y puede retirarlo con la misma facilidad con que lo otorgó, con efecto inmediato.'] },
       { h2: 'Sus derechos',
         list: [
           'Acceso a los datos personales que le conciernen',
@@ -91,31 +93,35 @@ const legal = {
 
   'politica-de-cookies': {
     metaTitle: "Política de cookies | Esther Pujol Wilkie & Associates",
-    metaDesc: "Este sitio no utiliza cookies de analítica, publicidad ni perfilado, por eso no muestra banner de consentimiento. Qué se usa, qué no y cómo gestionarlas.",
+    metaDesc: "Qué almacena este sitio en su dispositivo: cookies estrictamente necesarias siempre, y una cookie de Google Analytics solo si usted lo autoriza. Cómo cambiar su elección.",
     eyebrow: 'Legal', title: 'Política de cookies',
-    intro: 'Qué almacena este sitio web en su dispositivo y qué no.',
+    intro: 'Qué almacena este sitio web en su dispositivo, y la elección que se le ofrece al respecto.',
     sections: [
       { h2: 'En resumen',
-        p: ['Este sitio no utiliza cookies publicitarias, de perfilado ni de analítica de terceros. No se muestra banner de consentimiento porque el funcionamiento actual del sitio no lo requiere.'] },
-      { h2: 'Qué se utiliza',
+        p: ['Este sitio utiliza una cookie más allá de lo estrictamente necesario para servir la página: una cookie de Google Analytics, para entender cómo se usa el sitio. Solo se instala si usted lo acepta. Se le pregunta una vez, en su primera visita, y puede cambiar su respuesta en cualquier momento desde el enlace del pie de página.'] },
+      { h2: 'Siempre activas',
         list: [
-          'Cookies técnicas estrictamente necesarias, establecidas por la plataforma de alojamiento para servir las páginas y garantizar la seguridad. Están exceptuadas del deber de consentimiento conforme al art. 22.2 LSSI-CE',
+          'Cookies técnicas estrictamente necesarias, establecidas por la plataforma de alojamiento para servir las páginas y garantizar la seguridad. Exceptuadas del deber de consentimiento conforme al art. 22.2 LSSI-CE',
+          'Un registro de su elección sobre cookies, guardado en su navegador para no preguntárselo en cada visita',
           'Google Fonts, para representar la tipografía del sitio. No instala cookies, si bien la solicitud alcanza servidores de Google',
         ] },
+      { h2: 'Solo con su consentimiento',
+        list: [
+          'Google Analytics (GA4), que establece cookies como _ga y _ga_* para distinguir visitantes y sesiones. Hemos solicitado a Google que acorte las direcciones IP almacenadas antes de su uso',
+        ],
+        p: ['Analytics permanece desactivado por defecto. Elegir «Rechazar», o simplemente no responder, significa que nunca se activa y ninguna de estas cookies se instala. Elegir «Aceptar» lo activa para este navegador hasta que cambie de opinión.'] },
+      { h2: 'Cambiar su elección',
+        p: ['Pulse «Preferencias de cookies» en el pie de página, en cualquier momento. Esto reabre la misma elección y surte efecto de inmediato: aceptar activa Analytics, rechazar lo desactiva y detiene cualquier envío posterior de datos.'] },
       { h2: 'Qué no se utiliza',
         list: [
-          'Ninguna cookie de Google Analytics ni de analítica equivalente',
           'Ningún píxel publicitario o de remarketing',
           'Ningún rastreo de redes sociales',
           'Ningún perfilado de visitantes entre sitios',
         ] },
       { h2: 'Servicios externos',
         p: ['El envío del formulario remite sus datos a Formspree, que actúa como encargado del tratamiento conforme a sus propias condiciones. Los enlaces a Google Maps o al perfil de empresa del despacho en Google conducen a Google, que aplica su propia política de cookies una vez los sigue.'] },
-      { h2: 'Gestión de cookies',
-        p: ['Cualquier navegador permite consultar, bloquear o eliminar cookies desde su configuración. Bloquear las estrictamente necesarias puede impedir el funcionamiento correcto de algunas partes del sitio.'] },
-      { h2: 'Modificaciones',
-        p: ['Si en el futuro se incorpora analítica o cualquier otra tecnología no esencial, esta política se actualizará y se implantará un mecanismo de consentimiento antes de activarla.'] },
+      { h2: 'Gestión de cookies en el navegador',
+        p: ['Más allá de la elección que ofrece este sitio, cualquier navegador permite también consultar, bloquear o eliminar cookies desde su propia configuración. Bloquear las estrictamente necesarias puede impedir el funcionamiento correcto de algunas partes del sitio.'] },
     ],
-  },
-};
+  },};
 export default legal;

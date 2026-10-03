@@ -17,8 +17,10 @@ npm run dev                    # http://localhost:3000
 |---|---|
 | `NEXT_PUBLIC_FORMSPREE_ID` | The ID after `/f/` in your Formspree endpoint. Without it the form returns an error state. |
 | `NEXT_PUBLIC_SITE_URL` | Canonical origin. Used for canonical tags, hreflang, sitemap and schema. Leave as the production domain even on preview. |
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | GA4 Measurement ID, e.g. `G-XXXXXXXXXX`. Optional. Unset means no GA code loads and the cookie banner never appears, since there is nothing to ask about. |
+| `ALLOW_INDEXING` | `true` on the real production deployment only. Gates search indexing, the sitemap, Vercel Analytics, Google Analytics and the cookie banner all at once, so nothing on a preview deployment is indexed, tracked or shown a consent prompt. |
 
-Set both in Vercel under Settings → Environment Variables, for **all** environments.
+Set these in Vercel under Settings → Environment Variables. `NEXT_PUBLIC_GA_MEASUREMENT_ID` and `NEXT_PUBLIC_FORMSPREE_ID` apply to **all** environments; `ALLOW_INDEXING` should be ticked **Production only**.
 
 ## Structure
 

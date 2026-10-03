@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Icon, GoogleG, Stars } from './Icons';
 import Logo from './Logo';
+import CookiePrefsButton from './CookiePrefsButton';
 import site from '@/lib/site';
 
 const img = (n) => `/images/${n}.jpg`;
@@ -244,6 +245,7 @@ export function Footer({ t }) {
       </div>
       <div className="flegal">
         {t.footer.legal.map((l) => <Link href={l.href} key={l.label}>{l.label}</Link>)}
+        <CookiePrefsButton locale={t.locale} />
       </div>
       <div className="fbot">
         <span>© {new Date().getFullYear()} {site.legalName}</span>
