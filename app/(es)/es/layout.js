@@ -6,6 +6,7 @@ export const viewport = { width: 'device-width', initialScale: 1, themeColor: '#
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
+  manifest: '/site.webmanifest',
   title: es.meta.title,
   description: es.meta.description,
   alternates: {
