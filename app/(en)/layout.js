@@ -1,6 +1,7 @@
 import '../globals.css';
 import en from '@/content/en';
 import { siteUrl } from '@/lib/site';
+import { Analytics } from '@vercel/analytics/next';
 
 export const viewport = { width: 'device-width', initialScale: 1, themeColor: '#0C3527' };
 
@@ -22,5 +23,5 @@ export const metadata = {
 };
 
 export default function EnLayout({ children }) {
-  return <html lang="en"><body>{children}</body></html>;
+  return <html lang="en"><body>{children}{process.env.ALLOW_INDEXING === 'true' && <Analytics />}</body></html>;
 }
