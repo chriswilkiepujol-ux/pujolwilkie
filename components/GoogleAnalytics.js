@@ -21,6 +21,9 @@ function pushDefaultDenied() {
     ad_personalization: 'denied',
     wait_for_update: 500,
   });
+  // Required by gtag.js: without a 'js' command first, 'config' never emits a
+  // hit and GA4 records nothing. Also a local dataLayer push, no network call.
+  gtag('js', new Date());
 }
 
 // Renders nothing, and requests nothing from Google, until NEXT_PUBLIC_GA_MEASUREMENT_ID
