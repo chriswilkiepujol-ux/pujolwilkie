@@ -123,6 +123,8 @@ body.lock{overflow:hidden}
   .hbar{height:66px}
 }
 @media(min-width:1141px){.scrim,.drawer{display:none}}
+header>.wrap>.btn,.brand,header .lang{white-space:nowrap;flex:none}
+@media(min-width:1141px) and (max-width:1240px){header nav{gap:16px}.hbar{gap:12px}}
 
 /* ============ HERO ============ */
 .hero{position:relative;color:var(--ink);overflow:hidden;background:var(--stucco);

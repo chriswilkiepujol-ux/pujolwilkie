@@ -55,7 +55,7 @@ export default function Header({ t }) {
 
   const brand = (
     <span>
-      <span className="bn">{site.shortName}</span>
+      <span className="bn">{site.shortName}</span>{' '}
       <span className="bs">&amp; Associates · Abogados</span>
     </span>
   );
@@ -111,7 +111,7 @@ export default function Header({ t }) {
       <aside id="drawer" ref={drawer} className={`drawer${open ? ' on' : ''}`} hidden={!open}
         role="dialog" aria-modal="true" aria-label="Menu">
         <div className="dhead">
-          <span><span className="bn">{site.shortName}</span><span className="bs">&amp; Associates</span></span>
+          <span><span className="bn">{site.shortName}</span>{' '}<span className="bs">&amp; Associates</span></span>
           <button className="dclose" ref={closeBtn} aria-label="Close menu" onClick={() => setOpen(false)}>×</button>
         </div>
         <nav className="dnav">

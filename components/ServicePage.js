@@ -76,7 +76,7 @@ export default function ServicePage({ t, page, jsonLd = [] }) {
 
           <p className="disclaim">
             {t.locale === 'es'
-              ? 'Esta página ofrece información general sobre el derecho español y no constituye asesoramiento jurídico. Cada caso debe valorarse individualmente.'
+              ? 'Esta página ofrece información general sobre el derecho español y no constituye asesoramiento jurídico. Cada caso es distinto y debe estudiarse de forma individual.'
               : 'This page gives general information about Spanish law and is not legal advice. Every case turns on its own facts and should be assessed individually.'}
           </p>
         </div>

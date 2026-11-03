@@ -32,7 +32,7 @@ export function Hero({ t }) {
           </a>
         </div>
         <figure className="heroimg">
-          <Image src={img('sotogrande-marina-cadiz')} alt="La Marina de Sotogrande, Cádiz, on the Costa del Sol"
+          <Image src={img('sotogrande-marina-cadiz')} alt={t.alts.marina}
             width={1200} height={900} priority sizes="(min-width:1000px) 45vw, 100vw" />
         </figure>
       </div>
@@ -60,7 +60,7 @@ export function Intro({ t }) {
         <p className="sub intro-extra">{t.intro.p2}</p>
         <a className="btn dk" href="#contact" style={{ marginTop: 14 }}>{t.intro.cta}</a>
       </div>
-      <Image src={img('polo-sotogrande')} alt="Polo match at Sotogrande" width={900} height={498} sizes="(max-width:860px) 100vw, 45vw" />
+      <Image src={img('polo-sotogrande')} alt={t.alts.polo} width={900} height={498} sizes="(max-width:860px) 100vw, 45vw" />
     </div></section>
   );
 }
@@ -156,7 +156,7 @@ export function About({ t }) {
       <h2 className="sh">{t.about.h2}</h2>
       <div className="about" style={{ marginTop: 34 }}>
         <div className="ph">
-          <Image src={img('esther-pujol-wilkie-abogada-sotogrande')} alt={`${site.shortName}, abogada, in her Sotogrande office`} width={400} height={461} sizes="250px" />
+          <Image src={img('esther-pujol-wilkie-abogada-sotogrande')} alt={t.alts.esther} width={400} height={461} sizes="250px" />
           <div className="pc">{t.about.role}</div>
         </div>
         <div>
@@ -222,7 +222,7 @@ export function Footer({ t }) {
       <div className="fg">
         <div className="fbrand">
           <div className="fl"><Logo className="footmark" />
-            <span><span className="bn" style={{ color: '#fff' }}>{site.shortName}</span>
+            <span><span className="bn" style={{ color: '#fff' }}>{site.shortName}</span>{' '}
               <span className="bs">&amp; Associates · Abogados</span></span>
           </div>
           {t.footer.blurb}
