@@ -180,7 +180,7 @@ const pages = {
     ],
   },
   'immigration-and-foreigners-legal-procedures': {
-    legacy: true, image: 'yachts-puerto-sotogrande', imageAlt: 'Yachts moored at Puerto de Sotogrande',
+    legacy: true, image: 'spanish-visa-application', imageAlt: 'Spanish visa application form',
     metaTitle: 'Immigration Procedures in Spain | Pujol Wilkie',
     metaDesc: 'NIE, residency, TIE, citizenship and driving licence exchange handled on your behalf, with more than thirty years of experience in foreigners procedures.',
     eyebrow: 'Practice area',
@@ -219,7 +219,7 @@ const pages = {
     ],
   },
   'property-management-services': {
-    legacy: true, image: 'yachts-puerto-sotogrande', imageAlt: 'Yachts moored at Puerto de Sotogrande',
+    legacy: true, image: 'property-keys-handover-spain', imageAlt: 'Keys to a home in Spain',
     metaTitle: 'Property Management in Sotogrande | Pujol Wilkie',
     metaDesc: 'Property management and concierge for owners who are not in Spain year round: supervision, utilities, local taxes, maintenance and gardens.',
     eyebrow: 'Practice area',
