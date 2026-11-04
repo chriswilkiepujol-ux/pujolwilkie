@@ -26,6 +26,7 @@ const legal = {
           'Nombre colegial: Esther Pujol Andrés, que ejerce bajo la denominación Esther Pujol Wilkie & Associates',
           'Fecha de colegiación: 2 de julio de 1990. Situación: abogada ejerciente',
           'Profesión: Abogada, profesión regulada en España',
+          'Título: Licenciada en Derecho (título expedido en España)',
           'La colegiación puede verificarse en el censo del Consejo General de la Abogacía Española, censo.abogacia.es',
           'Normativa profesional aplicable: Estatuto General de la Abogacía Española y Código Deontológico de la Abogacía Española, disponibles en abogacia.es',
         ] },
@@ -42,7 +43,7 @@ const legal = {
       { h2: 'Legislación aplicable y jurisdicción',
         p: ['Estas condiciones se rigen por la legislación española. Cualquier controversia derivada del uso de este sitio se someterá a los juzgados y tribunales de San Roque, Cádiz, salvo que la normativa de consumo aplicable disponga otra cosa.'] },
       { h2: 'Reclamaciones y resolución de conflictos',
-        p: ['Las reclamaciones pueden dirigirse al domicilio indicado más arriba. Los clientes pueden asimismo plantear cuestiones ante el Colegio de Abogados correspondiente. La Comisión Europea facilita una plataforma de resolución de litigios en línea en ec.europa.eu/consumers/odr.'] },
+        p: ['Las reclamaciones pueden dirigirse al domicilio indicado más arriba o a esther@pujolwilkie.com. Los clientes pueden asimismo plantear cuestiones ante el Colegio de Abogados correspondiente. La Comisión Europea facilita una plataforma de resolución de litigios en línea en ec.europa.eu/consumers/odr.'] },
     ],
   },
 
@@ -55,7 +56,6 @@ const legal = {
       { h2: 'Responsable del tratamiento',
         list: [
           'Responsable: Esther Pujol Wilkie & Associates',
-          'NIF: ***9020** (parcialmente anonimizado conforme al criterio de la AEPD)',
           'Dirección: Guadalmarina 1, Portal 3, 2E, La Marina de Sotogrande, 11310 San Roque, Cádiz',
           'Teléfono: +34 620 86 80 12',
           'Correo electrónico: esther@pujolwilkie.com',
@@ -85,7 +85,7 @@ const legal = {
           'Portabilidad de los datos que usted facilitó',
           'Retirada del consentimiento en cualquier momento, sin efectos retroactivos sobre el tratamiento ya realizado',
         ],
-        p: ['Para ejercer cualquiera de estos derechos puede escribir al domicilio indicado, adjuntando copia de un documento identificativo. Tiene además derecho a presentar una reclamación ante la Agencia Española de Protección de Datos en aepd.es.'] },
+        p: ['Para ejercer cualquiera de estos derechos puede escribir al domicilio indicado o a esther@pujolwilkie.com, adjuntando copia de un documento identificativo. Tiene además derecho a presentar una reclamación ante la Agencia Española de Protección de Datos en aepd.es.'] },
       { h2: 'Seguridad',
         p: ['El sitio se sirve mediante HTTPS y se aplican medidas técnicas y organizativas adecuadas para proteger los datos personales. Las comunicaciones relativas a un asunto en curso se canalizan por los medios acordados con cada cliente.'] },
     ],
@@ -93,12 +93,12 @@ const legal = {
 
   'politica-de-cookies': {
     metaTitle: "Política de cookies | Esther Pujol Wilkie & Associates",
-    metaDesc: "Qué almacena este sitio en su dispositivo: cookies estrictamente necesarias siempre, y una cookie de Google Analytics solo si usted lo autoriza. Cómo cambiar su elección.",
+    metaDesc: "Qué almacena este sitio en su dispositivo: cookies estrictamente necesarias siempre, y cookies de Google Analytics solo si usted lo autoriza. Cómo cambiar su elección.",
     eyebrow: 'Legal', title: 'Política de cookies',
     intro: 'Qué almacena este sitio web en su dispositivo, y la elección que se le ofrece al respecto.',
     sections: [
       { h2: 'En resumen',
-        p: ['Este sitio utiliza una cookie más allá de lo estrictamente necesario para servir la página: una cookie de Google Analytics, para entender cómo se usa el sitio. Solo se instala si usted lo acepta. Se le pregunta una vez, en su primera visita, y puede cambiar su respuesta en cualquier momento desde el enlace del pie de página.'] },
+        p: ['Este sitio utiliza cookies de Google Analytics, además de las estrictamente necesarias para servir la página, para entender cómo se usa. Solo se instalan si usted lo acepta. Se le pregunta una vez, en su primera visita, y puede cambiar su respuesta en cualquier momento desde el enlace del pie de página.'] },
       { h2: 'Siempre activas',
         list: [
           'Cookies técnicas estrictamente necesarias, establecidas por la plataforma de alojamiento para servir las páginas y garantizar la seguridad. Exceptuadas del deber de consentimiento conforme al art. 22.2 LSSI-CE',
@@ -107,9 +107,19 @@ const legal = {
         ] },
       { h2: 'Solo con su consentimiento',
         list: [
-          'Google Analytics (GA4), que establece cookies como _ga y _ga_* para distinguir visitantes y sesiones. Hemos solicitado a Google que acorte las direcciones IP almacenadas antes de su uso',
+          'Google Analytics (GA4), que establece cookies como _ga y _ga_* para distinguir visitantes y sesiones',
         ],
         p: ['Analytics permanece desactivado por defecto. Elegir «Rechazar», o simplemente no responder, significa que nunca se activa y ninguna de estas cookies se instala. Elegir «Aceptar» lo activa para este navegador hasta que cambie de opinión.'] },
+      { h2: 'Detalle de lo que se guarda',
+        table: {
+          head: ['Nombre', 'Proveedor', 'Finalidad', 'Duración'],
+          rows: [
+            ['pw_consent', 'Este sitio', 'Guardar su elección sobre las cookies. Se guarda en el almacenamiento local de su navegador y no se envía a ningún servidor', 'Hasta que borre los datos del navegador'],
+            ['_ga', 'Google LLC', 'Distinguir visitantes. Solo con su consentimiento', '2 años'],
+            ['_ga_*', 'Google LLC', 'Mantener el estado de la sesión. Solo con su consentimiento', '2 años'],
+          ],
+        },
+      },
       { h2: 'Cambiar su elección',
         p: ['Pulse «Preferencias de cookies» en el pie de página, en cualquier momento. Esto reabre la misma elección y surte efecto de inmediato: aceptar activa Analytics, rechazar lo desactiva y detiene cualquier envío posterior de datos.'] },
       { h2: 'Qué no se utiliza',

@@ -51,6 +51,15 @@ export default function ServicePage({ t, page, jsonLd = [] }) {
                   ))}
                 </ul>
               )}
+              {s.table && (
+                <div className="ptable"><table>
+                  <thead><tr>{s.table.head.map((h) => <th key={h} scope="col">{h}</th>)}</tr></thead>
+                  <tbody>{s.table.rows.map((r) => (
+                    <tr key={r[0]}>{r.map((c, i) => <td key={i}>{c}</td>)}</tr>
+                  ))}</tbody>
+                </table></div>
+              )}
+              {s.after && s.after.map((para, i) => <p key={'a' + i}>{para}</p>)}
             </div>
           ))}
 

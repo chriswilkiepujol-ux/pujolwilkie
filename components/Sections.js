@@ -11,7 +11,7 @@ export function Hero({ t }) {
   return (
     <div className="hero">
       <Image className="herobg" src={img('sotogrande-marina-cadiz')}
-        alt="" aria-hidden="true" fill priority sizes="100vw" style={{ objectFit: 'cover' }} />
+        alt={t.alts.marina} aria-hidden="true" fill priority sizes="100vw" style={{ objectFit: 'cover' }} />
       <div className="wrap hin">
         <div className="herocopy">
           <span className="eyebrow">{t.hero.eyebrow}</span>
