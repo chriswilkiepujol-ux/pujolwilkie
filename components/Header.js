@@ -63,8 +63,8 @@ export default function Header({ t }) {
   return (
     <>
       <div className="top"><div className="wrap">
-        <span className="l">{t.topbar.blurb}</span>
-        <a href={`tel:${site.phoneHref}`}>{site.phone}</a>
+        <span className="l">{t.topbar.blurb}</span>{' '}
+        <a href={`tel:${site.phoneHref}`}>{site.phone}</a>{' '}
         <a href="#contact">{t.topbar.hours}</a>
       </div></div>
 

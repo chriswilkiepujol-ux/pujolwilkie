@@ -44,7 +44,7 @@ export function Trust({ t }) {
   return (
     <div className="trust"><div className="wrap">
       {t.trust.map((i) => (
-        <div className="ti" key={i.k}><span className="v">{i.v}</span><span className="k">{i.k}</span></div>
+        <div className="ti" key={i.k}><span className="v">{i.v}</span>{' '}<span className="k">{i.k}</span></div>
       ))}
     </div></div>
   );
@@ -225,9 +225,9 @@ export function Footer({ t }) {
             <span><span className="bn" style={{ color: '#fff' }}>{site.shortName}</span>{' '}
               <span className="bs">&amp; Associates · Abogados</span></span>
           </div>
-          {t.footer.blurb}
+          {' '}{t.footer.blurb}
           <p className="fcontact">
-            <a href={`tel:${site.phoneHref}`}>{site.phone}</a>
+            <a href={`tel:${site.phoneHref}`}>{site.phone}</a>{' '}
             <a href={`mailto:${site.email}`}>{site.email}</a>
           </p>
         </div>

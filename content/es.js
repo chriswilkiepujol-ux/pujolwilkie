@@ -38,7 +38,7 @@ export const es = {
   moreLabel: 'Más servicios',
   cta: { primary: 'Contacte con nosotros', call: 'Llamar al despacho', consult: 'Escribir a Esther' },
   alts: {
-    marina: 'La Marina de Sotogrande, en la costa gaditana',
+    marina: 'Puerto deportivo de La Marina, en Sotogrande y la Costa del Sol',
     polo: 'Partido de polo en Sotogrande',
     esther: 'Esther Pujol Wilkie, abogada, en su despacho de Sotogrande',
   },
@@ -54,7 +54,7 @@ export const es = {
   trust: [
     { v: 'Desde 1983', k: 'Licenciada en Derecho en Barcelona' },
     { v: 'Sotogrande', k: 'Aquí desde 1988' },
-    { v: 'Tres jurisdicciones', k: 'Reino Unido, Gibraltar y España' },
+    { v: 'Tres jurisdicciones', k: 'Ejercicio en Reino Unido, Gibraltar y España' },
     { v: 'ES / EN', k: 'Fluidez en ambos idiomas' },
   ],
   intro: {
@@ -62,7 +62,7 @@ export const es = {
     h2: 'Le acompañamos de la mano durante todo el proceso',
     p1: 'Comprar o tener una propiedad en otro país supone tratar con personas, oficinas y trámites que no conoce. Mi equipo y yo nos ocupamos de todo, desde la primera consulta hasta la firma y durante el tiempo que después nos necesite.',
     p2: 'Podemos empezar antes incluso de que pise suelo español y después seguimos a su lado con las declaraciones fiscales, la residencia y todo lo que implica tener una propiedad aquí.',
-    cta: 'Cuéntenos qué tiene en mente',
+    cta: 'Cuénteme qué tiene en mente',
   },
   services: {
     eyebrow: 'Servicios',

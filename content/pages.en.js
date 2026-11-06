@@ -18,7 +18,7 @@ const pages = {
             'In 1988 I moved to Gibraltar to join the Spanish legal team at Hassans, then in joint venture with Plazas Abogados. Shortly afterwards I transferred to their newly opened Sotogrande office, where I remained as Managing Partner until 2010, followed by a period as a partner at the international firm KONSILIA, specialising in property law and fiscal accounting.',
             'In 2012 I set out on my own, with the same work ethic and a clearer vision: to continue helping and collaborating with international clients and entrepreneurs developing business and investment in Spain and beyond.'] },
       { h2: 'Where we work',
-        p: ['The office is in Guadalmarina, on Avenida de la Marina in La Marina de Sotogrande, and Sotogrande is where most of our work is. We also act along the rest of the Andalusian coast, including Marbella and Estepona, and take on matters elsewhere in Spain when clients ask us to.',
+        p: ['The office is in Guadalmarina, on Avenida de la Marina in La Marina de Sotogrande. We work mainly in Sotogrande and the Campo de Gibraltar, and also on the Costa del Sol, including Marbella and Estepona, and take on matters elsewhere in Spain when clients ask us to.',
             'A good deal of the work is done at a distance under power of attorney, for clients who are not in Spain for much of the year.'] },
       { h2: 'How we work',
         list: ['Honesty and integrity', 'Trust', 'Excellence', 'Creativity', 'Vision', 'Adaptability'],
@@ -66,7 +66,7 @@ const pages = {
     metaDesc: 'Property law in Spain for foreign owners, explained simply. Over thirty years helping clients buy, sell, let and own property along the Andalusian coast.',
     eyebrow: 'Practice area',
     title: 'Property Law in Spain',
-    intro: 'If you are planning to acquire property in Spain, let us help you get it right first time.',
+    intro: 'If you are planning to acquire property in Spain, let us help you get it right first time. We work mainly in Sotogrande and the Campo de Gibraltar, and also on the Costa del Sol, including Marbella and Estepona.',
     nav: 'Property law',
     sections: [
       { h2: 'Getting it right first time',

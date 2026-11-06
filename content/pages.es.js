@@ -16,7 +16,7 @@ const pages = {
             'En 1988 me trasladé a Gibraltar para incorporarme al equipo jurídico español de Hassans, que entonces actuaba en asociación con Plazas Abogados. Poco después pasé a su oficina de Sotogrande, recién inaugurada, de la que fui socia directora hasta 2010. Después fui socia del despacho internacional KONSILIA, especializado en derecho inmobiliario y asesoría fiscal.',
             'En 2012 empecé a ejercer por mi cuenta, con la misma ética de trabajo y una visión más clara: seguir asesorando y acompañando a clientes y emprendedores internacionales que desarrollan sus negocios e inversiones en España y fuera de ella.'] },
       { h2: 'Dónde trabajamos',
-        p: ['Nuestro despacho está en Guadalmarina, sobre la Avenida de la Marina, en La Marina de Sotogrande, y es en Sotogrande donde se concentra la mayor parte de nuestro trabajo. Actuamos también en el resto de la costa andaluza, incluidas Marbella y Estepona, y aceptamos asuntos en otros puntos de España cuando los clientes nos lo piden.',
+        p: ['Nuestro despacho está en Guadalmarina, sobre la Avenida de la Marina, en La Marina de Sotogrande. Trabajamos sobre todo en Sotogrande y el Campo de Gibraltar, y también en la Costa del Sol, incluidas Marbella y Estepona, y aceptamos asuntos en otros puntos de España cuando los clientes nos lo piden.',
             'Buena parte del trabajo se realiza a distancia mediante poder notarial, para clientes que pasan fuera de España la mayor parte del año.'] },
       { h2: 'Cómo trabajamos',
         list: ['Honestidad e integridad', 'Confianza', 'Excelencia', 'Creatividad', 'Visión', 'Adaptabilidad'],
@@ -65,7 +65,7 @@ const pages = {
     metaDesc: 'Derecho inmobiliario español explicado con claridad para propietarios extranjeros. Más de treinta años acompañando a clientes en la costa andaluza.',
     eyebrow: 'Área de especialización',
     title: 'Derecho inmobiliario en España',
-    intro: 'Si tiene previsto adquirir una propiedad en España, permítanos ayudarle a hacerlo bien a la primera.',
+    intro: 'Si tiene previsto adquirir una propiedad en España, permítanos ayudarle a hacerlo bien a la primera. Trabajamos sobre todo en Sotogrande y el Campo de Gibraltar, y también en la Costa del Sol, incluidas Marbella y Estepona.',
     nav: 'Derecho inmobiliario',
     sections: [
       { h2: 'Hacerlo bien a la primera',
@@ -140,7 +140,7 @@ const pages = {
   },
   'fiscalidad': {
     en: 'tax-and-accountancy', image: 'coastal-property-costa-del-sol',
-    imageAlt: 'Viviendas y puerto deportivo en Sotogrande',
+    imageAlt: 'Inmuebles y puerto deportivo en la Costa del Sol',
     metaTitle: 'Fiscalidad inmobiliaria para no residentes | Pujol Wilkie',
     metaDesc: 'Fiscalidad y contabilidad para propietarios en España, residentes y no residentes. Preparamos y presentamos sus declaraciones y le mantenemos al día.',
     eyebrow: 'Área de especialización', title: 'Fiscalidad y contabilidad',
@@ -260,7 +260,7 @@ const pages = {
   },
   'compraventa': {
     en: 'buying-property', image: 'villa-pool-costa-del-sol',
-    imageAlt: 'Villa con piscina en Sotogrande, Cádiz',
+    imageAlt: 'Villa con piscina en Sotogrande y la Costa del Sol',
     metaTitle: 'Comprar una propiedad en España | Abogada Sotogrande',
     metaDesc: 'Acompañamos al comprador extranjero en todo el proceso, del NIE a las llaves: comprobaciones, contratos, impuestos y firma ante notario.',
     eyebrow: 'Servicio', title: 'Comprar una propiedad en España',
@@ -369,7 +369,7 @@ const pages = {
     ],
     faq: [
       { q: '¿Qué visado me corresponde?',
-        a: 'Depende de cómo genera sus ingresos y no de lo que posee. Las rentas pasivas apuntan a la residencia no lucrativa; el trabajo en remoto, al visado de nómada digital, y un negocio aquí, a la residencia por cuenta propia. Cuéntenos su situación y le asesoraremos.' },
+        a: 'Depende de cómo genera sus ingresos y no de lo que posee. Las rentas pasivas apuntan a la residencia no lucrativa; el trabajo en remoto, al visado de nómada digital, y un negocio aquí, a la residencia por cuenta propia. Cuénteme su situación y le asesoraré.' },
       { q: '¿Puedo trabajar en remoto con una residencia no lucrativa?',
         a: 'No. La vía no lucrativa es para quien no trabaja en absoluto, ni siquiera en remoto para una empresa extranjera. Si va a seguir trabajando, la vía de nómada digital es la pensada para usted.' },
       { q: '¿Tengo que solicitarlo desde mi país?',
@@ -384,7 +384,7 @@ const pages = {
   },
   'ley-beckham': {
     en: 'beckhams-law', image: 'coastal-property-costa-del-sol',
-    imageAlt: 'Viviendas y puerto deportivo en Sotogrande',
+    imageAlt: 'Inmuebles y puerto deportivo en la Costa del Sol',
     metaTitle: 'Ley Beckham: régimen de impatriados en España',
     metaDesc: 'El régimen especial para trabajadores desplazados a España, tributando como no residente durante seis años. Quién puede acogerse y cómo encaja con el visado de nómada digital.',
     eyebrow: 'Servicio',
