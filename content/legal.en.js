@@ -1,8 +1,7 @@
 
 // Required under Ley 34/2002 (LSSI-CE) art. 10 and the RGPD/LOPDGDD.
-// The NIF is published in the partially masked form the AEPD sets out for
-// identity documents, since the practice is a sole practitioner and the NIF
-// is her personal DNI. See lib/site.js. Do not substitute the full number.
+// The full NIF appears only in the legal notice, at the holder's request
+// (11 Nov 2026). It must not appear in the privacy policy.
 
 const legal = {
   'aviso-legal': {
@@ -14,7 +13,7 @@ const legal = {
       { h2: 'Ownership of this website',
         list: [
           'Holder: Esther Pujol Andrés, practising under the name Esther Pujol Wilkie & Associates',
-          'NIF: ***9020** (shown in the partially masked form set out by the Spanish Data Protection Agency for the publication of identity documents)',
+          'NIF: 16790206E',
           'Registered office: Guadalmarina 1, Portal 3, 2E, La Marina de Sotogrande, 11310 San Roque, Cádiz, Spain',
           'Telephone: +34 620 86 80 12',
           'Email: esther@pujolwilkie.com',

@@ -1,7 +1,6 @@
 // Exigido por la Ley 34/2002 (LSSI-CE) art. 10 y por el RGPD / LOPDGDD.
-// El NIF se publica parcialmente anonimizado conforme al criterio de la AEPD
-// para documentos identificativos, al tratarse de una profesional autonoma
-// cuyo NIF es su DNI personal. No sustituir por el numero completo.
+// El NIF completo figura solo en el Aviso legal, a peticion de la titular
+// (11 nov 2026). No debe aparecer en la Politica de privacidad.
 
 const legal = {
   'aviso-legal': {
@@ -13,7 +12,7 @@ const legal = {
       { h2: 'Titularidad de este sitio web',
         list: [
           'Titular: Esther Pujol Andrés, que ejerce bajo la denominación Esther Pujol Wilkie & Associates',
-          'NIF: ***9020** (publicado de forma parcialmente anonimizada conforme al criterio de la Agencia Española de Protección de Datos para la publicación de documentos identificativos)',
+          'NIF: 16790206E',
           'Domicilio: Guadalmarina 1, Portal 3, 2E, La Marina de Sotogrande, 11310 San Roque, Cádiz, España',
           'Teléfono: +34 620 86 80 12',
           'Correo electrónico: esther@pujolwilkie.com',
