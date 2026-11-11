@@ -9,6 +9,7 @@ export const metadata = {
   title: page.metaTitle || `${page.title} | Esther Pujol Wilkie & Associates`,
   description: page.metaDesc || page.intro,
   alternates: { canonical: '/aviso-legal/', languages: languagesFor('/aviso-legal/') },
+  openGraph: { title: page.metaTitle || page.title, description: page.metaDesc || page.intro, url: '/aviso-legal/', type: 'website', locale: 'en_GB' },
   robots: { index: false, follow: true },
 };
 

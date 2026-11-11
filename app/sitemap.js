@@ -12,7 +12,7 @@ export default function sitemap() {
   for (const [en, es] of PAIRS) {
     if (LEGAL.has(en)) continue;
     // each entry declares both language versions, as well as the HTML tags do
-    const languages = { 'en-GB': abs(en), 'es-ES': abs(es), 'x-default': abs(en) };
+    const languages = { en: abs(en), es: abs(es), 'x-default': abs(en) };
     out.push({ url: abs(en), lastModified: lastModified(en), alternates: { languages } });
     out.push({ url: abs(es), lastModified: lastModified(es), alternates: { languages } });
   }

@@ -61,6 +61,7 @@ const pages = {
     ],
   },
   'property-law': {
+    relatedPosts: ['contrato-de-arras'],
     legacy: true, image: 'scales-of-justice-spanish-law', imageAlt: 'Scales of justice, representing Spanish legal practice',
     metaTitle: 'Property Law in Spain | Pujol Wilkie, Sotogrande',
     metaDesc: 'Property law in Spain for foreign owners, explained simply. Over thirty years helping clients buy, sell, let and own property along the Andalusian coast.',
@@ -102,6 +103,7 @@ const pages = {
     ],
   },
   'spanish-golden-visa': {
+    relatedPosts: ['spain-golden-visa-guide'],
     legacy: true, image: 'spanish-visa-application', imageAlt: 'Spanish visa application form being completed',
     metaTitle: 'Spain Golden Visa: Closed April 2025 | Pujol Wilkie',
     metaDesc: 'The Spanish Golden Visa closed to new applications on 3 April 2025. What it means for existing holders, and the residency routes that remain open.',
@@ -143,6 +145,7 @@ const pages = {
     ],
   },
   'tax-and-accountancy': {
+    relatedPosts: ['non-resident-tax'],
     legacy: true, image: 'coastal-property-costa-del-sol', imageAlt: 'Coastal property and marina on the Costa del Sol',
     metaTitle: 'Spanish Property Tax for Non Residents | Pujol Wilkie',
     metaDesc: 'Tax and accountancy for Spanish property owners, resident and non resident. We prepare and file your returns and keep you updated on changes in the law.',
@@ -219,6 +222,7 @@ const pages = {
     ],
   },
   'property-management-services': {
+    relatedPosts: ['non-resident-tax'],
     legacy: true, image: 'property-keys-handover-spain', imageAlt: 'Keys to a home in Spain',
     metaTitle: 'Property Management in Sotogrande | Pujol Wilkie',
     metaDesc: 'Property management and concierge for owners who are not in Spain year round: supervision, utilities, local taxes, maintenance and gardens.',
@@ -280,6 +284,7 @@ const pages = {
 
   // ---- new services, new URLs ----
   'buying-property': {
+    relatedPosts: ['contrato-de-arras', 'non-resident-tax'],
     image: 'villa-pool-costa-del-sol', imageAlt: 'Villa with pool on the Costa del Sol, typical of resale purchases in Sotogrande',
     metaTitle: 'Buying Property in Spain: Lawyer in Sotogrande',
     metaDesc: 'We guide foreign buyers through the whole purchase, from NIE to keys: searches, contracts, taxes and completion before the notary. Sotogrande and the Costa del Sol.',
@@ -326,6 +331,7 @@ const pages = {
     ],
   },
   'selling-property': {
+    relatedPosts: ['non-resident-tax'],
     image: 'property-keys-handover-spain', imageAlt: 'Keys handed over on completion of a Spanish property purchase',
     metaTitle: 'Selling Property in Spain | Sotogrande Lawyer',
     metaDesc: 'We look after the sale of your Spanish property from preparing the file to completion, including the non resident retention and the return of any excess.',
@@ -365,6 +371,7 @@ const pages = {
     ],
   },
   'residency-and-visas': {
+    relatedPosts: ['spain-golden-visa-guide'],
     image: 'spanish-visa-application', imageAlt: 'Spanish visa application form being completed',
     metaTitle: 'Spanish Residency and Visas in 2026 | Pujol Wilkie',
     metaDesc: 'Non lucrative, digital nomad, entrepreneur and family routes to Spanish residency, prepared and filed on your behalf from our Sotogrande office.',

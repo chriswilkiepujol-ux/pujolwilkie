@@ -95,12 +95,12 @@ export default function Header({ t }) {
           </div>
         </nav>
         <Link className="lang" href={alt} hrefLang={t.altLocale.code}
-          aria-label={t.altLocale.label}>
+          aria-label={`${t.altLocale.label} (${t.locale.toUpperCase()} / ${t.altLocale.code.toUpperCase()})`}>
           <b>{t.locale.toUpperCase()}</b> / {t.altLocale.code.toUpperCase()}
         </Link>
         <a className="btn dk" href="#contact">{t.cta.primary}</a>
         <Link className="langm" href={alt} hrefLang={t.altLocale.code}
-          aria-label={t.altLocale.label}>{t.altLocale.code.toUpperCase()}</Link>
+          aria-label={`${t.altLocale.label} (${t.altLocale.code.toUpperCase()})`}>{t.altLocale.code.toUpperCase()}</Link>
         <button className="burger" aria-expanded={open} aria-controls="drawer"
           aria-label={open ? 'Close menu' : 'Open menu'} onClick={() => setOpen(!open)}>
           <span /><span /><span />
@@ -108,7 +108,7 @@ export default function Header({ t }) {
       </div></header>
 
       <div className={`scrim${open ? ' on' : ''}`} hidden={!open} onClick={() => setOpen(false)} />
-      <aside id="drawer" ref={drawer} className={`drawer${open ? ' on' : ''}`} hidden={!open}
+      <div id="drawer" ref={drawer} className={`drawer${open ? ' on' : ''}`} hidden={!open}
         role="dialog" aria-modal="true" aria-label="Menu">
         <div className="dhead">
           <span><span className="bn">{site.shortName}</span>{' '}<span className="bs">&amp; Associates</span></span>
@@ -136,7 +136,7 @@ export default function Header({ t }) {
           <a className="btn" href="#contact" onClick={() => setOpen(false)}>{t.cta.primary}</a>
           <a className="btn dk" href={`tel:${site.phoneHref}`}>{t.cta.call} {site.phone}</a>
         </div>
-      </aside>
+      </div>
     </>
   );
 }

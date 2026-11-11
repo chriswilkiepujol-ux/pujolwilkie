@@ -103,7 +103,7 @@ export function Checks({ t }) {
               <Icon name={c.icon} className="chi" />
               <span className="n">{String(i + 1).padStart(2, '0')}</span>
             </span>
-            <h4>{c.title}</h4>
+            <h3>{c.title}</h3>
             <p>{c.text}</p>
           </div>
         ))}
@@ -232,13 +232,13 @@ export function Footer({ t }) {
           </p>
         </div>
         <div>
-          <h5>{t.footer.services}</h5>
+          <p className="fhead">{t.footer.services}</p>
           {t.navServices.map((s) => (
             <Link href={s.href} key={s.href}>{s.label}</Link>
           ))}
         </div>
         <div>
-          <h5>{t.footer.firm}</h5>
+          <p className="fhead">{t.footer.firm}</p>
           {t.footer.firmLinks.map((l) => <Link href={l.href} key={l.label}>{l.label}</Link>)}
           <Link href={t.altHome} hrefLang={t.altLocale.code}>{t.altLocale.label}</Link>
         </div>

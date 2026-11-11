@@ -5,6 +5,13 @@ import ContactForm from './ContactForm';
 import { Footer, MobileCta, Trust } from './Sections';
 
 export default function ServicePage({ t, page, jsonLd = [] }) {
+  // Service pages point readers to the articles on the same topic, so the
+  // articles are linked from the body of the site and not only from the menu.
+  const postBase = t.locale === 'es' ? '/es/articulos/' : '/blog/';
+  const posts = (page.relatedPosts ? t.insights.items : [])
+    .filter((p) => page.relatedPosts.includes(p.slug))
+    .map((p) => ({ href: `${postBase}${p.slug}/`, label: p.title }));
+  const related = [...posts, ...(page.related || [])];
   return (
     <>
       {jsonLd.map((o, i) => (
@@ -74,10 +81,10 @@ export default function ServicePage({ t, page, jsonLd = [] }) {
             </div>
           )}
 
-          {page.related && (
+          {related && related.length > 0 && (
             <div className="related">
               <h3>{t.locale === 'es' ? 'También le puede interesar' : 'Related'}</h3>
-              <ul>{page.related.map((r) => (
+              <ul>{related.map((r) => (
                 <li key={r.href}><Link href={r.href}>{r.label} →</Link></li>
               ))}</ul>
             </div>

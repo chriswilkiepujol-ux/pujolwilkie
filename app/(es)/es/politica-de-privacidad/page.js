@@ -9,6 +9,7 @@ export const metadata = {
   title: page.metaTitle || `${page.title} | Esther Pujol Wilkie & Associates`,
   description: page.metaDesc || page.intro,
   alternates: { canonical: '/es/politica-de-privacidad/', languages: languagesFor('/es/politica-de-privacidad/') },
+  openGraph: { title: page.metaTitle || page.title, description: page.metaDesc || page.intro, url: '/es/politica-de-privacidad/', type: 'website', locale: 'es_ES' },
   robots: { index: false, follow: true },
 };
 

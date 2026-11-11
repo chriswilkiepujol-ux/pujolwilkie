@@ -20,7 +20,7 @@ const cases = [
   ['/full-client-service/', 'ok'],
   ['/immigration-and-foreigners-legal-procedures/', 'ok'],
   ['/2021/06/17/example-post-2/', '/blog/spain-golden-visa-guide/'],
-  ['/2021/01/06/brexit-side-effects/', '/blog/brexit-spain-residency/'],
+  ['/2021/01/06/brexit-side-effects/', '/immigration-and-foreigners-legal-procedures/'],
   ['/2021/01/06/intro-esther-pujol-wilkie/', '/about/'],
   ['/author/estherwilkie/', '/about/'],
   // new pages
@@ -47,7 +47,15 @@ for (const [path, expect] of cases) {
 
   let pass;
   if (expect === 'ok') pass = status === 200;
-  else pass = [301, 308].includes(status) && location.replace(/\?.*$/, '') === expect;
+  else {
+    pass = [301, 308].includes(status) && location.replace(/\?.*$/, '') === expect;
+    // the destination must exist too: a redirect into a 404 is still a dead end
+    if (pass) {
+      try { pass = (await fetch(base + expect, { redirect: 'manual' })).status === 200; }
+      catch (e) { pass = false; }
+      if (!pass) location += '  (destination does not return 200)';
+    }
+  }
 
   if (!pass) fail++;
   const mark = pass ? 'PASS' : 'FAIL';

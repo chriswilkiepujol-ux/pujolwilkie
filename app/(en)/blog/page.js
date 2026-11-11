@@ -7,6 +7,7 @@ export const metadata = {
   title: "Insights on Spanish Property Law | Pujol Wilkie",
   description: "Notes on Spanish property law, tax and residency for foreign owners: what actually changed, what it costs, and the deadlines that catch owners out.",
   alternates: { canonical: '/blog/', languages: languagesFor('/blog/') },
+  openGraph: { title: "Insights on Spanish Property Law | Pujol Wilkie", description: "Notes on Spanish property law, tax and residency for foreign owners: what actually changed, what it costs, and the deadlines that catch owners out.", url: '/blog/', type: 'website', locale: 'en_GB' },
 };
 
 export default function P() {

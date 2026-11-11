@@ -5,7 +5,7 @@
 
 const legal = {
   'aviso-legal': {
-    metaTitle: "Aviso legal | Esther Pujol Wilkie & Associates",
+    metaTitle: "Legal notice | Esther Pujol Wilkie & Associates",
     metaDesc: "Legal notice under art. 10 LSSI: firm identity, NIF, registered office, colegio and colegiada number, applicable professional rules and jurisdiction.",
     eyebrow: 'Legal', title: 'Aviso legal',
     intro: 'Information required under Spanish law on information society services.',

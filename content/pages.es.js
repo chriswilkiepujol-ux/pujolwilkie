@@ -59,6 +59,7 @@ const pages = {
     ],
   },
   'derecho-inmobiliario': {
+    relatedPosts: ['contrato-de-arras'],
     en: 'property-law', image: 'scales-of-justice-spanish-law',
     imageAlt: 'La balanza de la justicia, símbolo del ejercicio del derecho español',
     metaTitle: 'Derecho inmobiliario en España | Pujol Wilkie',
@@ -99,6 +100,7 @@ const pages = {
               { href: '/es/servicio-integral/', label: 'Todos los servicios' }],
   },
   'golden-visa-espana': {
+    relatedPosts: ['guia-golden-visa-espana'],
     en: 'spanish-golden-visa', image: 'spanish-visa-application',
     imageAlt: 'Formulario de solicitud de visado español',
     metaTitle: 'Golden Visa España: derogada en abril de 2025',
@@ -139,6 +141,7 @@ const pages = {
               { href: '/es/tramites-de-extranjeria/', label: 'Trámites de extranjería' }],
   },
   'fiscalidad': {
+    relatedPosts: ['impuestos-no-residentes'],
     en: 'tax-and-accountancy', image: 'coastal-property-costa-del-sol',
     imageAlt: 'Inmuebles y puerto deportivo en la Costa del Sol',
     metaTitle: 'Fiscalidad inmobiliaria para no residentes | Pujol Wilkie',
@@ -211,6 +214,7 @@ const pages = {
               { href: '/es/servicio-integral/', label: 'Todos los servicios' }],
   },
   'gestion-de-propiedades': {
+    relatedPosts: ['impuestos-no-residentes'],
     en: 'property-management-services', image: 'property-keys-handover-spain',
     imageAlt: 'Llaves de una vivienda en España',
     metaTitle: 'Gestión de propiedades en Sotogrande | Pujol Wilkie',
@@ -259,6 +263,7 @@ const pages = {
               { href: '/es/contacto/', label: 'Contactar' }],
   },
   'compraventa': {
+    relatedPosts: ['contrato-de-arras', 'impuestos-no-residentes'],
     en: 'buying-property', image: 'villa-pool-costa-del-sol',
     imageAlt: 'Villa con piscina en Sotogrande y la Costa del Sol',
     metaTitle: 'Comprar una propiedad en España | Abogada Sotogrande',
@@ -303,6 +308,7 @@ const pages = {
               { href: '/es/contacto/', label: 'Contactar' }],
   },
   'venta-de-propiedades': {
+    relatedPosts: ['impuestos-no-residentes'],
     en: 'selling-property', image: 'property-keys-handover-spain',
     imageAlt: 'Entrega de llaves en la firma de una compraventa en España',
     metaTitle: 'Vender una propiedad en España | Abogada Sotogrande',
@@ -340,6 +346,7 @@ const pages = {
               { href: '/es/derecho-inmobiliario/', label: 'Derecho inmobiliario en España' }],
   },
   'residencia-y-visados': {
+    relatedPosts: ['guia-golden-visa-espana'],
     en: 'residency-and-visas', image: 'spanish-visa-application',
     imageAlt: 'Formulario de solicitud de visado español',
     metaTitle: 'Residencia y visados en España 2026 | Pujol Wilkie',

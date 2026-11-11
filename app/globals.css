@@ -226,7 +226,7 @@ section{padding:clamp(52px,7vw,92px) 0;scroll-margin-top:78px}
 .ci-row{display:flex;align-items:center;gap:9px;margin-bottom:13px}
 .chi{width:26px;height:26px;color:var(--brass);flex:none}
 .chk .n{font-family:var(--m);font-size:11px;color:rgba(227,196,137,.75);letter-spacing:.12em}
-.chk h4{font-size:19px;color:var(--ink);margin-bottom:7px}
+.chk h3{font-size:19px;color:var(--ink);margin-bottom:7px}
 .chk p{font-size:14.5px;color:#4E574F;margin:0}
 
 /* ============ REVIEWS ============ */
@@ -342,12 +342,12 @@ footer{background:var(--ink);color:rgba(244,245,242,.7);padding:54px 0 26px;font
   .fg{grid-template-columns:1fr 1fr;gap:20px 18px}
   footer{padding:38px 0 22px;font-size:13.8px}
   .fbrand{grid-column:1/-1;font-size:13.5px}
-  footer h5{margin-bottom:8px}
+  footer .fhead{margin-bottom:8px}
   footer a{padding:2px 0}
   .fbot{margin-top:12px;flex-direction:column;gap:6px;text-align:left}
   .flegal{margin-top:22px;gap:5px 16px}.flegal a{font-size:12.8px}
 }
-footer h5{font-family:var(--m);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+footer .fhead{font-family:var(--m);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
   color:var(--brass);margin:0 0 12px;font-weight:500}
 footer a{color:rgba(244,245,242,.7);text-decoration:none;display:block;padding:3px 0}
 footer a:hover{color:#fff}
@@ -376,7 +376,7 @@ footer .fl svg{width:32px;height:36px;color:var(--brass)}
   .sub{font-size:15.5px;margin-top:10px}
   .checks{grid-template-columns:1fr 1fr}
   .chk{padding:15px 13px}
-  .chk h4{font-size:15.5px;line-height:1.2}
+  .chk h3{font-size:15.5px;line-height:1.2}
   .chk p{font-size:12.8px;line-height:1.45}
   .ci-row{gap:7px;margin-bottom:8px}.chi{width:20px;height:20px}
   .chk .n{font-size:9.5px}
