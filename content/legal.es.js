@@ -12,7 +12,7 @@ const legal = {
     sections: [
       { h2: 'Titularidad de este sitio web',
         list: [
-          'Titular: Esther Pujol Wilkie & Associates',
+          'Titular: Esther Pujol Andrés, que ejerce bajo la denominación Esther Pujol Wilkie & Associates',
           'NIF: ***9020** (publicado de forma parcialmente anonimizada conforme al criterio de la Agencia Española de Protección de Datos para la publicación de documentos identificativos)',
           'Domicilio: Guadalmarina 1, Portal 3, 2E, La Marina de Sotogrande, 11310 San Roque, Cádiz, España',
           'Teléfono: +34 620 86 80 12',
@@ -23,10 +23,11 @@ const legal = {
         list: [
           'Colegio profesional: Ilustre Colegio Provincial de Abogados de Cádiz',
           'Número de colegiada: 1432',
-          'Nombre colegial: Esther Pujol Andrés, que ejerce bajo la denominación Esther Pujol Wilkie & Associates',
+          'Nombre colegial: Esther Pujol Andrés',
           'Fecha de colegiación: 2 de julio de 1990. Situación: abogada ejerciente',
           'Profesión: Abogada, profesión regulada en España',
           'Título: Licenciada en Derecho (título expedido en España)',
+          'Seguro de responsabilidad civil profesional: póliza colectiva del Ilustre Colegio Provincial de Abogados de Cádiz',
           'La colegiación puede verificarse en el censo del Consejo General de la Abogacía Española, censo.abogacia.es',
           'Normativa profesional aplicable: Estatuto General de la Abogacía Española y Código Deontológico de la Abogacía Española, disponibles en abogacia.es',
         ] },
@@ -43,7 +44,7 @@ const legal = {
       { h2: 'Legislación aplicable y jurisdicción',
         p: ['Estas condiciones se rigen por la legislación española. Cualquier controversia derivada del uso de este sitio se someterá a los juzgados y tribunales de San Roque, Cádiz, salvo que la normativa de consumo aplicable disponga otra cosa.'] },
       { h2: 'Reclamaciones y resolución de conflictos',
-        p: ['Las reclamaciones pueden dirigirse al domicilio indicado más arriba o a esther@pujolwilkie.com. Los clientes pueden asimismo plantear cuestiones ante el Colegio de Abogados correspondiente. La Comisión Europea facilita una plataforma de resolución de litigios en línea en ec.europa.eu/consumers/odr.'] },
+        p: ['Las reclamaciones pueden dirigirse al domicilio indicado más arriba o a esther@pujolwilkie.com. Los clientes pueden asimismo plantear cuestiones ante el Colegio de Abogados correspondiente.'] },
     ],
   },
 
@@ -55,7 +56,7 @@ const legal = {
     sections: [
       { h2: 'Responsable del tratamiento',
         list: [
-          'Responsable: Esther Pujol Wilkie & Associates',
+          'Responsable: Esther Pujol Andrés, que ejerce bajo la denominación Esther Pujol Wilkie & Associates',
           'Dirección: Guadalmarina 1, Portal 3, 2E, La Marina de Sotogrande, 11310 San Roque, Cádiz',
           'Teléfono: +34 620 86 80 12',
           'Correo electrónico: esther@pujolwilkie.com',
@@ -103,7 +104,6 @@ const legal = {
         list: [
           'Cookies técnicas estrictamente necesarias, establecidas por la plataforma de alojamiento para servir las páginas y garantizar la seguridad. Exceptuadas del deber de consentimiento conforme al art. 22.2 LSSI-CE',
           'Un registro de su elección sobre cookies, guardado en su navegador para no preguntárselo en cada visita',
-          'Google Fonts, para representar la tipografía del sitio. No instala cookies, si bien la solicitud alcanza servidores de Google',
         ] },
       { h2: 'Solo con su consentimiento',
         list: [

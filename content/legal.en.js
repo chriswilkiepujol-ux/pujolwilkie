@@ -13,7 +13,7 @@ const legal = {
     sections: [
       { h2: 'Ownership of this website',
         list: [
-          'Holder: Esther Pujol Wilkie & Associates',
+          'Holder: Esther Pujol Andrés, practising under the name Esther Pujol Wilkie & Associates',
           'NIF: ***9020** (shown in the partially masked form set out by the Spanish Data Protection Agency for the publication of identity documents)',
           'Registered office: Guadalmarina 1, Portal 3, 2E, La Marina de Sotogrande, 11310 San Roque, Cádiz, Spain',
           'Telephone: +34 620 86 80 12',
@@ -24,10 +24,11 @@ const legal = {
         list: [
           'Bar association: Ilustre Colegio Provincial de Abogados de Cádiz',
           'Registration number (nº colegiada): 1432',
-          'Registered name: Esther Pujol Andrés, practising under Esther Pujol Wilkie & Associates',
+          'Registered name: Esther Pujol Andrés',
           'Admitted: 2 July 1990. Status: abogada ejerciente',
           'Profession: Lawyer (abogada), a regulated profession in Spain',
           'Qualification: Licenciada en Derecho (law degree), awarded in Spain',
+          'Professional indemnity insurance: group policy of the Ilustre Colegio Provincial de Abogados de Cádiz',
           'Registration may be verified at the national register of the Consejo General de la Abogacía Española, censo.abogacia.es',
           'Applicable professional rules: Estatuto General de la Abogacía Española and the Código Deontológico of the Abogacía Española, available at abogacia.es',
         ] },
@@ -44,7 +45,7 @@ const legal = {
       { h2: 'Applicable law and jurisdiction',
         p: ['These conditions are governed by Spanish law. Any dispute arising from the use of this website will be submitted to the courts of San Roque, Cádiz, unless the applicable rules on consumer protection provide otherwise.'] },
       { h2: 'Complaints and dispute resolution',
-        p: ['Complaints may be addressed to the firm at the postal address above or to esther@pujolwilkie.com. Clients may also raise matters with the relevant Colegio de Abogados. The European Commission provides an online dispute resolution platform at ec.europa.eu/consumers/odr.'] },
+        p: ['Complaints may be addressed to the firm at the postal address above or to esther@pujolwilkie.com. Clients may also raise matters with the relevant Colegio de Abogados.'] },
     ],
   },
 
@@ -56,7 +57,7 @@ const legal = {
     sections: [
       { h2: 'Who is responsible for your data',
         list: [
-          'Data controller: Esther Pujol Wilkie & Associates',
+          'Data controller: Esther Pujol Andrés, practising under the name Esther Pujol Wilkie & Associates',
           'Address: Guadalmarina 1, Portal 3, 2E, La Marina de Sotogrande, 11310 San Roque, Cádiz',
           'Telephone: +34 620 86 80 12',
           'Email: esther@pujolwilkie.com',
@@ -104,7 +105,6 @@ const legal = {
         list: [
           'Strictly necessary technical cookies set by the hosting platform to serve pages and maintain security. These are exempt from the consent requirement under art. 22.2 LSSI-CE',
           'A record of your cookie choice, kept in your browser so you are not asked on every visit',
-          'Google Fonts, used to render the site typography. No cookie is set by this, though the request reaches Google servers',
         ] },
       { h2: 'Only with your consent',
         list: [

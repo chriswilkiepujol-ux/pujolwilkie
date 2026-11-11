@@ -168,7 +168,7 @@ const pages = {
       { q: 'Do I need to file anything if my property sits empty?',
         a: 'Yes. Non resident owners file an annual return whether or not the property is let, and it is calculated from the cadastral value. We handle it as a matter of course for clients we look after.' },
       { q: 'What about rental income?',
-        a: 'Since 2024 rental income is declared annually rather than quarterly, in January for the previous year. The treatment also differs depending on where you are tax resident, which since Brexit affects British owners in particular. The rules here have changed more than once recently, so we keep clients updated.' },
+        a: 'Rental income is also declared, on whatever timetable applies, and we take care of it. The treatment also differs depending on where you are tax resident, which since Brexit affects British owners in particular. The rules here have changed more than once recently, so we keep clients updated.' },
       { q: 'What tax arises when I sell?',
         a: 'There is a tax on the gain, and where the seller is not resident in Spain the buyer retains a percentage of the price on account of it. Where the retention exceeds the actual liability the excess can be reclaimed, and we take care of that filing.' },
       { q: 'Do I have to declare assets I hold abroad?',
@@ -420,7 +420,7 @@ const pages = {
     sections: [
       { h2: 'What it does',
         p: ['The regime for inbound workers, set out in article 93 of the income tax act and known to everybody as the Beckham Law, allows someone who becomes tax resident in Spain to be taxed broadly as a non resident for a period of six years.',
-            'In practice that means a flat rate on Spanish employment income up to a generous ceiling, rather than the progressive scale, and income arising outside Spain generally falling outside the Spanish net during that time.'] },
+            'In practice that means a flat rate on Spanish employment income up to €600,000 a year, rather than the progressive scale, and income arising outside Spain generally falling outside the Spanish net during that time.'] },
       { h2: 'Who it is for',
         p: ['It was originally designed for employees relocating to Spain, and the Startups Law of 2022 widened it considerably. It now reaches international teleworkers, entrepreneurs with a project recognised as innovative, highly qualified professionals, and company directors within certain limits.',
             'The same reform reduced the period of prior non residence from ten years to five, which brought a good many people back within reach of it, including Spaniards returning after a spell abroad. Your spouse and children may also be able to join you in the regime.'] },
