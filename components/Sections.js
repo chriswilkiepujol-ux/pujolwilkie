@@ -251,7 +251,7 @@ export function Footer({ t }) {
         <span>© {new Date().getFullYear()} {site.legalName}</span>
         <span>{t.footer.place}</span>
         <span className="pw">{t.footer.poweredBy}{' '}
-          <a href={site.agency.url} rel="noopener">{site.agency.name}</a></span>
+          <a href={site.agency.url} target="_blank" rel="noopener">{site.agency.name}</a></span>
       </div>
     </div></footer>
   );

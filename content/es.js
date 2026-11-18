@@ -210,7 +210,7 @@ export const es = {
       { label: 'Política de cookies', href: '/es/politica-de-cookies' },
     ],
     place: 'La Marina de Sotogrande \u00b7 C\u00e1diz \u00b7 España',
-    poweredBy: 'Desarrollado por',
+    poweredBy: 'Powered by',
   },
 };
 export default es;
