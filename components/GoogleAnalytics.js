@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import Script from 'next/script';
 import { getConsent, CONSENT_EVENT } from '@/lib/consent';
+import { track } from '@/lib/track';
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
@@ -54,6 +55,21 @@ export default function GoogleAnalytics() {
       window.gtag('config', GA_ID, { anonymize_ip: true });
     }
   }, [state]);
+
+  // Phone and email clicks, wherever the links sit (header, body, footer).
+  useEffect(() => {
+    if (!GA_ID) return;
+    const onClick = (e) => {
+      const a = e.target.closest && e.target.closest('a[href^="tel:"], a[href^="mailto:"]');
+      if (!a) return;
+      const area = a.closest('.top, header') ? 'header' : a.closest('#drawer') ? 'menu'
+        : a.closest('.mcta') ? 'mobile_bar' : a.closest('footer') ? 'footer'
+        : a.closest('#contact') ? 'contact_section' : 'page';
+      track(a.getAttribute('href').startsWith('tel:') ? 'click_phone' : 'click_email', { link_area: area });
+    };
+    document.addEventListener('click', onClick);
+    return () => document.removeEventListener('click', onClick);
+  }, []);
 
   if (!GA_ID || state !== 'granted') return null;
 

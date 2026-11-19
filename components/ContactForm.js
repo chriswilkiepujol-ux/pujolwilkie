@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import site from '@/lib/site';
+import { track } from '@/lib/track';
 
 export default function ContactForm({ t }) {
   const [state, setState] = useState('idle');
@@ -17,7 +18,11 @@ export default function ContactForm({ t }) {
         method: 'POST', body: data, headers: { Accept: 'application/json' },
       });
       setState(res.ok ? 'ok' : 'error');
-      if (res.ok) e.target.reset();
+      if (res.ok) {
+        // GA4 key event: an enquiry sent. Only the matter type, nothing the visitor typed.
+        track('generate_lead', { form: 'contact', matter: data.get('matter') || 'General', language: t.locale });
+        e.target.reset();
+      }
     } catch { setState('error'); }
   }
 
